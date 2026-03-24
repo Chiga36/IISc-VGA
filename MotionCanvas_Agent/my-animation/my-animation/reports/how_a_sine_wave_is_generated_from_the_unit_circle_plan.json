@@ -1,0 +1,837 @@
+{
+  "topic": "How a Sine Wave is Generated from the Unit Circle",
+  "generation_timestamp": "2025-08-24 21:20:42",
+  "total_scenes": 6,
+  "total_estimated_duration": 70,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "X-axis for the unit circle visualization, horizontal center alignment in the left 40% region, with origin at [200, 500]. Length is 300 units for easy visualization, from 50 to 350. This means the origin is at x=200, y=500. A radius of 150 from the origin to (1,0) would be 150 units on screen, mapping 1 unit of the unit circle to 150 screen units. So actual start and end positions will be 200-150 and 200+150 based on the central point. Start at 50, end at 350 means length 300, center is 200. This is good for showing unit circle of radius 150 centered at (200,500). Max x for left 40% is 400. Min x for left 40% is 0. So 50 to 350 is good range for the axis on the left 40%. The entire screen is 1000 units wide. The left 40% is 400 units. A 300 unit axis leaves 50 units padding on each side. The y=500 is the vertical center of the screen, good for unit circle. Length is 300, so from 50 to 350 in x coordinates. So x=50, y=500 to x=350, y=500. This is good as 200 is center. Y axis will be from x=200, y=350 to x=200, y=650. Length 300. Radius of circle will be 150."
+            },
+            "target_id": "xAxis",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Y-axis for the unit circle, vertical center alignment, length 300 units. This also leaves 50 units padding on top/bottom from the central visual region of 400 units height (y=300 to y=700). Origin at [200, 500]. So Y axis will be from x=200, y=350 to x=200, y=650. Length 300. Good to set a 150 radius for the unit circle to fit. The Y-axis should be placed to start from 500-150=350 and end at 500+150=650 for a full visual extent."
+            },
+            "target_id": "yAxis",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Unit circle centered at the origin [200, 500] of the left visual area, with a radius of 150 screen units. Stroke color and width are specified for clarity. This is the main visual for the left 40%."
+            },
+            "target_id": "unitCircle",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Main title for the video, centered in the right 60% region. The right 60% region goes from x=400 to x=1000. So center x is 700. Y is high up at 100 for a title. This is good for an overarching title."
+            },
+            "target_id": "mainTitle",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Subtitle introducing the unit circle, below the main title. This is an introductory text, describing the visual element."
+            },
+            "target_id": "subTitle1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "First explanatory text for the unit circle, below the subtitle. Width 500 is good for text in the 600-unit wide right region. This text describes the main visual element on the left."
+            },
+            "target_id": "explText1",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 1,
+      "scene_title": "The Unit Circle Introduction",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Rotating point on the circumference of the unit circle. Starts at (1,0) in math space, which is (200 + 150, 500) in screen coordinates. This point will animate in later scenes. Radius 10 is visible and distinct. Color specified. This will be the animating element of the unit circle."
+            },
+            "target_id": "rotatingPoint",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Line representing the radius, from the origin to the rotating point. This line shows the vector from origin to point. Starts at (1,0) as well. Length is 150 units. Color and width are specified. This line connects the origin to the rotating point on the unit circle."
+            },
+            "target_id": "radiusLine",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Arc indicating the angle from the positive x-axis. Starts at angle 0. Will animate in later scenes. Radius 50 is small enough not to interfere with the point or other visuals. Color and width specified. This arc visually represents the angle theta."
+            },
+            "target_id": "angleArc",
+            "type": "arc"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for the angle, positioned near the arc. LaTeX for theta symbol. Font size and color are specified. This label clearly identifies the angle being discussed. It will be positioned to follow the arc and angle."
+            },
+            "target_id": "angleLabel",
+            "type": "latex"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Subtitle for this scene, introducing rotation and angle concepts. Centered in the right 60% region. This title cues the viewer to the new concept."
+            },
+            "target_id": "subTitle2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explanation of the rotating point. Placed below the subtitle. Describes the dynamic element introduced. This text explains what the rotating point represents."
+            },
+            "target_id": "explText2a",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explanation of how the angle is measured. Uses LaTeX for theta. This text defines the angular measurement."
+            },
+            "target_id": "explText2b",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 2,
+      "scene_title": "Angle and Rotation",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "xAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "yAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "unitCircle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mainTitle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "subTitle1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explText1"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Modify rotating point to an illustrative angle (e.g., PI/4 or 45 degrees). This sets the initial position for projection demonstration. X coordinate: 200 + 150*cos(PI/4). Y coordinate: 500 - 150*sin(PI/4) (y-axis inverted for screen coordinates, 0 is top). A good illustrative angle for demonstration is Pi/4 radians. Math.PI/4 for the value. X: 200 + 150*0.707 = 306.05. Y: 500 - 150*0.707 = 393.95."
+            },
+            "target_id": "rotatingPoint",
+            "type": "circle"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Modify radius line to end at the new illustrative rotating point position. This updates the visual to match the new point. The start is fixed at the origin (200,500). End is the rotating point's position. This is consistent with the visual update for the point."
+            },
+            "target_id": "radiusLine",
+            "type": "line"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Modify angle arc to illustrate the angle (PI/4). End angle set to PI/4. This visually shows the angle being referred to. Angle Arc starts at 0 and ends at PI/4. Radius is 50. Center is (200,500). This is consistent with the visual update for the angle."
+            },
+            "target_id": "angleArc",
+            "type": "arc"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Horizontal dashed line from the rotating point to the Y-axis. This visually represents the y-coordinate. Its start and end Y values are the same as the rotating point's Y. The X values are from the rotating point's X to the Y-axis (x=200). Color and dashed line specified for distinction. This line visually highlights the Y-coordinate being discussed."
+            },
+            "target_id": "yProjectionLine",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Vertical dashed line from the rotating point to the X-axis. This visually completes the right triangle. Its start and end X values are the same as the rotating point's X. The Y values are from the rotating point's Y to the X-axis (y=500). Color and dashed line specified. This line helps form the right triangle visually."
+            },
+            "target_id": "xProjectionLine",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for the Y-coordinate. Positioned near the Y-axis, aligned with the y-projection. Font size and color specified. This clearly labels the Y-coordinate. Position is slightly to the left of the Y-axis, at the same Y-coordinate as the projection."
+            },
+            "target_id": "yLabel",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for sin(theta). Positioned near the y-projection line, signifying its length. LaTeX for sin(theta). This explicitly states the connection between Y and sine. Position is slightly to the left of the Y-axis, but a bit higher than the projection line, making it clear it refers to the length of the projection."
+            },
+            "target_id": "sineLabel",
+            "type": "latex"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Subtitle for this scene, emphasizing the role of the Y-coordinate. Centered in the right 60% region. This title clearly states the main point of the scene."
+            },
+            "target_id": "subTitle3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explanation linking Y-coordinate to sine. LaTeX for theta. Placed below the subtitle. This text explains the fundamental concept demonstrated visually. This reinforces the visual connection between the Y-coordinate and sine."
+            },
+            "target_id": "explText3a",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Formula for Y = sin(theta). Centered and prominent. LaTeX for sine and theta. This formula is the mathematical representation of the concept. This formalizes the visual and textual explanation."
+            },
+            "target_id": "formula1",
+            "type": "latex"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 3,
+      "scene_title": "The Y-Coordinate is Sine",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "xAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "yAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "unitCircle"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotatingPoint"
+        },
+        {
+          "action": "keep",
+          "target_id": "radiusLine"
+        },
+        {
+          "action": "keep",
+          "target_id": "angleArc"
+        },
+        {
+          "action": "keep",
+          "target_id": "angleLabel"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "subTitle2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explText2a"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explText2b"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "X-axis for the sine wave plot, positioned in the lower part of the right 60% region. Starts at x=450, ends at x=950 (length 500). Y-coordinate is 600, for vertical centering of the plot in the lower half of the 60% region. This axis defines the domain (angle/time) for the sine wave. A length of 500 units for 2*PI radians allows good resolution."
+            },
+            "target_id": "sinePlotXAxis",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Y-axis for the sine wave plot, positioned at x=450. Starts at y=450, ends at y=750 (length 300). This axis defines the range (Y=sin(theta)) for the sine wave. Y values from -1 to 1 will map to this range, so 150 units for 1 unit amplitude. This axis shows the amplitude range for the sine wave."
+            },
+            "target_id": "sinePlotYAxis",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for the sine plot X-axis, using LaTeX for theta. Placed at the end of the X-axis for clarity. This explicitly labels the X-axis as representing the angle theta."
+            },
+            "target_id": "sinePlotXLabel",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for the sine plot Y-axis, simply 'Y'. Placed at the top of the Y-axis. This explicitly labels the Y-axis as representing the Y-coordinate."
+            },
+            "target_id": "sinePlotYLabel",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for the value '1' on the sine plot Y-axis. Positioned at the top of the Y-axis, slightly to the left. This indicates the maximum amplitude of the sine wave."
+            },
+            "target_id": "yVal1Label",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for the value '-1' on the sine plot Y-axis. Positioned at the bottom of the Y-axis, slightly to the left. This indicates the minimum amplitude of the sine wave."
+            },
+            "target_id": "yValNeg1Label",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Horizontal dashed line connecting the Y-coordinate of the unit circle point to the Y-axis of the sine plot. This line shows the direct transfer of the Y-value. Starts at the Y-axis of the unit circle (x=200) and ends at the Y-axis of the sine plot (x=450). This visually links the unit circle's Y-coordinate to the sine wave's Y-axis."
+            },
+            "target_id": "yConnectLine",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Vertical dashed line indicating the corresponding angle (x-value) on the sine plot. This line moves horizontally as the angle changes, and vertically to meet the y-value from the unit circle. X-position for PI/4 is 450 + (PI/4 / (2*PI)) * 500 = 450 + 62.5 = 512.5. This line visually links the angle theta to the x-axis of the sine wave plot."
+            },
+            "target_id": "xConnectLine",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Initial point on the sine wave plot, at the intersection of the two projection lines. This is the first point of the curve being drawn. Its position corresponds to the current angle (PI/4) and its sine value. This marks the initial plotted point from the unit circle."
+            },
+            "target_id": "plotPoint",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Subtitle for this scene, indicating the start of the plotting process. Centered in the right 60% region. This title prepares the viewer for the new visual representation."
+            },
+            "target_id": "subTitle4",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explanation of how the sine wave will be plotted. LaTeX for theta. Placed below the subtitle. This text explains the mapping between the unit circle's angle and Y-coordinate to the sine wave's axes. This text clarifies the method of generating the sine wave."
+            },
+            "target_id": "explText4a",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 4,
+      "scene_title": "Setting up the Sine Wave Plot",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "xAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "yAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "unitCircle"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotatingPoint"
+        },
+        {
+          "action": "keep",
+          "target_id": "radiusLine"
+        },
+        {
+          "action": "keep",
+          "target_id": "angleArc"
+        },
+        {
+          "action": "keep",
+          "target_id": "angleLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "yProjectionLine"
+        },
+        {
+          "action": "keep",
+          "target_id": "xProjectionLine"
+        },
+        {
+          "action": "keep",
+          "target_id": "yLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "sineLabel"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "subTitle3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explText3a"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "formula1"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animate the rotating point around the unit circle for one full rotation plus the initial offset. The `angle` property will be interpreted by the animation engine to calculate its x,y position on the unit circle. This animates the core driving mechanism of the sine wave generation. Start angle from PI/4, end angle at 2*PI + PI/4 (one full rotation). Center (200,500), radius 150 (unit circle size). Duration 15s. Easing linear for smooth rotation."
+            },
+            "target_id": "rotatingPoint",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animate the radius line following the rotating point. Its start point is fixed at the origin (200,500), end point follows the rotating point. This animation shows the changing angle and position. This is directly tied to the rotating point's animation. Start and end angles are same as rotating point."
+            },
+            "target_id": "radiusLine",
+            "type": "line"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animate the angle arc to expand as the point rotates. Start angle 0, end angle from PI/4 to 2*PI + PI/4. This visually shows the progression of the angle. This is also directly tied to the rotating point's animation. Radius 50, center (200,500)."
+            },
+            "target_id": "angleArc",
+            "type": "arc"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animate the Y-projection line to follow the vertical position of the rotating point. This dynamically highlights the Y-coordinate that generates the sine wave. This line's Y-coordinate follows the rotating point's Y, while X-coordinates are from the rotating point's X to the Y-axis. This animation shows the changing Y-coordinate."
+            },
+            "target_id": "yProjectionLine",
+            "type": "line"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animate the X-projection line to follow the horizontal position of the rotating point. This line shows the X-coordinate of the point, completing the right triangle. This animation shows the changing X-coordinate. This line's X-coordinate follows the rotating point's X, while Y-coordinates are from the rotating point's Y to the X-axis."
+            },
+            "target_id": "xProjectionLine",
+            "type": "line"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animate the Y-connector line to transfer the Y-coordinate to the sine plot's Y-axis. This visually connects the unit circle's Y value to the sine plot. This line's Y-coordinate follows the rotating point's Y, while X-coordinates are from the unit circle's Y-axis to the sine plot's Y-axis. This animation visualizes the mapping of the Y-coordinate to the sine plot."
+            },
+            "target_id": "yConnectLine",
+            "type": "line"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animate the X-connector line on the sine plot to indicate the current angle. This line shows the progression along the X-axis of the sine plot. This line's X-coordinate maps the angle from the unit circle to the sine plot's X-axis, while Y-coordinates are from the sine plot's X-axis to the corresponding Y-value. This animation visualizes the mapping of the angle to the sine plot's X-axis."
+            },
+            "target_id": "xConnectLine",
+            "type": "line"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animate the plot point on the sine wave plot, tracing out the curve. This point follows the intersection of the X and Y connector lines, forming the sine wave. This is the core visual element of the sine wave generation, showing the point being drawn. The animation is driven by the angle, mapping it to the sine plot's coordinates."
+            },
+            "target_id": "plotPoint",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animate the sine curve path being drawn progressively. The `drawPercentage` property makes the path reveal itself from 0% to 100%. This is the final generated sine wave, revealed over time. The points of the sine curve are generated based on the angle (theta), mapping to the sine plot's coordinates. The amplitude (150) matches the unit circle's radius and the plot's Y-axis scaling. Start `drawPercentage` at 0, end at 1."
+            },
+            "target_id": "sineCurvePath",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for 0 on the sine wave X-axis. This labels the starting point of the wave."
+            },
+            "target_id": "zeroLabel",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for PI/2 on the sine wave X-axis. This labels a key point (peak) of the wave."
+            },
+            "target_id": "piHalfLabel",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for PI on the sine wave X-axis. This labels a zero-crossing point."
+            },
+            "target_id": "piLabel",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for 3PI/2 on the sine wave X-axis. This labels a key point (trough) of the wave."
+            },
+            "target_id": "threePiHalfLabel",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for 2PI on the sine wave X-axis. This labels the end of one full cycle of the wave."
+            },
+            "target_id": "twoPiLabel",
+            "type": "latex"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explanation of the sine wave generation process. LaTeX for pi. This text describes the dynamic process shown in the animation. This text summarizes the visual generation of the sine wave from the rotating point's Y-coordinate."
+            },
+            "target_id": "explText5a",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explanation of the periodic nature of the wave. LaTeX for pi. This text highlights a key characteristic of the sine wave. This text explains that the sine wave repeats itself after a full rotation."
+            },
+            "target_id": "explText5b",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 5,
+      "scene_title": "Generating the Sine Wave",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "xAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "yAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "unitCircle"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotatingPoint"
+        },
+        {
+          "action": "keep",
+          "target_id": "radiusLine"
+        },
+        {
+          "action": "keep",
+          "target_id": "angleArc"
+        },
+        {
+          "action": "keep",
+          "target_id": "angleLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "yProjectionLine"
+        },
+        {
+          "action": "keep",
+          "target_id": "xProjectionLine"
+        },
+        {
+          "action": "keep",
+          "target_id": "yLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "sineLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "sinePlotXAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "sinePlotYAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "sinePlotXLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "sinePlotYLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "yVal1Label"
+        },
+        {
+          "action": "keep",
+          "target_id": "yValNeg1Label"
+        },
+        {
+          "action": "keep",
+          "target_id": "yConnectLine"
+        },
+        {
+          "action": "keep",
+          "target_id": "xConnectLine"
+        },
+        {
+          "action": "keep",
+          "target_id": "plotPoint"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "subTitle4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explText4a"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Subtitle for the conclusion scene. Centered in the right 60% region. This title provides a clear wrap-up for the video."
+            },
+            "target_id": "subTitle6",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "First explanatory text for the sine wave's periodicity. LaTeX for pi. Placed below the subtitle. This text reiterates the periodic nature of the sine wave, a key takeaway from the animation. This emphasizes the repeating pattern and its duration."
+            },
+            "target_id": "explText6a",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Second explanatory text about the sine wave's amplitude range. Placed below the first explanation. This text highlights the consistent range of values the sine wave takes, directly linked to the unit circle. This reiterates the range of the sine wave's values."
+            },
+            "target_id": "explText6b",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The fundamental sine wave equation. Centered and prominent. LaTeX for sine. This formula is the mathematical representation of the sine wave demonstrated. This provides the mathematical equation for the visual concept."
+            },
+            "target_id": "formula2",
+            "type": "latex"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 6,
+      "scene_title": "Conclusion: The Sine Wave",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "xAxis"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "yAxis"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "unitCircle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotatingPoint"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "radiusLine"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "angleArc"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "angleLabel"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "yProjectionLine"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "xProjectionLine"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "yLabel"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "sineLabel"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "yConnectLine"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "xConnectLine"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "plotPoint"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explText5a"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explText5b"
+        },
+        {
+          "action": "keep",
+          "target_id": "sinePlotXAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "sinePlotYAxis"
+        },
+        {
+          "action": "keep",
+          "target_id": "sinePlotXLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "sinePlotYLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "yVal1Label"
+        },
+        {
+          "action": "keep",
+          "target_id": "yValNeg1Label"
+        },
+        {
+          "action": "keep",
+          "target_id": "zeroLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "piHalfLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "piLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "threePiHalfLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "twoPiLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "sineCurvePath"
+        }
+      ]
+    }
+  ]
+}

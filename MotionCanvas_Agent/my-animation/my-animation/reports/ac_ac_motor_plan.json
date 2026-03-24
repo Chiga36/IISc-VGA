@@ -1,0 +1,1067 @@
+{
+  "topic": "ac ac motor",
+  "generation_timestamp": "2025-08-23 17:21:36",
+  "total_scenes": 8,
+  "total_estimated_duration": 72,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 150 400 L 250 400 L 250 500 L 150 500 Z M 200 350 C 270 350 270 550 200 550 C 130 550 130 350 200 350 M 200 300 C 300 300 300 600 200 600 C 100 600 100 300 200 300",
+              "strokeColor": "#333333",
+              "strokeWidth": 5,
+              "text": "Motor Outline"
+            },
+            "target_id": "motorOutlineShape",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 64,
+              "fontWeight": "bold",
+              "position": {
+                "x": 700,
+                "y": 400
+              },
+              "text": "Understanding AC Motors"
+            },
+            "target_id": "titleMain",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#555555",
+              "fontSize": 36,
+              "position": {
+                "x": 700,
+                "y": 480
+              },
+              "text": "The Workhorse of Industry"
+            },
+            "target_id": "subtitleIntro",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 1,
+      "scene_title": "Introduction to AC Motors",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 150 450 C 180 430 180 470 150 450 M 170 450 C 200 430 200 470 170 450 M 190 450 C 220 430 220 470 190 450",
+              "strokeColor": "#CC0000",
+              "strokeWidth": 4
+            },
+            "target_id": "acPowerSymbol",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 250 450 L 300 450 L 290 440 M 300 450 L 290 460",
+              "strokeColor": "#333333",
+              "strokeWidth": 4
+            },
+            "target_id": "arrowRight",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 350 450 A 50 50 0 1 1 350 451 M 350 420 L 350 480 M 320 450 L 380 450",
+              "strokeColor": "#333333",
+              "strokeWidth": 4
+            },
+            "target_id": "mechanicalEnergySymbol",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 36,
+              "position": {
+                "x": 700,
+                "y": 420
+              },
+              "text": "AC motors convert alternating current (AC)"
+            },
+            "target_id": "defText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 36,
+              "position": {
+                "x": 700,
+                "y": 470
+              },
+              "text": "electrical energy into mechanical energy."
+            },
+            "target_id": "defText2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 2,
+      "scene_title": "What is an AC Motor?",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "titleMain"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "subtitleIntro"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "motorOutlineShape"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#AEC6CF",
+              "path": "M 200 250 C 350 250 350 650 200 650 C 50 650 50 250 200 250 Z",
+              "strokeColor": "#333333",
+              "strokeWidth": 3
+            },
+            "target_id": "statorShape",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#778899",
+              "path": "M 200 350 C 270 350 270 550 200 550 C 130 550 130 350 200 350 Z",
+              "strokeColor": "#333333",
+              "strokeWidth": 3
+            },
+            "target_id": "rotorShape",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 24,
+              "position": {
+                "x": 200,
+                "y": 230
+              },
+              "text": "Stator"
+            },
+            "target_id": "statorLabel",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 24,
+              "position": {
+                "x": 200,
+                "y": 570
+              },
+              "text": "Rotor"
+            },
+            "target_id": "rotorLabel",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 36,
+              "position": {
+                "x": 700,
+                "y": 420
+              },
+              "text": "Every AC motor has two main parts:"
+            },
+            "target_id": "partsText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 36,
+              "position": {
+                "x": 700,
+                "y": 470
+              },
+              "text": "the Stator and the Rotor."
+            },
+            "target_id": "partsText2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 3,
+      "scene_title": "Components: Stator and Rotor",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "titleMain"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "defText1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "defText2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "acPowerSymbol"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "arrowRight"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mechanicalEnergySymbol"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#AEC6CF",
+              "path": "M 200 250 C 350 250 350 650 200 650 C 50 650 50 250 200 250 Z M 200 350 C 270 350 270 550 200 550 C 130 550 130 350 200 350 Z",
+              "strokeColor": "#FFD700",
+              "strokeWidth": 6
+            },
+            "target_id": "statorHighlight",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#990000",
+              "fontSize": 28,
+              "position": {
+                "x": 200,
+                "y": 400
+              },
+              "text": "AC In"
+            },
+            "target_id": "acInText",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 200 300 A 100 100 0 1 1 200 600 A 100 100 0 1 1 200 300",
+              "strokeColor": "#6A5ACD",
+              "strokeWidth": 4
+            },
+            "target_id": "statorRMF",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 400
+              },
+              "text": "The Stator is the stationary part, containing"
+            },
+            "target_id": "statorText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 440
+              },
+              "text": "coils wound around an iron core."
+            },
+            "target_id": "statorText2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 500
+              },
+              "text": "When AC current flows through these coils,"
+            },
+            "target_id": "statorText3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 540
+              },
+              "text": "it creates a rotating magnetic field (RMF)."
+            },
+            "target_id": "statorText4",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 4,
+      "scene_title": "The Stator - Creating RMF",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "titleMain"
+        },
+        {
+          "action": "keep",
+          "target_id": "statorShape"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotorShape"
+        },
+        {
+          "action": "keep",
+          "target_id": "statorLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotorLabel"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "partsText1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "partsText2"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#778899",
+              "path": "M 200 350 C 270 350 270 550 200 550 C 130 550 130 350 200 350 Z",
+              "strokeColor": "#FFD700",
+              "strokeWidth": 6
+            },
+            "target_id": "rotorHighlight",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#CC0000",
+              "position": {
+                "x": 200,
+                "y": 450
+              },
+              "radius": 10,
+              "strokeColor": "#CC0000",
+              "strokeWidth": 2
+            },
+            "target_id": "inducedCurrentDot1",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#CC0000",
+              "position": {
+                "x": 220,
+                "y": 470
+              },
+              "radius": 10,
+              "strokeColor": "#CC0000",
+              "strokeWidth": 2
+            },
+            "target_id": "inducedCurrentDot2",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#CC0000",
+              "position": {
+                "x": 180,
+                "y": 430
+              },
+              "radius": 10,
+              "strokeColor": "#CC0000",
+              "strokeWidth": 2
+            },
+            "target_id": "inducedCurrentDot3",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 400
+              },
+              "text": "The Rotor is the rotating part, often a"
+            },
+            "target_id": "rotorText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 440
+              },
+              "text": "squirrel cage or wound rotor."
+            },
+            "target_id": "rotorText2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 500
+              },
+              "text": "The Stator's rotating magnetic field induces"
+            },
+            "target_id": "rotorText3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 540
+              },
+              "text": "an electric current in the Rotor conductors."
+            },
+            "target_id": "rotorText4",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 5,
+      "scene_title": "The Rotor - Induced Current",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "titleMain"
+        },
+        {
+          "action": "keep",
+          "target_id": "statorShape"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotorShape"
+        },
+        {
+          "action": "keep",
+          "target_id": "statorLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotorLabel"
+        },
+        {
+          "action": "modify",
+          "target_id": "statorHighlight",
+          "new_properties": {
+            "strokeColor": "#AEC6CF",
+            "strokeWidth": 0
+          }
+        },
+        {
+          "action": "keep",
+          "target_id": "statorRMF"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "acInText"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "statorText1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "statorText2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "statorText3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "statorText4"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 200 370 A 80 80 0 1 1 200 530 A 80 80 0 1 1 200 370",
+              "strokeColor": "#8A2BE2",
+              "strokeWidth": 3
+            },
+            "target_id": "rotorMF",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 250 450 L 280 450 L 270 440 M 280 450 L 270 460",
+              "strokeColor": "#006400",
+              "strokeWidth": 4
+            },
+            "target_id": "torqueArrow",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 400
+              },
+              "text": "This induced current in the rotor creates"
+            },
+            "target_id": "torqueText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 440
+              },
+              "text": "its own magnetic field."
+            },
+            "target_id": "torqueText2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 500
+              },
+              "text": "The interaction between the Stator's RMF"
+            },
+            "target_id": "torqueText3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 540
+              },
+              "text": "and the Rotor's field produces torque,"
+            },
+            "target_id": "torqueText4",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 580
+              },
+              "text": "making the rotor spin."
+            },
+            "target_id": "torqueText5",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 6,
+      "scene_title": "Rotor's Field & Torque",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "titleMain"
+        },
+        {
+          "action": "keep",
+          "target_id": "statorShape"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotorShape"
+        },
+        {
+          "action": "keep",
+          "target_id": "statorLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotorLabel"
+        },
+        {
+          "action": "modify",
+          "target_id": "rotorHighlight",
+          "new_properties": {
+            "strokeColor": "#778899",
+            "strokeWidth": 0
+          }
+        },
+        {
+          "action": "keep",
+          "target_id": "statorRMF"
+        },
+        {
+          "action": "keep",
+          "target_id": "inducedCurrentDot1"
+        },
+        {
+          "action": "keep",
+          "target_id": "inducedCurrentDot2"
+        },
+        {
+          "action": "keep",
+          "target_id": "inducedCurrentDot3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotorText1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotorText2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotorText3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotorText4"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "animate",
+            "properties": {
+              "path": "M 200 300 A 100 100 0 1 1 200 600 A 100 100 0 1 1 200 300",
+              "strokeColor": "#6A5ACD",
+              "strokeWidth": 4,
+              "text": "Stator RMF (Faster)"
+            },
+            "target_id": "statorRMF",
+            "type": "path"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "path": "M 200 370 A 80 80 0 1 1 200 530 A 80 80 0 1 1 200 370",
+              "strokeColor": "#8A2BE2",
+              "strokeWidth": 3,
+              "text": "Rotor MF (Slower)"
+            },
+            "target_id": "rotorMF",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#555555",
+              "fontSize": 24,
+              "position": {
+                "x": 200,
+                "y": 280
+              },
+              "text": "RMF Speed"
+            },
+            "target_id": "statorSpeedText",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#555555",
+              "fontSize": 24,
+              "position": {
+                "x": 200,
+                "y": 590
+              },
+              "text": "Rotor Speed"
+            },
+            "target_id": "rotorSpeedText",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 380
+              },
+              "text": "In an induction motor, the rotor always spins"
+            },
+            "target_id": "slipText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 420
+              },
+              "text": "slightly slower than the stator's RMF."
+            },
+            "target_id": "slipText2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 470
+              },
+              "text": "This difference in speed is called 'slip'."
+            },
+            "target_id": "slipText3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 520
+              },
+              "text": "Slip is essential to induce current and generate torque."
+            },
+            "target_id": "slipText4",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 7,
+      "scene_title": "Slip - The Speed Difference",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "titleMain"
+        },
+        {
+          "action": "keep",
+          "target_id": "statorShape"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotorShape"
+        },
+        {
+          "action": "keep",
+          "target_id": "statorLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotorLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "statorRMF"
+        },
+        {
+          "action": "keep",
+          "target_id": "inducedCurrentDot1"
+        },
+        {
+          "action": "keep",
+          "target_id": "inducedCurrentDot2"
+        },
+        {
+          "action": "keep",
+          "target_id": "inducedCurrentDot3"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotorMF"
+        },
+        {
+          "action": "keep",
+          "target_id": "torqueArrow"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "torqueText1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "torqueText2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "torqueText3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "torqueText4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "torqueText5"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 150 450 C 150 420 170 420 170 450 L 170 480 C 170 510 150 510 150 480 Z",
+              "strokeColor": "#333333",
+              "strokeWidth": 3
+            },
+            "target_id": "washingMachineIcon",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 250 450 L 280 450 L 280 480 L 250 480 Z M 265 430 C 275 430 275 440 265 440 C 255 440 255 430 265 430 Z",
+              "strokeColor": "#333333",
+              "strokeWidth": 3
+            },
+            "target_id": "industrialGearIcon",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 320 450 L 370 450 L 370 470 C 370 480 360 480 360 470 L 330 470 C 330 480 320 480 320 470 Z M 330 460 C 335 460 335 465 330 465 C 325 465 325 460 330 460 Z M 360 460 C 365 460 365 465 360 465 C 355 465 355 460 360 460 Z",
+              "strokeColor": "#333333",
+              "strokeWidth": 3
+            },
+            "target_id": "evIcon",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 420
+              },
+              "text": "AC motors are widely used in industrial"
+            },
+            "target_id": "applicationsText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 460
+              },
+              "text": "machinery, home appliances, electric"
+            },
+            "target_id": "applicationsText2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#1A1A1A",
+              "fontSize": 32,
+              "position": {
+                "x": 700,
+                "y": 500
+              },
+              "text": "vehicles, and many more applications."
+            },
+            "target_id": "applicationsText3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 8,
+      "scene_title": "Applications of AC Motors",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "titleMain"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "statorShape"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotorShape"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "statorLabel"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotorLabel"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "statorRMF"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "inducedCurrentDot1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "inducedCurrentDot2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "inducedCurrentDot3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotorMF"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "torqueArrow"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "statorSpeedText"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotorSpeedText"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "slipText1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "slipText2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "slipText3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "slipText4"
+        }
+      ]
+    }
+  ]
+}

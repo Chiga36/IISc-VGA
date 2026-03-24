@@ -1,0 +1,1810 @@
+[
+  {
+    "actions": {
+      "visualization": [],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 72,
+            "fontWeight": "bold",
+            "position": {
+              "x": 300,
+              "y": 400
+            },
+            "text": "Chemical Bonding: Covalent Bonds"
+          },
+          "target_id": "title_main",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 200
+            },
+            "text": "Atoms bond to achieve stability."
+          },
+          "target_id": "text_intro1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 120
+            },
+            "text": "They seek a lower energy state by completing their valence shells."
+          },
+          "target_id": "text_intro2",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 1,
+    "scene_title": "Introduction to Chemical Bonds",
+    "transitions": []
+  },
+  {
+    "actions": {
+      "visualization": [],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 200
+            },
+            "text": "Two primary types of chemical bonds:"
+          },
+          "target_id": "text_bond_types_intro",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 120
+            },
+            "text": "1. Ionic Bonds (transfer of electrons)"
+          },
+          "target_id": "text_ionic",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 40
+            },
+            "text": "2. Covalent Bonds (sharing of electrons)"
+          },
+          "target_id": "text_covalent",
+          "type": "text"
+        },
+        {
+          "command": "highlight",
+          "properties": {
+            "color": "#2563EB",
+            "duration": 1
+          },
+          "target_id": "text_covalent",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 6,
+    "scene_number": 2,
+    "scene_title": "Types of Chemical Bonds",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "title_main"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_intro1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_intro2"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 150
+            },
+            "text": "Covalent bonds form when atoms share one or more pairs of valence electrons."
+          },
+          "target_id": "text_covalent_def1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 40
+            },
+            "text": "This sharing allows both atoms to achieve a stable electron configuration, often a full outer shell."
+          },
+          "target_id": "text_covalent_def2",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 6,
+    "scene_number": 3,
+    "scene_title": "Covalent Bond Concept",
+    "transitions": [
+      {
+        "action": "fadeOut",
+        "target_id": "text_bond_types_intro"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_ionic"
+      },
+      {
+        "action": "modify",
+        "target_id": "title_main",
+        "new_properties": {
+          "color": "#1E293B",
+          "fontSize": 72,
+          "fontWeight": "bold",
+          "position": {
+            "x": 300,
+            "y": 400
+          },
+          "text": "Covalent Bonds: The Concept"
+        }
+      },
+      {
+        "action": "modify",
+        "target_id": "text_covalent",
+        "new_properties": {
+          "color": "#2563EB",
+          "fontSize": 56,
+          "fontWeight": "bold",
+          "position": {
+            "x": 300,
+            "y": 250
+          }
+        }
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#DC2626",
+            "position": {
+              "x": -600,
+              "y": 0
+            },
+            "radius": 15
+          },
+          "target_id": "circle_h1_nucleus",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#F8FAFC",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -600,
+              "y": 0
+            },
+            "text": "H"
+          },
+          "target_id": "label_h1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "none",
+            "position": {
+              "x": -600,
+              "y": 0
+            },
+            "radius": 100,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 2
+          },
+          "target_id": "circle_h1_shell",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#2563EB",
+            "position": {
+              "x": -600,
+              "y": -90
+            },
+            "radius": 10
+          },
+          "target_id": "dot_h1_electron",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#DC2626",
+            "position": {
+              "x": -400,
+              "y": 0
+            },
+            "radius": 15
+          },
+          "target_id": "circle_h2_nucleus",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#F8FAFC",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -400,
+              "y": 0
+            },
+            "text": "H"
+          },
+          "target_id": "label_h2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "none",
+            "position": {
+              "x": -400,
+              "y": 0
+            },
+            "radius": 100,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 2
+          },
+          "target_id": "circle_h2_shell",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#2563EB",
+            "position": {
+              "x": -400,
+              "y": 90
+            },
+            "radius": 10
+          },
+          "target_id": "dot_h2_electron",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -550,
+              "y": 0
+            }
+          },
+          "target_id": "circle_h1_shell",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -450,
+              "y": 0
+            }
+          },
+          "target_id": "circle_h2_shell",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -550,
+              "y": 0
+            }
+          },
+          "target_id": "circle_h1_nucleus",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -550,
+              "y": 0
+            }
+          },
+          "target_id": "label_h1",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -450,
+              "y": 0
+            }
+          },
+          "target_id": "circle_h2_nucleus",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -450,
+              "y": 0
+            }
+          },
+          "target_id": "label_h2",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -500,
+              "y": 15
+            }
+          },
+          "target_id": "dot_h1_electron",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -500,
+              "y": -15
+            }
+          },
+          "target_id": "dot_h2_electron",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 280
+            },
+            "text": "Each Hydrogen atom has 1 valence electron."
+          },
+          "target_id": "text_h_valence",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 180
+            },
+            "text": "By sharing, each H atom effectively has 2 electrons, completing its first shell."
+          },
+          "target_id": "text_h_stability",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#059669",
+            "fontSize": 60,
+            "position": {
+              "x": 300,
+              "y": 50
+            },
+            "text": "\\text{H-H}"
+          },
+          "target_id": "latex_h2",
+          "type": "latex"
+        }
+      ]
+    },
+    "duration": 10,
+    "scene_number": 4,
+    "scene_title": "Hydrogen Molecule (H2)",
+    "transitions": [
+      {
+        "action": "fadeOut",
+        "target_id": "title_main"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_covalent_def1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_covalent_def2"
+      },
+      {
+        "action": "modify",
+        "target_id": "text_covalent",
+        "new_properties": {
+          "color": "#1E293B",
+          "fontSize": 56,
+          "fontWeight": "bold",
+          "position": {
+            "x": 300,
+            "y": 400
+          },
+          "text": "Covalent Bonds: Example H\u2082"
+        }
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#DC2626",
+            "position": {
+              "x": -500,
+              "y": 0
+            },
+            "radius": 20
+          },
+          "target_id": "circle_o_nucleus",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#F8FAFC",
+            "fontSize": 35,
+            "fontWeight": "bold",
+            "position": {
+              "x": -500,
+              "y": 0
+            },
+            "text": "O"
+          },
+          "target_id": "label_o",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "none",
+            "position": {
+              "x": -500,
+              "y": 0
+            },
+            "radius": 120,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 2
+          },
+          "target_id": "circle_o_shell",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#8B5CF6",
+            "position": {
+              "x": -410,
+              "y": 10
+            },
+            "radius": 8
+          },
+          "target_id": "dot_o_electron1",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#8B5CF6",
+            "position": {
+              "x": -590,
+              "y": 10
+            },
+            "radius": 8
+          },
+          "target_id": "dot_o_electron2",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#8B5CF6",
+            "position": {
+              "x": -500,
+              "y": 110
+            },
+            "radius": 8
+          },
+          "target_id": "dot_o_electron3",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#8B5CF6",
+            "position": {
+              "x": -500,
+              "y": -110
+            },
+            "radius": 8
+          },
+          "target_id": "dot_o_electron4",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#8B5CF6",
+            "position": {
+              "x": -440,
+              "y": 70
+            },
+            "radius": 8
+          },
+          "target_id": "dot_o_electron5",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#8B5CF6",
+            "position": {
+              "x": -560,
+              "y": 70
+            },
+            "radius": 8
+          },
+          "target_id": "dot_o_electron6",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#2563EB",
+            "position": {
+              "x": -700,
+              "y": 100
+            },
+            "radius": 15
+          },
+          "target_id": "circle_h3_nucleus",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#F8FAFC",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -700,
+              "y": 100
+            },
+            "text": "H"
+          },
+          "target_id": "label_h3",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "none",
+            "position": {
+              "x": -700,
+              "y": 100
+            },
+            "radius": 100,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 2
+          },
+          "target_id": "circle_h3_shell",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#2563EB",
+            "position": {
+              "x": -700,
+              "y": 10
+            },
+            "radius": 10
+          },
+          "target_id": "dot_h3_electron",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#2563EB",
+            "position": {
+              "x": -300,
+              "y": 100
+            },
+            "radius": 15
+          },
+          "target_id": "circle_h4_nucleus",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#F8FAFC",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -300,
+              "y": 100
+            },
+            "text": "H"
+          },
+          "target_id": "label_h4",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "none",
+            "position": {
+              "x": -300,
+              "y": 100
+            },
+            "radius": 100,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 2
+          },
+          "target_id": "circle_h4_shell",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#2563EB",
+            "position": {
+              "x": -300,
+              "y": 10
+            },
+            "radius": 10
+          },
+          "target_id": "dot_h4_electron",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -570,
+              "y": 40
+            }
+          },
+          "target_id": "circle_h3_shell",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -430,
+              "y": 40
+            }
+          },
+          "target_id": "circle_h4_shell",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -570,
+              "y": 40
+            }
+          },
+          "target_id": "circle_h3_nucleus",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -570,
+              "y": 40
+            }
+          },
+          "target_id": "label_h3",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -430,
+              "y": 40
+            }
+          },
+          "target_id": "circle_h4_nucleus",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -430,
+              "y": 40
+            }
+          },
+          "target_id": "label_h4",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -530,
+              "y": 45
+            }
+          },
+          "target_id": "dot_h3_electron",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -470,
+              "y": 45
+            }
+          },
+          "target_id": "dot_h4_electron",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -530,
+              "y": 35
+            }
+          },
+          "target_id": "dot_o_electron1",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -470,
+              "y": 35
+            }
+          },
+          "target_id": "dot_o_electron2",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 280
+            },
+            "text": "Oxygen needs 2 electrons, each Hydrogen needs 1."
+          },
+          "target_id": "text_h2o_needs",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 180
+            },
+            "text": "Oxygen shares with two Hydrogen atoms, forming two covalent bonds."
+          },
+          "target_id": "text_h2o_bonds",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#059669",
+            "fontSize": 60,
+            "position": {
+              "x": 300,
+              "y": 50
+            },
+            "text": "\\text{H-O-H}"
+          },
+          "target_id": "latex_h2o",
+          "type": "latex"
+        }
+      ]
+    },
+    "duration": 12,
+    "scene_number": 5,
+    "scene_title": "Water Molecule (H2O)",
+    "transitions": [
+      {
+        "action": "fadeOut",
+        "target_id": "circle_h1_nucleus"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_h1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "circle_h1_shell"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "dot_h1_electron"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "circle_h2_nucleus"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_h2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "circle_h2_shell"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "dot_h2_electron"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_h_valence"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_h_stability"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "latex_h2"
+      },
+      {
+        "action": "modify",
+        "target_id": "text_covalent",
+        "new_properties": {
+          "color": "#1E293B",
+          "fontSize": 56,
+          "fontWeight": "bold",
+          "position": {
+            "x": 300,
+            "y": 400
+          },
+          "text": "Covalent Bonds: Example H\u2082O"
+        }
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "path": "M -500 0 L -400 0",
+            "strokeColor": "#2563EB",
+            "strokeWidth": 5
+          },
+          "target_id": "line_single_bond_h",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -520,
+              "y": 0
+            },
+            "text": "H"
+          },
+          "target_id": "label_h_single1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -380,
+              "y": 0
+            },
+            "text": "H"
+          },
+          "target_id": "label_h_single2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "path": "M -500 -120 L -400 -120",
+            "strokeColor": "#2563EB",
+            "strokeWidth": 5
+          },
+          "target_id": "line_double_bond_o1",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "path": "M -500 -140 L -400 -140",
+            "strokeColor": "#2563EB",
+            "strokeWidth": 5
+          },
+          "target_id": "line_double_bond_o2",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -520,
+              "y": -130
+            },
+            "text": "O"
+          },
+          "target_id": "label_o_double1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -380,
+              "y": -130
+            },
+            "text": "O"
+          },
+          "target_id": "label_o_double2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "path": "M -500 -280 L -400 -280",
+            "strokeColor": "#2563EB",
+            "strokeWidth": 5
+          },
+          "target_id": "line_triple_bond_n1",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "path": "M -500 -300 L -400 -300",
+            "strokeColor": "#2563EB",
+            "strokeWidth": 5
+          },
+          "target_id": "line_triple_bond_n2",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "path": "M -500 -320 L -400 -320",
+            "strokeColor": "#2563EB",
+            "strokeWidth": 5
+          },
+          "target_id": "line_triple_bond_n3",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -520,
+              "y": -300
+            },
+            "text": "N"
+          },
+          "target_id": "label_n_triple1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -380,
+              "y": -300
+            },
+            "text": "N"
+          },
+          "target_id": "label_n_triple2",
+          "type": "text"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 280
+            },
+            "text": "Covalent bonds are classified by the number of electron pairs shared:"
+          },
+          "target_id": "text_bond_types_intro2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#2563EB",
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "position": {
+              "x": 300,
+              "y": 150
+            },
+            "text": "Single Bond:"
+          },
+          "target_id": "text_single_bond_title",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "position": {
+              "x": 300,
+              "y": 100
+            },
+            "text": "One shared pair (2 electrons)"
+          },
+          "target_id": "text_single_bond_def",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#059669",
+            "fontSize": 50,
+            "position": {
+              "x": 300,
+              "y": 30
+            },
+            "text": "\\text{H-H}"
+          },
+          "target_id": "latex_single_bond",
+          "type": "latex"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#2563EB",
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "position": {
+              "x": 300,
+              "y": -100
+            },
+            "text": "Double Bond:"
+          },
+          "target_id": "text_double_bond_title",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "position": {
+              "x": 300,
+              "y": -150
+            },
+            "text": "Two shared pairs (4 electrons)"
+          },
+          "target_id": "text_double_bond_def",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#059669",
+            "fontSize": 50,
+            "position": {
+              "x": 300,
+              "y": -220
+            },
+            "text": "\\text{O=O}"
+          },
+          "target_id": "latex_double_bond",
+          "type": "latex"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#2563EB",
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "position": {
+              "x": 300,
+              "y": -280
+            },
+            "text": "Triple Bond:"
+          },
+          "target_id": "text_triple_bond_title",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "position": {
+              "x": 300,
+              "y": -330
+            },
+            "text": "Three shared pairs (6 electrons)"
+          },
+          "target_id": "text_triple_bond_def",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#059669",
+            "fontSize": 50,
+            "position": {
+              "x": 300,
+              "y": -400
+            },
+            "text": "\\text{N\\equiv N}"
+          },
+          "target_id": "latex_triple_bond",
+          "type": "latex"
+        }
+      ]
+    },
+    "duration": 15,
+    "scene_number": 6,
+    "scene_title": "Types of Covalent Bonds",
+    "transitions": [
+      {
+        "action": "fadeOut",
+        "target_id": "circle_o_nucleus"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_o"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "circle_o_shell"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "dot_o_electron1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "dot_o_electron2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "dot_o_electron3"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "dot_o_electron4"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "dot_o_electron5"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "dot_o_electron6"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "circle_h3_nucleus"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_h3"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "circle_h3_shell"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "dot_h3_electron"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "circle_h4_nucleus"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_h4"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "circle_h4_shell"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "dot_h4_electron"
+      },
+      {
+        "action": "modify",
+        "target_id": "text_covalent",
+        "new_properties": {
+          "color": "#1E293B",
+          "fontSize": 72,
+          "fontWeight": "bold",
+          "position": {
+            "x": 300,
+            "y": 400
+          },
+          "text": "Types of Covalent Bonds"
+        }
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "path": "M -500 100 L -400 100",
+            "strokeColor": "#2563EB",
+            "strokeWidth": 5
+          },
+          "target_id": "line_nonpolar_cl",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -520,
+              "y": 100
+            },
+            "text": "Cl"
+          },
+          "target_id": "label_cl_nonpolar1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -380,
+              "y": 100
+            },
+            "text": "Cl"
+          },
+          "target_id": "label_cl_nonpolar2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "path": "M -500 -200 L -400 -200",
+            "strokeColor": "#2563EB",
+            "strokeWidth": 5
+          },
+          "target_id": "line_polar_hcl",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -520,
+              "y": -200
+            },
+            "text": "H"
+          },
+          "target_id": "label_h_polar",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 30,
+            "fontWeight": "bold",
+            "position": {
+              "x": -380,
+              "y": -200
+            },
+            "text": "Cl"
+          },
+          "target_id": "label_cl_polar",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#DC2626",
+            "fontSize": 30,
+            "position": {
+              "x": -520,
+              "y": -240
+            },
+            "text": "\u03b4+"
+          },
+          "target_id": "text_delta_plus",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#2563EB",
+            "fontSize": 30,
+            "position": {
+              "x": -380,
+              "y": -240
+            },
+            "text": "\u03b4-"
+          },
+          "target_id": "text_delta_minus",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "path": "M -470 -190 L -430 -190 M -430 -190 L -435 -195 M -430 -190 L -435 -185",
+            "strokeColor": "#8B5CF6",
+            "strokeWidth": 3
+          },
+          "target_id": "arrow_polarity",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 280
+            },
+            "text": "Electronegativity is an atom's ability to attract shared electrons."
+          },
+          "target_id": "text_electroneg_def",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#2563EB",
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "position": {
+              "x": 300,
+              "y": 150
+            },
+            "text": "Nonpolar Covalent Bond:"
+          },
+          "target_id": "text_nonpolar_title",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "position": {
+              "x": 300,
+              "y": 100
+            },
+            "text": "Electrons are shared equally (e.g., Cl-Cl)"
+          },
+          "target_id": "text_nonpolar_def",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#2563EB",
+            "fontSize": 48,
+            "fontWeight": "bold",
+            "position": {
+              "x": 300,
+              "y": -150
+            },
+            "text": "Polar Covalent Bond:"
+          },
+          "target_id": "text_polar_title",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "position": {
+              "x": 300,
+              "y": -200
+            },
+            "text": "Electrons are shared unequally, creating partial charges (e.g., H-Cl)"
+          },
+          "target_id": "text_polar_def",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#059669",
+            "fontSize": 50,
+            "position": {
+              "x": 300,
+              "y": -300
+            },
+            "text": "\\text{H}^{\\delta+}\\text{-Cl}^{\\delta-}"
+          },
+          "target_id": "latex_polar_hcl_symbol",
+          "type": "latex"
+        }
+      ]
+    },
+    "duration": 12,
+    "scene_number": 7,
+    "scene_title": "Polarity in Covalent Bonds",
+    "transitions": [
+      {
+        "action": "fadeOut",
+        "target_id": "text_bond_types_intro2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_single_bond_title"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_single_bond_def"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "latex_single_bond"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_double_bond_title"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_double_bond_def"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "latex_double_bond"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_triple_bond_title"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_triple_bond_def"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "latex_triple_bond"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "line_single_bond_h"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_h_single1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_h_single2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "line_double_bond_o1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "line_double_bond_o2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_o_double1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_o_double2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "line_triple_bond_n1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "line_triple_bond_n2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "line_triple_bond_n3"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_n_triple1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_n_triple2"
+      },
+      {
+        "action": "modify",
+        "target_id": "text_covalent",
+        "new_properties": {
+          "color": "#1E293B",
+          "fontSize": 72,
+          "fontWeight": "bold",
+          "position": {
+            "x": 300,
+            "y": 400
+          },
+          "text": "Polarity in Covalent Bonds"
+        }
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 250
+            },
+            "text": "\u2022 Covalent bonds involve the sharing of electron pairs between atoms."
+          },
+          "target_id": "text_summary1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 170
+            },
+            "text": "\u2022 This sharing leads to stable electron configurations."
+          },
+          "target_id": "text_summary2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 90
+            },
+            "text": "\u2022 Bonds can be single, double, or triple depending on shared pairs."
+          },
+          "target_id": "text_summary3",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "position": {
+              "x": 300,
+              "y": 10
+            },
+            "text": "\u2022 Polarity arises from unequal sharing due to electronegativity differences."
+          },
+          "target_id": "text_summary4",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 8,
+    "scene_number": 8,
+    "scene_title": "Summary and Conclusion",
+    "transitions": [
+      {
+        "action": "fadeOut",
+        "target_id": "text_electroneg_def"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_nonpolar_title"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_nonpolar_def"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_polar_title"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_polar_def"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "latex_polar_hcl_symbol"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "line_nonpolar_cl"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_cl_nonpolar1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_cl_nonpolar2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "line_polar_hcl"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_h_polar"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_cl_polar"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_delta_plus"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_delta_minus"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "arrow_polarity"
+      },
+      {
+        "action": "modify",
+        "target_id": "text_covalent",
+        "new_properties": {
+          "color": "#1E293B",
+          "fontSize": 72,
+          "fontWeight": "bold",
+          "position": {
+            "x": 300,
+            "y": 400
+          },
+          "text": "Summary: Key Takeaways"
+        }
+      }
+    ]
+  }
+]

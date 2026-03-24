@@ -1,0 +1,232 @@
+{
+  "topic": "motion",
+  "generation_timestamp": "2025-09-19 11:48:06",
+  "total_scenes": 6,
+  "total_estimated_duration": 56,
+  "pipeline_version": "Professional v3.0",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_title": "Introduction to Motion",
+      "duration": 8,
+      "transitions": [],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "title",
+            "properties": {
+              "text": "What is Motion?"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "definition",
+            "properties": {
+              "text": "Motion is the act or process of changing position or orientation in space and time."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 2,
+      "scene_title": "Types of Motion: Linear",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title"
+        },
+        {
+          "action": "keep",
+          "target_id": "definition"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "path",
+            "target_id": "linear_motion",
+            "properties": {
+              "placeholder": "visualize a straight line with an object moving along it."
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "linear_text",
+            "properties": {
+              "text": "Linear Motion: Movement along a straight line."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_title": "Types of Motion: Rotational",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "definition"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "linear_motion"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "linear_text"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "path",
+            "target_id": "rotational_motion",
+            "properties": {
+              "placeholder": "visualize a rotating circle with a point moving along its circumference"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "rotational_text",
+            "properties": {
+              "text": "Rotational Motion: Movement around a fixed axis."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_title": "Types of Motion: Oscillatory",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotational_motion"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotational_text"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "path",
+            "target_id": "oscillatory_motion",
+            "properties": {
+              "placeholder": "visualize a pendulum swinging back and forth"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "oscillatory_text",
+            "properties": {
+              "text": "Oscillatory Motion: Repetitive variation about a central point."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 5,
+      "scene_title": "Combining Motions",
+      "duration": 12,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "oscillatory_motion"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "oscillatory_text"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "path",
+            "target_id": "combined_motion",
+            "properties": {
+              "placeholder": "visualize a complex path that combines linear, rotational, and oscillatory elements"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "combined_text",
+            "properties": {
+              "text": "Complex Motion: A combination of multiple types of motion occurring simultaneously."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 6,
+      "scene_title": "Conclusion",
+      "duration": 6,
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "combined_motion"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "combined_text"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "summary",
+            "properties": {
+              "text": "Motion is fundamental to understanding the physical world. Different types of motion can combine to create complex movements."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

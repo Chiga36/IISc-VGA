@@ -1,0 +1,200 @@
+[
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "An AC motor diagram showing stator, rotor, and magnetic fields"
+          },
+          "target_id": "ACMotorDiagram",
+          "type": "image"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Introduction to AC Motors"
+          },
+          "target_id": "TitleText",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 1,
+    "scene_title": "Introduction",
+    "transitions": []
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "highlight",
+          "properties": {
+            "placeholder": "Highlight stator"
+          },
+          "target_id": "ACMotorDiagram_Stator",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Stator: The stationary part of the motor, with windings that create a rotating magnetic field"
+          },
+          "target_id": "StatorText",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 7,
+    "scene_number": 2,
+    "scene_title": "Stator",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "ACMotorDiagram"
+      },
+      {
+        "action": "keep",
+        "target_id": "TitleText"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "highlight",
+          "properties": {
+            "placeholder": "Highlight rotor"
+          },
+          "target_id": "ACMotorDiagram_Rotor",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Rotor: The rotating part of the motor, interacting with the stator's magnetic field"
+          },
+          "target_id": "RotorText",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 6,
+    "scene_number": 3,
+    "scene_title": "Rotor",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "ACMotorDiagram"
+      },
+      {
+        "action": "keep",
+        "target_id": "TitleText"
+      },
+      {
+        "action": "keep",
+        "target_id": "StatorText"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "animate",
+          "properties": {
+            "placeholder": "Show rotation of the rotor"
+          },
+          "target_id": "ACMotorDiagram_Rotor",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "The interaction between the stator and rotor fields creates torque"
+          },
+          "target_id": "TorqueText",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 8,
+    "scene_number": 4,
+    "scene_title": "Torque Generation",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "ACMotorDiagram"
+      },
+      {
+        "action": "keep",
+        "target_id": "TitleText"
+      },
+      {
+        "action": "keep",
+        "target_id": "StatorText"
+      },
+      {
+        "action": "keep",
+        "target_id": "RotorText"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "fadeOut",
+          "properties": {},
+          "target_id": "ACMotorDiagram_Rotor",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Summary: AC motors use rotating magnetic fields for efficient power conversion"
+          },
+          "target_id": "SummaryText",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 5,
+    "scene_title": "Summary",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "ACMotorDiagram"
+      },
+      {
+        "action": "keep",
+        "target_id": "TitleText"
+      },
+      {
+        "action": "keep",
+        "target_id": "StatorText"
+      },
+      {
+        "action": "keep",
+        "target_id": "RotorText"
+      },
+      {
+        "action": "keep",
+        "target_id": "TorqueText"
+      }
+    ]
+  }
+]

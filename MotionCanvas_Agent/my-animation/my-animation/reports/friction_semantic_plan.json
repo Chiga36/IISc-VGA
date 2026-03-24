@@ -1,0 +1,276 @@
+{
+  "topic": "friction",
+  "generation_timestamp": "2025-09-17 17:11:14",
+  "total_scenes": 6,
+  "total_estimated_duration": 67,
+  "pipeline_version": "Professional v3.0",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_title": "Introducing Friction",
+      "duration": 10,
+      "transitions": [],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "image",
+            "target_id": "roughSurface",
+            "properties": {
+              "placeholder": "image of a rough surface"
+            }
+          },
+          {
+            "command": "create",
+            "type": "block",
+            "target_id": "block",
+            "properties": {
+              "placeholder": "a rectangular block"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "title",
+            "properties": {
+              "text": "Friction: An Opposing Force"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "description1",
+            "properties": {
+              "text": "Friction is a force that opposes motion between surfaces in contact."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 2,
+      "scene_title": "Types of Friction",
+      "duration": 12,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "roughSurface"
+        },
+        {
+          "action": "keep",
+          "target_id": "block"
+        },
+        {
+          "action": "keep",
+          "target_id": "title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "description1"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "arrow",
+            "target_id": "forceArrow",
+            "properties": {
+              "placeholder": "arrow indicating force applied to the block"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "description2",
+            "properties": {
+              "text": "There are three main types: Static, Sliding, and Rolling."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_title": "Static Friction",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "roughSurface"
+        },
+        {
+          "action": "keep",
+          "target_id": "block"
+        },
+        {
+          "action": "keep",
+          "target_id": "title"
+        },
+        {
+          "action": "keep",
+          "target_id": "description2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "forceArrow"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "staticFriction",
+            "properties": {
+              "text": "Static Friction: Prevents objects from moving when a force is applied."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_title": "Sliding Friction",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "roughSurface"
+        },
+        {
+          "action": "keep",
+          "target_id": "block"
+        },
+        {
+          "action": "keep",
+          "target_id": "title"
+        },
+        {
+          "action": "keep",
+          "target_id": "description2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "staticFriction"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "animation",
+            "target_id": "slidingBlock",
+            "properties": {
+              "placeholder": "animation of a block sliding across a surface"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "slidingFriction",
+            "properties": {
+              "text": "Sliding Friction: Opposes the motion of objects sliding against each other."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 5,
+      "scene_title": "Rolling Friction",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "roughSurface"
+        },
+        {
+          "action": "keep",
+          "target_id": "block"
+        },
+        {
+          "action": "keep",
+          "target_id": "title"
+        },
+        {
+          "action": "keep",
+          "target_id": "description2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "slidingBlock"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "slidingFriction"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "animation",
+            "target_id": "rollingBall",
+            "properties": {
+              "placeholder": "animation of a ball rolling across the surface"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "rollingFriction",
+            "properties": {
+              "text": "Rolling Friction: Opposes motion of a rolling object."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 6,
+      "scene_title": "Factors Affecting Friction",
+      "duration": 15,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title"
+        },
+        {
+          "action": "keep",
+          "target_id": "description2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rollingBall"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rollingFriction"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "factors",
+            "properties": {
+              "text": "Factors Affecting Friction:\n-Surface texture\n-Normal force\n-Material properties"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

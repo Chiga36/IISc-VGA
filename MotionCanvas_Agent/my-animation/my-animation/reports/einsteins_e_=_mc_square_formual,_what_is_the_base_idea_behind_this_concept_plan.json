@@ -1,0 +1,448 @@
+{
+  "topic": "einsteins e = mc square formual, what is the base idea behind this concept",
+  "generation_timestamp": "2025-08-24 18:18:47",
+  "total_scenes": 6,
+  "total_estimated_duration": 63,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "M 0.1 0.6 L 0.3 0.6"
+            },
+            "target_id": "balance_scale_base",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "M 0.2 0.6 L 0.2 0.5"
+            },
+            "target_id": "balance_scale_support",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "M 0.1 0.45 L 0.3 0.45"
+            },
+            "target_id": "balance_scale_beam",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "M 0.12 0.45 L 0.12 0.55 M 0.14 0.45 L 0.14 0.55"
+            },
+            "target_id": "balance_scale_left_hanger",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "M 0.26 0.45 L 0.26 0.55 M 0.28 0.45 L 0.28 0.55"
+            },
+            "target_id": "balance_scale_right_hanger",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "0.13"
+            },
+            "target_id": "balance_scale_left_pan",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "0.27"
+            },
+            "target_id": "balance_scale_right_pan",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Mass"
+            },
+            "target_id": "mass_label_visual",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Energy"
+            },
+            "target_id": "energy_label_visual",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "E=mc\u00b2: The Universal Exchange Rate"
+            },
+            "target_id": "title_main",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Mass and Energy are two forms of the same thing."
+            },
+            "target_id": "subtitle_concept",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 9,
+      "scene_number": 1,
+      "scene_title": "Introduction to Mass-Energy Equivalence",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "E"
+            },
+            "target_id": "e_symbol",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "0.2"
+            },
+            "target_id": "energy_pulse_visual",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "0.12"
+            },
+            "target_id": "energy_pulse_visual",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "E stands for Energy."
+            },
+            "target_id": "energy_heading",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Energy is the ability to do work or cause change."
+            },
+            "target_id": "energy_definition_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 2,
+      "scene_title": "Understanding Energy (E)",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "balance_scale_base"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "balance_scale_support"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "balance_scale_beam"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "balance_scale_left_hanger"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "balance_scale_right_hanger"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "balance_scale_left_pan"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "balance_scale_right_pan"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mass_label_visual"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "energy_label_visual"
+        },
+        {
+          "action": "modify",
+          "target_id": "title_main",
+          "new_properties": {
+            "placeholder": "0.7"
+          }
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "subtitle_concept"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "0.2"
+            },
+            "target_id": "mass_block_visual",
+            "type": "rect"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "m stands for Mass."
+            },
+            "target_id": "mass_heading",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Mass is a measure of an object's amount of 'stuff' or resistance to acceleration."
+            },
+            "target_id": "mass_definition_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 3,
+      "scene_title": "Understanding Mass (m)",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_main"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "energy_heading"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "energy_definition_text"
+        },
+        {
+          "action": "modify",
+          "target_id": "e_symbol",
+          "new_properties": {
+            "placeholder": "m"
+          }
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "energy_pulse_visual"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "c"
+            },
+            "target_id": "c_symbol",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "M 0.05 0.5 L 0.15 0.45 L 0.25 0.5 L 0.35 0.45"
+            },
+            "target_id": "light_wave_visual",
+            "type": "path"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "M 0.15 0.5 L 0.25 0.45 L 0.35 0.5 L 0.45 0.45"
+            },
+            "target_id": "light_wave_visual",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "c stands for the Speed of Light."
+            },
+            "target_id": "speed_heading",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "It's a universal constant, approximately 300,000 kilometers per second. Incredibly fast!"
+            },
+            "target_id": "speed_definition_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 4,
+      "scene_title": "Understanding the Speed of Light (c)",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_main"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "e_symbol"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mass_block_visual"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mass_heading"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mass_definition_text"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "E = mc^2"
+            },
+            "target_id": "equation_full_visual",
+            "type": "latex"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "E = mc\u00b2: The Famous Equation."
+            },
+            "target_id": "equation_heading",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "This formula reveals that mass and energy are interchangeable. A small amount of mass can release an enormous amount of energy."
+            },
+            "target_id": "equation_explanation_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 5,
+      "scene_title": "The Equation E=mc\u00b2",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "title_main"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "c_symbol"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "light_wave_visual"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "speed_heading"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "speed_definition_text"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "highlight",
+            "properties": {
+              "placeholder": "c^2"
+            },
+            "target_id": "equation_full_visual",
+            "type": "latex"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Why 'c\u00b2'?"
+            },
+            "target_id": "why_c_squared_heading",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The speed of light (c) is immense. Squaring it means this conversion factor is *staggeringly* large, explaining the immense energy released from even tiny amounts of mass."
+            },
+            "target_id": "c_squared_explanation_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 6,
+      "scene_title": "The Significance of c\u00b2",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "equation_full_visual"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "equation_heading"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "equation_explanation_text"
+        }
+      ]
+    }
+  ]
+}

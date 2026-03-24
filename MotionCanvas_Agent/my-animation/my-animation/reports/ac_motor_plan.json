@@ -1,0 +1,361 @@
+{
+  "topic": "ac motor",
+  "generation_timestamp": "2025-08-24 16:21:46",
+  "total_scenes": 5,
+  "total_estimated_duration": 49,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "This represents the input electrical energy."
+            },
+            "target_id": "electrical_input_line",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "An arrow indicating energy flow."
+            },
+            "target_id": "energy_flow_arrow",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A gear symbol for mechanical output."
+            },
+            "target_id": "mechanical_output_gear",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Title for Scene 1."
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Definition of an AC motor."
+            },
+            "target_id": "scene1_def_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 1,
+      "scene_title": "Introduction to AC Motors",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "First stator coil."
+            },
+            "target_id": "stator_coil_1",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Second stator coil."
+            },
+            "target_id": "stator_coil_2",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Third stator coil."
+            },
+            "target_id": "stator_coil_3",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Rotating magnetic field indicator."
+            },
+            "target_id": "rotating_magnetic_field_arrow",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "New title for Scene 2."
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "New definition text for Scene 2."
+            },
+            "target_id": "scene1_def_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 2,
+      "scene_title": "The Rotating Magnetic Field",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "electrical_input_line"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "energy_flow_arrow"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mechanical_output_gear"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The central rotor cylinder."
+            },
+            "target_id": "rotor_cylinder",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Modified title for Scene 3."
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Text defining the Stator."
+            },
+            "target_id": "scene1_def_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Text defining the Rotor."
+            },
+            "target_id": "scene3_rotor_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 9,
+      "scene_number": 3,
+      "scene_title": "Key Components: Stator & Rotor",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "stator_coil_1"
+        },
+        {
+          "action": "keep",
+          "target_id": "stator_coil_2"
+        },
+        {
+          "action": "keep",
+          "target_id": "stator_coil_3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotating_magnetic_field_arrow"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Rotating magnetic field visualization for this scene."
+            },
+            "target_id": "rotating_magnetic_field_arrow_s4",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Representation of induced current in the rotor."
+            },
+            "target_id": "induced_current_in_rotor",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Arrows showing the force on the rotor."
+            },
+            "target_id": "force_on_rotor_arrows",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Modified title for Scene 4."
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Text explaining induced current."
+            },
+            "target_id": "scene1_def_text",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Text explaining magnetic field interaction."
+            },
+            "target_id": "scene3_rotor_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Text explaining the Lorentz force."
+            },
+            "target_id": "scene4_lorentz_force_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 4,
+      "scene_title": "How the Rotor Spins: Induction",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "stator_coil_1"
+        },
+        {
+          "action": "keep",
+          "target_id": "stator_coil_2"
+        },
+        {
+          "action": "keep",
+          "target_id": "stator_coil_3"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotor_cylinder"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A gear symbol for final mechanical output."
+            },
+            "target_id": "final_output_gear",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Modified title for Scene 5."
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Text explaining continuous torque and power."
+            },
+            "target_id": "scene1_def_text",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "Fade out the rotor text from previous scene as it's not needed."
+            },
+            "target_id": "scene3_rotor_text",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "Fade out the lorentz force text from previous scene as it's not needed."
+            },
+            "target_id": "scene4_lorentz_force_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 5,
+      "scene_title": "Continuous Motion & Output",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "stator_coil_1"
+        },
+        {
+          "action": "keep",
+          "target_id": "stator_coil_2"
+        },
+        {
+          "action": "keep",
+          "target_id": "stator_coil_3"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotor_cylinder"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotating_magnetic_field_arrow_s4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "induced_current_in_rotor"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "force_on_rotor_arrows"
+        }
+      ]
+    }
+  ]
+}

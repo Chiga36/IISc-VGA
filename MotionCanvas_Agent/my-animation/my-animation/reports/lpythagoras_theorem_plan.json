@@ -1,0 +1,1041 @@
+{
+  "topic": "lpythagoras theorem",
+  "generation_timestamp": "2025-08-22 20:08:30",
+  "total_scenes": 9,
+  "total_estimated_duration": 93,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 60,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 400
+              },
+              "text": "The Pythagorean Theorem"
+            },
+            "target_id": "mainTitle",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 550
+              },
+              "text": "A fundamental concept in geometry that describes the relationship between the sides of a right-angled triangle."
+            },
+            "target_id": "bodyText1",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 1,
+      "scene_title": "Introduction to Pythagorean Theorem",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "transparent",
+              "path": "M 100 500 L 400 500 L 400 200 Z",
+              "strokeColor": "black",
+              "strokeWidth": 4
+            },
+            "target_id": "genericTriangle",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 370 500 L 370 470 L 400 470",
+              "strokeColor": "red",
+              "strokeWidth": 3
+            },
+            "target_id": "genericAngleMarker",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 60,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 400
+              },
+              "text": "What is a Right-Angled Triangle?"
+            },
+            "target_id": "mainTitle2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 550
+              },
+              "text": "A triangle with one angle exactly 90 degrees."
+            },
+            "target_id": "bodyText2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 2,
+      "scene_title": "What is a Right-Angled Triangle?",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "mainTitle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "bodyText1"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 40,
+              "fontWeight": "bold",
+              "position": {
+                "x": 250,
+                "y": 525
+              },
+              "text": "a"
+            },
+            "target_id": "genericSideA_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 40,
+              "fontWeight": "bold",
+              "position": {
+                "x": 425,
+                "y": 350
+              },
+              "text": "b"
+            },
+            "target_id": "genericSideB_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 40,
+              "fontWeight": "bold",
+              "position": {
+                "x": 250,
+                "y": 350
+              },
+              "text": "c"
+            },
+            "target_id": "genericSideC_label",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 60,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 400
+              },
+              "text": "The Sides of the Triangle"
+            },
+            "target_id": "mainTitle3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 550
+              },
+              "text": "The two shorter sides are called 'legs' (a and b)."
+            },
+            "target_id": "bodyText3_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 600
+              },
+              "text": "The longest side, opposite the right angle, is the 'hypotenuse' (c)."
+            },
+            "target_id": "bodyText3_2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 3,
+      "scene_title": "Identifying the Sides",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "genericTriangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "genericAngleMarker"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mainTitle2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "bodyText2"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 60,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 300
+              },
+              "text": "The Pythagorean Theorem"
+            },
+            "target_id": "mainTitle4",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "blue",
+              "fontSize": 50,
+              "position": {
+                "x": 1344,
+                "y": 450
+              },
+              "text": "a^2 + b^2 = c^2"
+            },
+            "target_id": "theoremFormula",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 600
+              },
+              "text": "In a right-angled triangle, the square of the hypotenuse (c)"
+            },
+            "target_id": "bodyText4_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 650
+              },
+              "text": "is equal to the sum of the squares of the other two sides (a and b)."
+            },
+            "target_id": "bodyText4_2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 4,
+      "scene_title": "The Theorem Itself",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "genericTriangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "genericAngleMarker"
+        },
+        {
+          "action": "keep",
+          "target_id": "genericSideA_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "genericSideB_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "genericSideC_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mainTitle3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "bodyText3_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "bodyText3_2"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#D3D3D3",
+              "path": "M 100 600 L 250 600 L 250 750 L 100 750 Z",
+              "strokeColor": "black",
+              "strokeWidth": 2
+            },
+            "target_id": "squareA_vis",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#A9A9A9",
+              "path": "M 300 600 L 500 600 L 500 800 L 300 800 Z",
+              "strokeColor": "black",
+              "strokeWidth": 2
+            },
+            "target_id": "squareB_vis",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#808080",
+              "path": "M 550 600 L 800 600 L 800 850 L 550 850 Z",
+              "strokeColor": "black",
+              "strokeWidth": 2
+            },
+            "target_id": "squareC_vis",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 60,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 400
+              },
+              "text": "Understanding the Theorem Visually"
+            },
+            "target_id": "mainTitle5",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 550
+              },
+              "text": "The theorem means that if you consider squares built on each side of the right triangle..."
+            },
+            "target_id": "bodyText5",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 5,
+      "scene_title": "Visualizing the Areas",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "genericTriangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "genericAngleMarker"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "genericSideA_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "genericSideB_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "genericSideC_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mainTitle4"
+        },
+        {
+          "action": "keep",
+          "target_id": "theoremFormula"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "bodyText4_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "bodyText4_2"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "strokeColor": "blue"
+            },
+            "target_id": "squareA_vis",
+            "type": "path"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "strokeColor": "blue"
+            },
+            "target_id": "squareB_vis",
+            "type": "path"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "strokeColor": "blue"
+            },
+            "target_id": "squareC_vis",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 60,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 400
+              },
+              "text": "Area Relationship Demonstrated"
+            },
+            "target_id": "mainTitle6",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 550
+              },
+              "text": "...the area of the square on the hypotenuse (c\u00b2) is exactly equal to the sum"
+            },
+            "target_id": "bodyText6_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 600
+              },
+              "text": "of the areas of the squares on the other two sides (a\u00b2 + b\u00b2)."
+            },
+            "target_id": "bodyText6_2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 6,
+      "scene_title": "Area Relationship Demonstrated",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "genericTriangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "genericAngleMarker"
+        },
+        {
+          "action": "keep",
+          "target_id": "theoremFormula"
+        },
+        {
+          "action": "keep",
+          "target_id": "squareA_vis"
+        },
+        {
+          "action": "keep",
+          "target_id": "squareB_vis"
+        },
+        {
+          "action": "keep",
+          "target_id": "squareC_vis"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mainTitle5"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "bodyText5"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 40,
+              "fontWeight": "bold",
+              "position": {
+                "x": 250,
+                "y": 525
+              },
+              "text": "3"
+            },
+            "target_id": "exampleSideA_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 40,
+              "fontWeight": "bold",
+              "position": {
+                "x": 425,
+                "y": 350
+              },
+              "text": "4"
+            },
+            "target_id": "exampleSideB_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "blue",
+              "fontSize": 40,
+              "fontWeight": "bold",
+              "position": {
+                "x": 250,
+                "y": 350
+              },
+              "text": "?"
+            },
+            "target_id": "exampleSideC_label",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 60,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 400
+              },
+              "text": "Let's See an Example"
+            },
+            "target_id": "mainTitle7",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 550
+              },
+              "text": "If the legs of a right triangle are 3 units and 4 units,"
+            },
+            "target_id": "bodyText7_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 600
+              },
+              "text": "what is the length of the hypotenuse?"
+            },
+            "target_id": "bodyText7_2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 7,
+      "scene_title": "Example Application",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "genericTriangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "genericAngleMarker"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "theoremFormula"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "squareA_vis"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "squareB_vis"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "squareC_vis"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mainTitle6"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "bodyText6_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "bodyText6_2"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 60,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 200
+              },
+              "text": "Solving for the Hypotenuse"
+            },
+            "target_id": "mainTitle8",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 350
+              },
+              "text": "a^2 + b^2 = c^2"
+            },
+            "target_id": "solutionStep1",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 420
+              },
+              "text": "3^2 + 4^2 = c^2"
+            },
+            "target_id": "solutionStep2",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 490
+              },
+              "text": "9 + 16 = c^2"
+            },
+            "target_id": "solutionStep3",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 560
+              },
+              "text": "25 = c^2"
+            },
+            "target_id": "solutionStep4",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 630
+              },
+              "text": "c = \\sqrt{25}"
+            },
+            "target_id": "solutionStep5",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "blue",
+              "fontSize": 48,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 700
+              },
+              "text": "c = 5"
+            },
+            "target_id": "solutionStep6",
+            "type": "latex"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 8,
+      "scene_title": "Solving the Example",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "genericTriangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "genericAngleMarker"
+        },
+        {
+          "action": "keep",
+          "target_id": "exampleSideA_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "exampleSideB_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "exampleSideC_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mainTitle7"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "bodyText7_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "bodyText7_2"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "transparent",
+              "path": "M 100 500 L 400 500 L 400 200 Z",
+              "strokeColor": "black",
+              "strokeWidth": 4
+            },
+            "target_id": "summaryTriangle",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 370 500 L 370 470 L 400 470",
+              "strokeColor": "red",
+              "strokeWidth": 3
+            },
+            "target_id": "summaryRightAngleMarker",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 40,
+              "fontWeight": "bold",
+              "position": {
+                "x": 250,
+                "y": 525
+              },
+              "text": "a"
+            },
+            "target_id": "summarySideA_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 40,
+              "fontWeight": "bold",
+              "position": {
+                "x": 425,
+                "y": 350
+              },
+              "text": "b"
+            },
+            "target_id": "summarySideB_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 40,
+              "fontWeight": "bold",
+              "position": {
+                "x": 250,
+                "y": 350
+              },
+              "text": "c"
+            },
+            "target_id": "summarySideC_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "blue",
+              "fontSize": 50,
+              "position": {
+                "x": 250,
+                "y": 100
+              },
+              "text": "a^2 + b^2 = c^2"
+            },
+            "target_id": "summaryFormula",
+            "type": "latex"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 60,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 400
+              },
+              "text": "Summary"
+            },
+            "target_id": "mainTitle9",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 550
+              },
+              "text": "The Pythagorean Theorem is a powerful tool for calculating distances"
+            },
+            "target_id": "bodyText9_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "black",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 600
+              },
+              "text": "and understanding relationships in geometry."
+            },
+            "target_id": "bodyText9_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "red",
+              "fontSize": 36,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 650
+              },
+              "text": "Remember: it only applies to right-angled triangles!"
+            },
+            "target_id": "bodyText9_3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 9,
+      "scene_title": "Summary",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "genericTriangle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "genericAngleMarker"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "exampleSideA_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "exampleSideB_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "exampleSideC_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mainTitle8"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "solutionStep1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "solutionStep2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "solutionStep3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "solutionStep4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "solutionStep5"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "solutionStep6"
+        }
+      ]
+    }
+  ]
+}

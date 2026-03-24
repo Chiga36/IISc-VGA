@@ -1,0 +1,1471 @@
+{
+  "topic": "chemical bonding of two atoms",
+  "generation_timestamp": "2025-08-22 20:05:20",
+  "total_scenes": 10,
+  "total_estimated_duration": 100,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#4285F4",
+              "position": {
+                "x": 0.25,
+                "y": 0.5
+              },
+              "radius": 0.05
+            },
+            "target_id": "atom1_nucleus",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 0.25,
+                "y": 0.5
+              },
+              "radius": 0.1,
+              "strokeColor": "#4285F4",
+              "strokeWidth": 3
+            },
+            "target_id": "atom1_shell",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#EA4335",
+              "position": {
+                "x": 0.45,
+                "y": 0.5
+              },
+              "radius": 0.05
+            },
+            "target_id": "atom2_nucleus",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 0.45,
+                "y": 0.5
+              },
+              "radius": 0.1,
+              "strokeColor": "#EA4335",
+              "strokeWidth": 3
+            },
+            "target_id": "atom2_shell",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#202124",
+              "fontSize": 48,
+              "fontWeight": "bold",
+              "position": {
+                "x": 0.7,
+                "y": 0.15
+              },
+              "text": "What is Chemical Bonding?"
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#202124",
+              "fontSize": 36,
+              "position": {
+                "x": 0.7,
+                "y": 0.4
+              },
+              "text": "The fundamental force that holds atoms together"
+            },
+            "target_id": "scene1_explanation",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 1,
+      "scene_title": "Introduction to Chemical Bonding",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.25,
+                "y": 0.6
+              },
+              "radius": 0.02
+            },
+            "target_id": "atom1_electron1",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.45,
+                "y": 0.6
+              },
+              "radius": 0.02
+            },
+            "target_id": "atom2_electron1",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.45,
+                "y": 0.57
+              },
+              "radius": 0.02
+            },
+            "target_id": "atom2_electron2",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.45,
+                "y": 0.53
+              },
+              "radius": 0.02
+            },
+            "target_id": "atom2_electron3",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.45,
+                "y": 0.47
+              },
+              "radius": 0.02
+            },
+            "target_id": "atom2_electron4",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.45,
+                "y": 0.43
+              },
+              "radius": 0.02
+            },
+            "target_id": "atom2_electron5",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.45,
+                "y": 0.4
+              },
+              "radius": 0.02
+            },
+            "target_id": "atom2_electron6",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.45,
+                "y": 0.62
+              },
+              "radius": 0.02
+            },
+            "target_id": "atom2_electron7",
+            "type": "circle"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "strokeColor": "#34A853"
+            },
+            "target_id": "atom1_shell",
+            "type": "circle"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "strokeColor": "#34A853"
+            },
+            "target_id": "atom2_shell",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Atoms and Valence Electrons"
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "text": "The outermost electrons, called valence electrons, determine reactivity."
+            },
+            "target_id": "scene1_explanation",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 2,
+      "scene_title": "Valence Electrons",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "atom1_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom1_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_explanation"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "highlight",
+            "properties": {
+              "fill": "#34A853",
+              "opacity": 0.2
+            },
+            "target_id": "atom1_shell",
+            "type": "circle"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "fill": "#34A853",
+              "opacity": 0.2
+            },
+            "target_id": "atom2_shell",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "text": "The Quest for Stability"
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Atoms bond to achieve a stable electron configuration (usually 8 valence electrons)."
+            },
+            "target_id": "scene1_explanation",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#202124",
+              "fontSize": 32,
+              "position": {
+                "x": 0.7,
+                "y": 0.55
+              },
+              "text": "This is known as the 'Octet Rule'."
+            },
+            "target_id": "octet_rule_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 3,
+      "scene_title": "Stability and Octet Rule",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "atom1_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom1_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom1_electron1"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron1"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron2"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron3"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron4"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron5"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron6"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron7"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_explanation"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "fill": "#4285F4",
+              "position": {
+                "x": 0.25,
+                "y": 0.5
+              },
+              "radius": 0.05
+            },
+            "target_id": "atom1_nucleus",
+            "type": "circle"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "position": {
+                "x": 0.25,
+                "y": 0.5
+              },
+              "radius": 0.1,
+              "strokeColor": "#4285F4",
+              "strokeWidth": 3
+            },
+            "target_id": "atom1_shell",
+            "type": "circle"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.25,
+                "y": 0.6
+              },
+              "radius": 0.02
+            },
+            "target_id": "atom1_electron1",
+            "type": "circle"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "fill": "#EA4335",
+              "position": {
+                "x": 0.45,
+                "y": 0.5
+              },
+              "radius": 0.05
+            },
+            "target_id": "atom2_nucleus",
+            "type": "circle"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "position": {
+                "x": 0.45,
+                "y": 0.5
+              },
+              "radius": 0.1,
+              "strokeColor": "#EA4335",
+              "strokeWidth": 3
+            },
+            "target_id": "atom2_shell",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Ionic Bonding: Electron Transfer"
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "text": "One atom completely transfers electrons to another atom."
+            },
+            "target_id": "scene1_explanation",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 4,
+      "scene_title": "Ionic Bonding - Electron Transfer (Part 1)",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "atom1_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom1_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom1_electron1"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron1"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron2"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron3"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron4"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron5"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron6"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron7"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "octet_rule_text"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_explanation"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.45,
+                "y": 0.61
+              }
+            },
+            "target_id": "atom1_electron1",
+            "type": "circle"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Na"
+            },
+            "target_id": "atom1_nucleus_text",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Cl"
+            },
+            "target_id": "atom2_nucleus_text",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Forms positively charged cations and negatively charged anions."
+            },
+            "target_id": "scene1_explanation",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#202124",
+              "fontSize": 32,
+              "position": {
+                "x": 0.7,
+                "y": 0.55
+              },
+              "text": "Atom 1 (Na) loses an electron becoming Na+"
+            },
+            "target_id": "cation_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#202124",
+              "fontSize": 32,
+              "position": {
+                "x": 0.7,
+                "y": 0.65
+              },
+              "text": "Atom 2 (Cl) gains an electron becoming Cl-"
+            },
+            "target_id": "anion_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 5,
+      "scene_title": "Ionic Bonding - Electron Transfer (Part 2)",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "atom1_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom1_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom1_electron1"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron1"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron2"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron3"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron4"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron5"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron6"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron7"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_explanation"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.35,
+                "y": 0.5
+              }
+            },
+            "target_id": "atom1_nucleus",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.35,
+                "y": 0.5
+              }
+            },
+            "target_id": "atom1_shell",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.45,
+                "y": 0.5
+              }
+            },
+            "target_id": "atom2_nucleus",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.45,
+                "y": 0.5
+              }
+            },
+            "target_id": "atom2_shell",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.45,
+                "y": 0.59
+              }
+            },
+            "target_id": "atom1_electron1",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#34A853",
+              "path": "M 0.4 0.5 C 0.38 0.45, 0.42 0.45, 0.4 0.5",
+              "strokeWidth": 4
+            },
+            "target_id": "attraction_line",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#202124",
+              "fontSize": 28,
+              "fontWeight": "bold",
+              "position": {
+                "x": 0.35,
+                "y": 0.4
+              },
+              "text": "Na+"
+            },
+            "target_id": "na_plus_charge",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#202124",
+              "fontSize": 28,
+              "fontWeight": "bold",
+              "position": {
+                "x": 0.45,
+                "y": 0.4
+              },
+              "text": "Cl-"
+            },
+            "target_id": "cl_minus_charge",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Ionic Bonding: Electrostatic Attraction"
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Oppositely charged ions attract each other, forming a strong ionic bond."
+            },
+            "target_id": "scene1_explanation",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {},
+            "target_id": "cation_text",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {},
+            "target_id": "anion_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 6,
+      "scene_title": "Ionic Bonding - Electrostatic Attraction",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "atom1_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom1_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom1_electron1"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron1"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron2"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron3"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron4"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron5"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron6"
+        },
+        {
+          "action": "keep",
+          "target_id": "atom2_electron7"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_explanation"
+        },
+        {
+          "action": "keep",
+          "target_id": "cation_text"
+        },
+        {
+          "action": "keep",
+          "target_id": "anion_text"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#4285F4",
+              "position": {
+                "x": 0.25,
+                "y": 0.5
+              },
+              "radius": 0.04
+            },
+            "target_id": "h_atom1_nucleus",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 0.25,
+                "y": 0.5
+              },
+              "radius": 0.08,
+              "strokeColor": "#4285F4",
+              "strokeWidth": 2
+            },
+            "target_id": "h_atom1_shell",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.25,
+                "y": 0.58
+              },
+              "radius": 0.015
+            },
+            "target_id": "h_atom1_electron",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#EA4335",
+              "position": {
+                "x": 0.45,
+                "y": 0.5
+              },
+              "radius": 0.04
+            },
+            "target_id": "h_atom2_nucleus",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 0.45,
+                "y": 0.5
+              },
+              "radius": 0.08,
+              "strokeColor": "#EA4335",
+              "strokeWidth": 2
+            },
+            "target_id": "h_atom2_shell",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.45,
+                "y": 0.58
+              },
+              "radius": 0.015
+            },
+            "target_id": "h_atom2_electron",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Covalent Bonding: Electron Sharing"
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Atoms share electrons to achieve a stable electron configuration."
+            },
+            "target_id": "scene1_explanation",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 7,
+      "scene_title": "Covalent Bonding - Electron Sharing (Part 1)",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "atom1_nucleus"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "atom1_shell"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "atom1_electron1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "atom2_nucleus"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "atom2_shell"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "atom2_electron1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "atom2_electron2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "atom2_electron3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "atom2_electron4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "atom2_electron5"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "atom2_electron6"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "atom2_electron7"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "attraction_line"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "na_plus_charge"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "cl_minus_charge"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_explanation"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.33,
+                "y": 0.5
+              }
+            },
+            "target_id": "h_atom1_nucleus",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.33,
+                "y": 0.5
+              }
+            },
+            "target_id": "h_atom1_shell",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.33,
+                "y": 0.58
+              }
+            },
+            "target_id": "h_atom1_electron",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.37,
+                "y": 0.5
+              }
+            },
+            "target_id": "h_atom2_nucleus",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.37,
+                "y": 0.5
+              }
+            },
+            "target_id": "h_atom2_shell",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "position": {
+                "x": 0.37,
+                "y": 0.58
+              }
+            },
+            "target_id": "h_atom2_electron",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.35,
+                "y": 0.55
+              },
+              "radius": 0.015
+            },
+            "target_id": "shared_electron_pair1",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.35,
+                "y": 0.45
+              },
+              "radius": 0.015
+            },
+            "target_id": "shared_electron_pair2",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Each shared electron pair constitutes a covalent bond."
+            },
+            "target_id": "scene1_explanation",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 8,
+      "scene_title": "Covalent Bonding - Electron Sharing (Part 2)",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "h_atom1_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "h_atom1_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "h_atom1_electron"
+        },
+        {
+          "action": "keep",
+          "target_id": "h_atom2_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "h_atom2_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "h_atom2_electron"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_explanation"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "strokeColor": "#34A853"
+            },
+            "target_id": "h_atom1_shell",
+            "type": "circle"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "strokeColor": "#34A853"
+            },
+            "target_id": "h_atom2_shell",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#202124",
+              "fontSize": 28,
+              "fontWeight": "bold",
+              "position": {
+                "x": 0.35,
+                "y": 0.65
+              },
+              "text": "H\u2082"
+            },
+            "target_id": "h2_molecule_text",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Resulting in a stable molecule like H\u2082 (Hydrogen)."
+            },
+            "target_id": "scene1_explanation",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 9,
+      "scene_title": "Covalent Bonding - Molecule Formation",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "h_atom1_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "h_atom1_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "h_atom1_electron"
+        },
+        {
+          "action": "keep",
+          "target_id": "h_atom2_nucleus"
+        },
+        {
+          "action": "keep",
+          "target_id": "h_atom2_shell"
+        },
+        {
+          "action": "keep",
+          "target_id": "h_atom2_electron"
+        },
+        {
+          "action": "keep",
+          "target_id": "shared_electron_pair1"
+        },
+        {
+          "action": "keep",
+          "target_id": "shared_electron_pair2"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_explanation"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#4285F4",
+              "position": {
+                "x": 0.25,
+                "y": 0.4
+              },
+              "radius": 0.05
+            },
+            "target_id": "icon_ionic_atom1",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#EA4335",
+              "position": {
+                "x": 0.35,
+                "y": 0.4
+              },
+              "radius": 0.05
+            },
+            "target_id": "icon_ionic_atom2",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FBBC04",
+              "path": "M 0.28 0.35 L 0.32 0.35",
+              "strokeWidth": 5
+            },
+            "target_id": "icon_ionic_transfer_arrow",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#4285F4",
+              "position": {
+                "x": 0.25,
+                "y": 0.7
+              },
+              "radius": 0.04
+            },
+            "target_id": "icon_covalent_atom1",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#EA4335",
+              "position": {
+                "x": 0.35,
+                "y": 0.7
+              },
+              "radius": 0.04
+            },
+            "target_id": "icon_covalent_atom2",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.3,
+                "y": 0.7
+              },
+              "radius": 0.015
+            },
+            "target_id": "icon_covalent_shared_electron1",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FBBC04",
+              "position": {
+                "x": 0.31,
+                "y": 0.72
+              },
+              "radius": 0.015
+            },
+            "target_id": "icon_covalent_shared_electron2",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "text": "Summary: Key Types of Bonding"
+            },
+            "target_id": "scene1_title",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "text": "1. Ionic Bonding: Electron Transfer"
+            },
+            "target_id": "scene1_explanation",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#202124",
+              "fontSize": 36,
+              "position": {
+                "x": 0.7,
+                "y": 0.55
+              },
+              "text": "2. Covalent Bonding: Electron Sharing"
+            },
+            "target_id": "summary_covalent_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 10,
+      "scene_title": "Conclusion: Summary",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "h_atom1_nucleus"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "h_atom1_shell"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "h_atom1_electron"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "h_atom2_nucleus"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "h_atom2_shell"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "h_atom2_electron"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "shared_electron_pair1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "shared_electron_pair2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "h2_molecule_text"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "scene1_explanation"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,237 @@
+{
+  "topic": "pythagoras theore",
+  "generation_timestamp": "2025-08-20 21:54:58",
+  "total_scenes": 2,
+  "total_estimated_duration": 10,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 100,
+                "y": 500
+              },
+              "text": "x-axis"
+            },
+            "target_id": "xaxis",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 100,
+                "y": 500
+              },
+              "strokeColor": "#475569",
+              "strokeWidth": 2,
+              "text": "line"
+            },
+            "target_id": "xaxisline",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 700,
+                "y": 500
+              },
+              "text": "y-axis"
+            },
+            "target_id": "yaxis",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 100,
+                "y": 100
+              },
+              "strokeColor": "#475569",
+              "strokeWidth": 2,
+              "text": "line"
+            },
+            "target_id": "yaxisline",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 200,
+                "y": 400
+              },
+              "radius": 50,
+              "strokeColor": "#DC2626",
+              "strokeWidth": 2,
+              "text": "circle"
+            },
+            "target_id": "circlea",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 600,
+                "y": 200
+              },
+              "radius": 50,
+              "strokeColor": "#2563EB",
+              "strokeWidth": 2,
+              "text": "circle"
+            },
+            "target_id": "circleb",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 200,
+                "y": 200
+              },
+              "strokeColor": "#059669",
+              "strokeWidth": 2,
+              "text": "line"
+            },
+            "target_id": "line1",
+            "type": "line"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "path": "M250,450 L650,250"
+            },
+            "target_id": "line1",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 700,
+                "y": 100
+              },
+              "text": "Pythagorean Theorem"
+            },
+            "target_id": "title",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 5,
+      "scene_number": 1,
+      "scene_title": "Introducing the concept",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 200,
+                "y": 400
+              },
+              "radius": 50,
+              "strokeColor": "#DC2626",
+              "strokeWidth": 2,
+              "text": "circle"
+            },
+            "target_id": "circlea",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 600,
+                "y": 200
+              },
+              "radius": 50,
+              "strokeColor": "#2563EB",
+              "strokeWidth": 2,
+              "text": "circle"
+            },
+            "target_id": "circleb",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 200,
+                "y": 200
+              },
+              "strokeColor": "#059669",
+              "strokeWidth": 2,
+              "text": "line"
+            },
+            "target_id": "line1",
+            "type": "line"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "path": "M250,450 L650,250"
+            },
+            "target_id": "line1",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 700,
+                "y": 100
+              },
+              "text": "a"
+            },
+            "target_id": "a",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 700,
+                "y": 200
+              },
+              "text": "b"
+            },
+            "target_id": "b",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "position": {
+                "x": 700,
+                "y": 300
+              },
+              "text": "c"
+            },
+            "target_id": "c",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 5,
+      "scene_number": 2,
+      "scene_title": "Identifying sides a, b, c",
+      "transitions": []
+    }
+  ]
+}

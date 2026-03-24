@@ -1,0 +1,589 @@
+{
+  "topic": "newton's second law of motion",
+  "generation_timestamp": "2025-08-24 18:47:30",
+  "total_scenes": 6,
+  "total_estimated_duration": 63,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A placeholder object for visual balance"
+            },
+            "target_id": "placeholderVisual",
+            "type": "rectangle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Newton's Second Law of Motion title text"
+            },
+            "target_id": "titleText",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Introductory text for the topic"
+            },
+            "target_id": "introText",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The formula F = ma"
+            },
+            "target_id": "formulaText",
+            "type": "latex"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 1,
+      "scene_title": "Introduction to Newton's Second Law",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A blue box representing an object"
+            },
+            "target_id": "objectBox",
+            "type": "rectangle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "An arrow representing force"
+            },
+            "target_id": "forceArrow",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for force arrow"
+            },
+            "target_id": "forceMagnitudeText",
+            "type": "latex"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Title for Force section"
+            },
+            "target_id": "forceTitle",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Definition of force"
+            },
+            "target_id": "forceDefinition1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Further explanation of force"
+            },
+            "target_id": "forceDefinition2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Units of force"
+            },
+            "target_id": "forceUnit",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 2,
+      "scene_title": "What is Force?",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "titleText"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "introText"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "formulaText"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "placeholderVisual"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A small blue box for less mass"
+            },
+            "target_id": "smallMassBox",
+            "type": "rectangle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Text label for small mass"
+            },
+            "target_id": "smallMassText",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A large blue box for more mass"
+            },
+            "target_id": "largeMassBox",
+            "type": "rectangle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Text label for large mass"
+            },
+            "target_id": "largeMassText",
+            "type": "latex"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Title for Mass section"
+            },
+            "target_id": "massTitle",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Definition of mass"
+            },
+            "target_id": "massDefinition1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explanation of inertia"
+            },
+            "target_id": "massDefinition2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Units of mass"
+            },
+            "target_id": "massUnit",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 3,
+      "scene_title": "What is Mass?",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "forceTitle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "forceDefinition1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "forceDefinition2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "forceUnit"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "objectBox"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "forceArrow"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "forceMagnitudeText"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "An object that will accelerate"
+            },
+            "target_id": "acceleratingObject",
+            "type": "rectangle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Initial velocity arrow"
+            },
+            "target_id": "initialVelocityArrow",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Final velocity arrow (larger)"
+            },
+            "target_id": "finalVelocityArrow",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Acceleration arrow"
+            },
+            "target_id": "accelerationArrow",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for acceleration arrow"
+            },
+            "target_id": "accelerationText",
+            "type": "latex"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Title for Acceleration section"
+            },
+            "target_id": "accelerationTitle",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Definition of acceleration"
+            },
+            "target_id": "accelerationDefinition1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explanation of velocity change"
+            },
+            "target_id": "accelerationDefinition2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Units of acceleration"
+            },
+            "target_id": "accelerationUnit",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 4,
+      "scene_title": "What is Acceleration?",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "massTitle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "massDefinition1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "massDefinition2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "massUnit"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "smallMassBox"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "smallMassText"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "largeMassBox"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "largeMassText"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Formula F=ma at the top left"
+            },
+            "target_id": "formulaLeftPane",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Small box for low mass example"
+            },
+            "target_id": "smallBoxRelation",
+            "type": "rectangle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Force arrow for small box"
+            },
+            "target_id": "forceArrowSmallBox",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Acceleration arrow for small box"
+            },
+            "target_id": "accelerationArrowSmallBox",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Large box for high mass example"
+            },
+            "target_id": "largeBoxRelation",
+            "type": "rectangle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Force arrow for large box (same size as small box)"
+            },
+            "target_id": "forceArrowLargeBox",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Acceleration arrow for large box (smaller)"
+            },
+            "target_id": "accelerationArrowLargeBox",
+            "type": "line"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Title for relationship section"
+            },
+            "target_id": "relationshipTitle",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Text about direct proportionality"
+            },
+            "target_id": "proportionality1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Text about inverse proportionality"
+            },
+            "target_id": "proportionality2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Example 1: More Force -> More Acceleration"
+            },
+            "target_id": "example1Text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Example 2: More Mass -> Less Acceleration"
+            },
+            "target_id": "example2Text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 5,
+      "scene_title": "The Relationship: F = ma",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "accelerationTitle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "accelerationDefinition1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "accelerationDefinition2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "accelerationUnit"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "acceleratingObject"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "initialVelocityArrow"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "finalVelocityArrow"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "accelerationArrow"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "accelerationText"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Main title for conclusion"
+            },
+            "target_id": "conclusionTitle",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Summary statement of the law"
+            },
+            "target_id": "conclusionStatement",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Final formula F=ma, emphasized"
+            },
+            "target_id": "finalFormula",
+            "type": "latex"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 6,
+      "scene_title": "Summary of Newton's Second Law",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "relationshipTitle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "proportionality1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "proportionality2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "example1Text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "example2Text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "formulaLeftPane"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "smallBoxRelation"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "forceArrowSmallBox"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "accelerationArrowSmallBox"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "largeBoxRelation"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "forceArrowLargeBox"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "accelerationArrowLargeBox"
+        }
+      ]
+    }
+  ]
+}

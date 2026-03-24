@@ -1,0 +1,875 @@
+{
+  "topic": "pythagoras theorem",
+  "generation_timestamp": "2025-08-24 15:06:36",
+  "total_scenes": 8,
+  "total_estimated_duration": 72,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 200 600 L 200 300 L 500 600 Z",
+              "strokeColor": "#00BFFF",
+              "strokeWidth": 6
+            },
+            "target_id": "triangle_outline",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 72,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 200
+              },
+              "text": "The Pythagoras Theorem"
+            },
+            "target_id": "title_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 48,
+              "position": {
+                "x": 1344,
+                "y": 350
+              },
+              "text": "A fundamental concept in geometry"
+            },
+            "target_id": "intro_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 7,
+      "scene_number": 1,
+      "scene_title": "Introduction to Pythagoras Theorem",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFD700",
+              "fontSize": 36,
+              "position": {
+                "x": 180,
+                "y": 450
+              },
+              "text": "a"
+            },
+            "target_id": "side_a_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFD700",
+              "fontSize": 36,
+              "position": {
+                "x": 350,
+                "y": 620
+              },
+              "text": "b"
+            },
+            "target_id": "side_b_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFD700",
+              "fontSize": 36,
+              "position": {
+                "x": 370,
+                "y": 440
+              },
+              "text": "c"
+            },
+            "target_id": "side_c_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 200 560 L 240 560 L 240 600",
+              "strokeColor": "#FFD700",
+              "strokeWidth": 4
+            },
+            "target_id": "right_angle_mark",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 48,
+              "position": {
+                "x": 1344,
+                "y": 350
+              },
+              "text": "Applies to right-angled triangles"
+            },
+            "target_id": "context_text_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 450
+              },
+              "text": "Hypotenuse (c): The longest side,"
+            },
+            "target_id": "hypotenuse_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 500
+              },
+              "text": "opposite the right angle."
+            },
+            "target_id": "hypotenuse_text_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 600
+              },
+              "text": "Legs (a & b): The two shorter sides"
+            },
+            "target_id": "legs_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 650
+              },
+              "text": "forming the right angle."
+            },
+            "target_id": "legs_text_2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 2,
+      "scene_title": "Identifying the Sides",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "intro_text"
+        },
+        {
+          "action": "keep",
+          "target_id": "triangle_outline"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 48,
+              "position": {
+                "x": 1344,
+                "y": 350
+              },
+              "text": "The Theorem states:"
+            },
+            "target_id": "theorem_statement_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#00BFFF",
+              "fontSize": 72,
+              "position": {
+                "x": 1344,
+                "y": 500
+              },
+              "text": "a^2 + b^2 = c^2"
+            },
+            "target_id": "formula_latex",
+            "type": "latex"
+          }
+        ]
+      },
+      "duration": 7,
+      "scene_number": 3,
+      "scene_title": "The Theorem Statement",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "context_text_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "hypotenuse_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "hypotenuse_text_2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "legs_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "legs_text_2"
+        },
+        {
+          "action": "keep",
+          "target_id": "triangle_outline"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_a_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_b_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_c_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "right_angle_mark"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#32CD32",
+              "path": "M 200 300 L 200 600 L -100 600 L -100 300 Z",
+              "strokeColor": "#32CD32",
+              "strokeWidth": 4
+            },
+            "target_id": "square_a",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#32CD32",
+              "path": "M 200 600 L 500 600 L 500 900 L 200 900 Z",
+              "strokeColor": "#32CD32",
+              "strokeWidth": 4
+            },
+            "target_id": "square_b",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 42,
+              "position": {
+                "x": 1344,
+                "y": 350
+              },
+              "text": "Visualizing the theorem:"
+            },
+            "target_id": "proof_text_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 450
+              },
+              "text": "The sum of the areas of the squares"
+            },
+            "target_id": "proof_text_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 500
+              },
+              "text": "on the two legs (a and b)..."
+            },
+            "target_id": "proof_text_3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 4,
+      "scene_title": "Visual Proof - Squares on Sides",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "theorem_statement_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "formula_latex"
+        },
+        {
+          "action": "keep",
+          "target_id": "triangle_outline"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_a_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_b_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_c_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "right_angle_mark"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#32CD32",
+              "path": "M 500 600 L 200 300 L -100 300 L 200 0 Z",
+              "strokeColor": "#32CD32",
+              "strokeWidth": 4
+            },
+            "target_id": "square_c",
+            "type": "path"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "path": "M 500 600 L 200 300 L 200 0 L 500 0 Z",
+              "strokeColor": "#32CD32",
+              "strokeWidth": 4,
+              "text": "M 500 600 L 200 300 L 200 0 L 500 0 Z"
+            },
+            "target_id": "square_a",
+            "type": "path"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "path": "M 500 600 L 200 300 L 200 0 L 500 0 Z",
+              "strokeColor": "#32CD32",
+              "strokeWidth": 4,
+              "text": "M 500 600 L 200 300 L 200 0 L 500 0 Z"
+            },
+            "target_id": "square_b",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 450
+              },
+              "text": "...is equal to the area of the square"
+            },
+            "target_id": "proof_text_4",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 500
+              },
+              "text": "on the hypotenuse (c)."
+            },
+            "target_id": "proof_text_5",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 5,
+      "scene_title": "Visual Proof - Sum of Areas",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "keep",
+          "target_id": "proof_text_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "proof_text_2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "proof_text_3"
+        },
+        {
+          "action": "keep",
+          "target_id": "triangle_outline"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_a_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_b_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_c_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "right_angle_mark"
+        },
+        {
+          "action": "keep",
+          "target_id": "square_a"
+        },
+        {
+          "action": "keep",
+          "target_id": "square_b"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "color": "#FFD700",
+              "text": "3"
+            },
+            "target_id": "side_a_label",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "color": "#FFD700",
+              "text": "4"
+            },
+            "target_id": "side_b_label",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "color": "#FFD700",
+              "text": "?"
+            },
+            "target_id": "side_c_label",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 48,
+              "position": {
+                "x": 1344,
+                "y": 350
+              },
+              "text": "How to use it: Finding the Hypotenuse"
+            },
+            "target_id": "application_title",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 6,
+      "scene_title": "Application - Finding Hypotenuse",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "proof_text_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "proof_text_4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "proof_text_5"
+        },
+        {
+          "action": "keep",
+          "target_id": "triangle_outline"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "square_a"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "square_b"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "square_c"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_a_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_b_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_c_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "right_angle_mark"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 300
+              },
+              "text": "1. Write the formula: a\u00b2 + b\u00b2 = c\u00b2"
+            },
+            "target_id": "step1_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 380
+              },
+              "text": "2. Substitute values: 3\u00b2 + 4\u00b2 = c\u00b2"
+            },
+            "target_id": "step2_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 460
+              },
+              "text": "3. Calculate squares: 9 + 16 = c\u00b2"
+            },
+            "target_id": "step3_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 540
+              },
+              "text": "4. Sum: 25 = c\u00b2"
+            },
+            "target_id": "step4_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 36,
+              "position": {
+                "x": 1344,
+                "y": 620
+              },
+              "text": "5. Find square root: c = \u221a25"
+            },
+            "target_id": "step5_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#00BFFF",
+              "fontSize": 48,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 700
+              },
+              "text": "c = 5"
+            },
+            "target_id": "result_c_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 7,
+      "scene_title": "Calculation Steps",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "application_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "triangle_outline"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_a_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_b_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_c_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "right_angle_mark"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "path": "M 200 600 L 200 300 L 500 600 Z",
+              "strokeColor": "#00BFFF",
+              "strokeWidth": 6
+            },
+            "target_id": "final_triangle_outline",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 48,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 350
+              },
+              "text": "The Pythagorean Theorem is vital"
+            },
+            "target_id": "conclusion_text_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 48,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 420
+              },
+              "text": "for solving problems involving"
+            },
+            "target_id": "conclusion_text_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#FFFFFF",
+              "fontSize": 48,
+              "fontWeight": "bold",
+              "position": {
+                "x": 1344,
+                "y": 490
+              },
+              "text": "distances and geometry."
+            },
+            "target_id": "conclusion_text_3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "color": "#00BFFF",
+              "fontSize": 72,
+              "position": {
+                "x": 350,
+                "y": 150
+              },
+              "text": "a^2 + b^2 = c^2"
+            },
+            "target_id": "final_formula_latex",
+            "type": "latex"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 8,
+      "scene_title": "Conclusion",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "title_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "step1_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "step2_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "step3_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "step4_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "step5_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "result_c_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "triangle_outline"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "side_a_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "side_b_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "side_c_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "right_angle_mark"
+        }
+      ]
+    }
+  ]
+}

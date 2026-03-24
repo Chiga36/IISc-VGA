@@ -1,0 +1,272 @@
+{
+  "topic": "pythagoras",
+  "generation_timestamp": "2025-10-09 19:51:40",
+  "total_scenes": 6,
+  "total_estimated_duration": 60,
+  "pipeline_version": "Professional v3.0",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_title": "Introduction to Pythagoras",
+      "duration": 8,
+      "transitions": [],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene_title",
+            "properties": {
+              "text": "The Pythagorean Theorem"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "intro_text",
+            "properties": {
+              "text": "A cornerstone of geometry, linking the sides of a right triangle."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 2,
+      "scene_title": "Visualizing a Right Triangle",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "scene_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "intro_text"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "path",
+            "target_id": "right_triangle",
+            "properties": {
+              "placeholder": "Draw a right triangle"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "side_a",
+            "properties": {
+              "placeholder": "Label side 'a'"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "side_b",
+            "properties": {
+              "placeholder": "Label side 'b'"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "side_c",
+            "properties": {
+              "placeholder": "Label side 'c' (hypotenuse)"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "triangle_def",
+            "properties": {
+              "text": "Right triangle: Contains one 90-degree angle."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_title": "The Pythagorean Formula",
+      "duration": 12,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "right_triangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_a"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_b"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_c"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "latex",
+            "target_id": "pythagorean_formula",
+            "properties": {
+              "placeholder": "a^2 + b^2 = c^2"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "formula_explain",
+            "properties": {
+              "text": "a\u00b2 + b\u00b2 = c\u00b2: The sum of the squares of the legs (a & b) equals the square of the hypotenuse (c)."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_title": "Example Calculation",
+      "duration": 15,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "right_triangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_a"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_b"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_c"
+        },
+        {
+          "action": "keep",
+          "target_id": "pythagorean_formula"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "type": "text",
+            "target_id": "side_a",
+            "properties": {
+              "placeholder": "Show a = 3"
+            }
+          },
+          {
+            "command": "modify",
+            "type": "text",
+            "target_id": "side_b",
+            "properties": {
+              "placeholder": "Show b = 4"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "calculation_steps",
+            "properties": {
+              "text": "If a=3 and b=4, then 3\u00b2 + 4\u00b2 = c\u00b2, 9 + 16 = c\u00b2, 25 = c\u00b2, c = 5."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 5,
+      "scene_title": "Real-World Applications",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "right_triangle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "side_a"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "side_b"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "side_c"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "pythagorean_formula"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "image",
+            "target_id": "architecture_image",
+            "properties": {
+              "placeholder": "Image of a building or bridge"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "applications_text",
+            "properties": {
+              "text": "Used in architecture, navigation, engineering, and more."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 6,
+      "scene_title": "Conclusion",
+      "duration": 5,
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "architecture_image"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "summary_text",
+            "properties": {
+              "text": "The Pythagorean theorem is a powerful tool for understanding right triangles."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1445 @@
+{
+  "topic": "Explain how hash tables work and also use correct vizualization elements to explain hash tables and hash function",
+  "generation_timestamp": "2025-08-24 20:29:32",
+  "total_scenes": 6,
+  "total_estimated_duration": 77,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Hash Tables: Fast Data Storage"
+            },
+            "target_id": "main_title_hash_table",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "0"
+            },
+            "target_id": "bucket_0_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "bucket_0_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "1"
+            },
+            "target_id": "bucket_1_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "bucket_1_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "2"
+            },
+            "target_id": "bucket_2_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "bucket_2_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "3"
+            },
+            "target_id": "bucket_3_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "bucket_3_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "4"
+            },
+            "target_id": "bucket_4_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "bucket_4_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "5"
+            },
+            "target_id": "bucket_5_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "bucket_5_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "6"
+            },
+            "target_id": "bucket_6_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "bucket_6_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "7"
+            },
+            "target_id": "bucket_7_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "bucket_7_rect",
+            "type": "rect"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "What is a Hash Table?"
+            },
+            "target_id": "scene_1_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A hash table is a data structure that stores key-value pairs."
+            },
+            "target_id": "scene_1_explanation_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "It allows for very efficient lookups, insertions, and deletions."
+            },
+            "target_id": "scene_1_explanation_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Think of it like an array (buckets) where each slot can hold data."
+            },
+            "target_id": "scene_1_explanation_3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 1,
+      "scene_title": "Introduction to Hash Tables",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "hash_function_box",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Hash Function"
+            },
+            "target_id": "hash_function_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Key (e.g., 'name')"
+            },
+            "target_id": "key_input_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "key_to_hash_arrow",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Index"
+            },
+            "target_id": "hash_output_index_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "hash_to_index_arrow",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "index_to_bucket_line_start",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "index_to_bucket_arrow_end",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The Hash Function"
+            },
+            "target_id": "scene_2_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A hash function takes an input (a 'key')."
+            },
+            "target_id": "scene_2_explanation_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "It processes the key and returns an 'index' for the array."
+            },
+            "target_id": "scene_2_explanation_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "This index tells us where to store or find the value."
+            },
+            "target_id": "scene_2_explanation_3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 2,
+      "scene_title": "The Role of a Hash Function",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "main_title_hash_table"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_0_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_0_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_1_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_1_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_2_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_2_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_3_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_3_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_4_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_4_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_5_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_5_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_6_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_6_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_7_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_7_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_1_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_1_explanation_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_1_explanation_2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_1_explanation_3"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Key: 'apple'"
+            },
+            "target_id": "key_insert_1",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'x': 390, 'y': 285, 'opacity': 0}"
+            },
+            "target_id": "key_insert_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Index: 2"
+            },
+            "target_id": "computed_index_1",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'opacity': 1}"
+            },
+            "target_id": "computed_index_1",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'fill': '#FFFF00'}"
+            },
+            "target_id": "bucket_2_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "bucket_content_apple_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "'red'"
+            },
+            "target_id": "value_apple_text",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'y': 245}"
+            },
+            "target_id": "value_apple_text",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Inserting Elements"
+            },
+            "target_id": "scene_3_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "To insert a key-value pair, we first pass the key to the hash function."
+            },
+            "target_id": "scene_3_explanation_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The hash function computes an index (e.g., '2')."
+            },
+            "target_id": "scene_3_explanation_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The value is then stored in the bucket at that index."
+            },
+            "target_id": "scene_3_explanation_3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 3,
+      "scene_title": "Inserting Elements: No Collisions",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "main_title_hash_table"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_0_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_0_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_1_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_1_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_2_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_2_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_3_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_3_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_4_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_4_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_5_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_5_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_6_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_6_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_7_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_7_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_function_box"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_function_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "key_input_text"
+        },
+        {
+          "action": "keep",
+          "target_id": "key_to_hash_arrow"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_output_index_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_to_index_arrow"
+        },
+        {
+          "action": "keep",
+          "target_id": "index_to_bucket_line_start"
+        },
+        {
+          "action": "keep",
+          "target_id": "index_to_bucket_arrow_end"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_2_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_2_explanation_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_2_explanation_2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_2_explanation_3"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Key: 'banana'"
+            },
+            "target_id": "key_insert_2",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'x': 390, 'y': 285, 'opacity': 0}"
+            },
+            "target_id": "key_insert_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Index: 2"
+            },
+            "target_id": "computed_index_2",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'opacity': 1}"
+            },
+            "target_id": "computed_index_2",
+            "type": "text"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "placeholder": "{'fill': '#FFD700'}"
+            },
+            "target_id": "bucket_2_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "chain_node_banana_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "'yellow'"
+            },
+            "target_id": "value_banana_text",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'y': 245}"
+            },
+            "target_id": "value_banana_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "chain_link_1",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Handling Collisions"
+            },
+            "target_id": "scene_4_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "What if two different keys hash to the same index?"
+            },
+            "target_id": "scene_4_explanation_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "This is a 'collision'. A common solution is 'chaining'."
+            },
+            "target_id": "scene_4_explanation_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Each bucket can hold a list (or chain) of key-value pairs."
+            },
+            "target_id": "scene_4_explanation_3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 4,
+      "scene_title": "Handling Collisions with Chaining",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "main_title_hash_table"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_0_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_0_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_1_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_1_label"
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_2_rect",
+          "new_properties": {
+            "placeholder": "{'fill': '#F0F0F0'}"
+          }
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_2_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_3_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_3_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_4_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_4_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_5_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_5_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_6_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_6_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_7_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_7_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_function_box"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_function_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "key_to_hash_arrow"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_output_index_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_to_index_arrow"
+        },
+        {
+          "action": "keep",
+          "target_id": "index_to_bucket_line_start"
+        },
+        {
+          "action": "keep",
+          "target_id": "index_to_bucket_arrow_end"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_content_apple_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "value_apple_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "key_insert_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "computed_index_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_3_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_3_explanation_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_3_explanation_2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_3_explanation_3"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Retrieve: 'apple'"
+            },
+            "target_id": "key_retrieve_1",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'x': 390, 'y': 285, 'opacity': 0}"
+            },
+            "target_id": "key_retrieve_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Index: 2"
+            },
+            "target_id": "computed_index_3",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'opacity': 1}"
+            },
+            "target_id": "computed_index_3",
+            "type": "text"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "placeholder": "{'fill': '#90EE90'}"
+            },
+            "target_id": "bucket_2_rect",
+            "type": "rect"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "placeholder": "{'fill': '#008000'}"
+            },
+            "target_id": "value_apple_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Retrieve: 'banana'"
+            },
+            "target_id": "key_retrieve_2",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'x': 200, 'y': 400, 'opacity': 1}"
+            },
+            "target_id": "key_retrieve_2",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'x': 390, 'y': 400, 'opacity': 0}"
+            },
+            "target_id": "key_retrieve_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Index: 2"
+            },
+            "target_id": "computed_index_4",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "{'opacity': 1}"
+            },
+            "target_id": "computed_index_4",
+            "type": "text"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "placeholder": "{'fill': '#FFFF00'}"
+            },
+            "target_id": "bucket_2_rect",
+            "type": "rect"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "placeholder": "{'fill': '#90EE90'}"
+            },
+            "target_id": "chain_node_banana_rect",
+            "type": "rect"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "placeholder": "{'fill': '#008000'}"
+            },
+            "target_id": "value_banana_text",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Retrieving Elements"
+            },
+            "target_id": "scene_5_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "To retrieve a value, we use the same process."
+            },
+            "target_id": "scene_5_explanation_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The hash function gives us the bucket index."
+            },
+            "target_id": "scene_5_explanation_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Then we search within that bucket (and its chain, if any) for the key."
+            },
+            "target_id": "scene_5_explanation_3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 5,
+      "scene_title": "Retrieving Elements",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "main_title_hash_table"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_0_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_0_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_1_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_1_label"
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_2_rect",
+          "new_properties": {
+            "placeholder": "{'fill': '#F0F0F0'}"
+          }
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_2_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_3_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_3_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_4_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_4_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_5_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_5_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_6_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_6_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_7_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_7_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_function_box"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_function_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "key_to_hash_arrow"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_output_index_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "hash_to_index_arrow"
+        },
+        {
+          "action": "keep",
+          "target_id": "index_to_bucket_line_start"
+        },
+        {
+          "action": "keep",
+          "target_id": "index_to_bucket_arrow_end"
+        },
+        {
+          "action": "keep",
+          "target_id": "bucket_content_apple_rect"
+        },
+        {
+          "action": "modify",
+          "target_id": "value_apple_text",
+          "new_properties": {
+            "placeholder": "{'fill': '#000000'}"
+          }
+        },
+        {
+          "action": "keep",
+          "target_id": "value_banana_text"
+        },
+        {
+          "action": "keep",
+          "target_id": "chain_node_banana_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "chain_link_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "key_insert_2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "computed_index_2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_4_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_4_explanation_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_4_explanation_2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_4_explanation_3"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Summary: How Hash Tables Work"
+            },
+            "target_id": "scene_6_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "1. A hash function converts a key into an array index."
+            },
+            "target_id": "scene_6_explanation_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "2. Values are stored in 'buckets' at these indices."
+            },
+            "target_id": "scene_6_explanation_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "3. Collisions are handled (e.g., by chaining items in a list)."
+            },
+            "target_id": "scene_6_explanation_3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Result: Extremely fast average-case performance!"
+            },
+            "target_id": "scene_6_explanation_4",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 6,
+      "scene_title": "Summary and Benefits",
+      "transitions": [
+        {
+          "action": "modify",
+          "target_id": "main_title_hash_table",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_0_rect",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_0_label",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_1_rect",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_1_label",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_2_rect",
+          "new_properties": {
+            "placeholder": "{'fill': '#F0F0F0', 'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_2_label",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_3_rect",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_3_label",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_4_rect",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_4_label",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_5_rect",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_5_label",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_6_rect",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_6_label",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_7_rect",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_7_label",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "hash_function_box",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "hash_function_label",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "key_to_hash_arrow",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "hash_output_index_label",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "hash_to_index_arrow",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "index_to_bucket_line_start",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "index_to_bucket_arrow_end",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "bucket_content_apple_rect",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "value_apple_text",
+          "new_properties": {
+            "placeholder": "{'fill': '#000000', 'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "value_banana_text",
+          "new_properties": {
+            "placeholder": "{'fill': '#000000', 'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "chain_node_banana_rect",
+          "new_properties": {
+            "placeholder": "{'fill': '#DDA0DD', 'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "chain_link_1",
+          "new_properties": {
+            "placeholder": "{'opacity': 0.5}"
+          }
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "key_retrieve_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "key_retrieve_2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "computed_index_3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "computed_index_4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_5_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_5_explanation_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_5_explanation_2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene_5_explanation_3"
+        }
+      ]
+    }
+  ]
+}

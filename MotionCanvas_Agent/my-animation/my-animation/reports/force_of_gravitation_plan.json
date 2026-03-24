@@ -1,0 +1,1216 @@
+[
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#2563EB",
+            "opacity": 0,
+            "position": {
+              "x": -650,
+              "y": 540
+            },
+            "radius": 100
+          },
+          "target_id": "planet_A",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#059669",
+            "opacity": 0,
+            "position": {
+              "x": -300,
+              "y": 540
+            },
+            "radius": 80
+          },
+          "target_id": "planet_B",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "planet_A",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "planet_B",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "opacity": 0,
+            "path": "M -550 540 L -430 540",
+            "strokeColor": "#DC2626",
+            "strokeWidth": 8
+          },
+          "target_id": "force_arrow_A_to_B",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "opacity": 0,
+            "path": "M -400 540 L -520 540",
+            "strokeColor": "#DC2626",
+            "strokeWidth": 8
+          },
+          "target_id": "force_arrow_B_to_A",
+          "type": "path"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.7,
+            "opacity": 1
+          },
+          "target_id": "force_arrow_A_to_B",
+          "type": "path"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.7,
+            "opacity": 1
+          },
+          "target_id": "force_arrow_B_to_A",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 64,
+            "fontWeight": "bold",
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 150
+            },
+            "text": "Force of Gravitation"
+          },
+          "target_id": "title_gravitation",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "title_gravitation",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 300
+            },
+            "text": "Every object in the universe"
+          },
+          "target_id": "intro_text_1",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "intro_text_1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 380
+            },
+            "text": "attracts every other object."
+          },
+          "target_id": "intro_text_2",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "intro_text_2",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 1,
+    "scene_title": "Introduction to Gravitation",
+    "transitions": []
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#8B5CF6",
+            "fontSize": 48,
+            "opacity": 0,
+            "position": {
+              "x": -650,
+              "y": 420
+            },
+            "text": "m_1"
+          },
+          "target_id": "label_m1",
+          "type": "latex"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#8B5CF6",
+            "fontSize": 48,
+            "opacity": 0,
+            "position": {
+              "x": -300,
+              "y": 420
+            },
+            "text": "m_2"
+          },
+          "target_id": "label_m2",
+          "type": "latex"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "opacity": 0,
+            "path": "M -550 640 L -400 640",
+            "strokeColor": "#475569",
+            "strokeWidth": 3
+          },
+          "target_id": "distance_line",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#8B5CF6",
+            "fontSize": 48,
+            "opacity": 0,
+            "position": {
+              "x": -475,
+              "y": 680
+            },
+            "text": "r"
+          },
+          "target_id": "label_r",
+          "type": "latex"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "label_m1",
+          "type": "latex"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "label_m2",
+          "type": "latex"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "distance_line",
+          "type": "path"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "label_r",
+          "type": "latex"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 50,
+            "fontWeight": "bold",
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 150
+            },
+            "text": "Newton's Law of Universal Gravitation"
+          },
+          "target_id": "law_title",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "law_title",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#2563EB",
+            "fontSize": 72,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 450
+            },
+            "text": "F = G \\frac{m_1 m_2}{r^2}"
+          },
+          "target_id": "gravitation_formula",
+          "type": "latex"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1,
+            "opacity": 1
+          },
+          "target_id": "gravitation_formula",
+          "type": "latex"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 600
+            },
+            "text": "F: Force of Gravitation"
+          },
+          "target_id": "formula_expl_F",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 680
+            },
+            "text": "G: Gravitational Constant"
+          },
+          "target_id": "formula_expl_G",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 760
+            },
+            "text": "m1, m2: Masses of objects"
+          },
+          "target_id": "formula_expl_m1m2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 840
+            },
+            "text": "r: Distance between centers"
+          },
+          "target_id": "formula_expl_r",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "formula_expl_F",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "formula_expl_G",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "formula_expl_m1m2",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "formula_expl_r",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 6,
+    "scene_number": 2,
+    "scene_title": "Newton's Law of Universal Gravitation",
+    "transitions": [
+      {
+        "action": "fadeOut",
+        "target_id": "title_gravitation"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "intro_text_1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "intro_text_2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "force_arrow_A_to_B"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "force_arrow_B_to_A"
+      },
+      {
+        "action": "keep",
+        "target_id": "planet_A"
+      },
+      {
+        "action": "keep",
+        "target_id": "planet_B"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1,
+            "radius": 150
+          },
+          "target_id": "planet_A",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1,
+            "scale": 1.5
+          },
+          "target_id": "label_m1",
+          "type": "latex"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "opacity": 0,
+            "path": "M -500 540 L -400 540",
+            "strokeColor": "#DC2626",
+            "strokeWidth": 12
+          },
+          "target_id": "force_arrow_A_to_B_mass_effect",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "opacity": 0,
+            "path": "M -400 540 L -500 540",
+            "strokeColor": "#DC2626",
+            "strokeWidth": 12
+          },
+          "target_id": "force_arrow_B_to_A_mass_effect",
+          "type": "path"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.8,
+            "opacity": 1
+          },
+          "target_id": "force_arrow_A_to_B_mass_effect",
+          "type": "path"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.8,
+            "opacity": 1
+          },
+          "target_id": "force_arrow_B_to_A_mass_effect",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 50,
+            "fontWeight": "bold",
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 150
+            },
+            "text": "How Mass Affects Gravitation"
+          },
+          "target_id": "mass_expl_title",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "mass_expl_title",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 300
+            },
+            "text": "The force of gravitation is directly"
+          },
+          "target_id": "mass_expl_text_1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 380
+            },
+            "text": "proportional to the product of masses."
+          },
+          "target_id": "mass_expl_text_2",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "mass_expl_text_1",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "mass_expl_text_2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#059669",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 550
+            },
+            "text": "Larger masses result in a stronger force."
+          },
+          "target_id": "mass_expl_text_3",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.7,
+            "opacity": 1
+          },
+          "target_id": "mass_expl_text_3",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 6,
+    "scene_number": 3,
+    "scene_title": "Impact of Mass",
+    "transitions": [
+      {
+        "action": "fadeOut",
+        "target_id": "law_title"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "formula_expl_F"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "formula_expl_G"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "formula_expl_m1m2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "formula_expl_r"
+      },
+      {
+        "action": "keep",
+        "target_id": "planet_A"
+      },
+      {
+        "action": "keep",
+        "target_id": "planet_B"
+      },
+      {
+        "action": "keep",
+        "target_id": "gravitation_formula"
+      },
+      {
+        "action": "keep",
+        "target_id": "label_m1"
+      },
+      {
+        "action": "keep",
+        "target_id": "label_m2"
+      },
+      {
+        "action": "keep",
+        "target_id": "distance_line"
+      },
+      {
+        "action": "keep",
+        "target_id": "label_r"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -200,
+              "y": 540
+            }
+          },
+          "target_id": "planet_B",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -200,
+              "y": 420
+            }
+          },
+          "target_id": "label_m2",
+          "type": "latex"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "path": "M -550 640 L -280 640"
+          },
+          "target_id": "distance_line",
+          "type": "path"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -415,
+              "y": 680
+            }
+          },
+          "target_id": "label_r",
+          "type": "latex"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "opacity": 0,
+            "path": "M -550 540 L -500 540",
+            "strokeColor": "#DC2626",
+            "strokeWidth": 6
+          },
+          "target_id": "force_arrow_A_to_B_distance_effect",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "opacity": 0,
+            "path": "M -250 540 L -300 540",
+            "strokeColor": "#DC2626",
+            "strokeWidth": 6
+          },
+          "target_id": "force_arrow_B_to_A_distance_effect",
+          "type": "path"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.8,
+            "opacity": 1
+          },
+          "target_id": "force_arrow_A_to_B_distance_effect",
+          "type": "path"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.8,
+            "opacity": 1
+          },
+          "target_id": "force_arrow_B_to_A_distance_effect",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 50,
+            "fontWeight": "bold",
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 150
+            },
+            "text": "How Distance Affects Gravitation"
+          },
+          "target_id": "distance_expl_title",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "distance_expl_title",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 300
+            },
+            "text": "The force is inversely proportional"
+          },
+          "target_id": "distance_expl_text_1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 380
+            },
+            "text": "to the square of the distance (r\u00b2)."
+          },
+          "target_id": "distance_expl_text_2",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "distance_expl_text_1",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "distance_expl_text_2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#DC2626",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 550
+            },
+            "text": "Greater distance means weaker force!"
+          },
+          "target_id": "distance_expl_text_3",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.7,
+            "opacity": 1
+          },
+          "target_id": "distance_expl_text_3",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 7,
+    "scene_number": 4,
+    "scene_title": "Impact of Distance",
+    "transitions": [
+      {
+        "action": "fadeOut",
+        "target_id": "mass_expl_title"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "mass_expl_text_1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "mass_expl_text_2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "mass_expl_text_3"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "force_arrow_A_to_B_mass_effect"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "force_arrow_B_to_A_mass_effect"
+      },
+      {
+        "action": "keep",
+        "target_id": "planet_A"
+      },
+      {
+        "action": "keep",
+        "target_id": "planet_B"
+      },
+      {
+        "action": "keep",
+        "target_id": "gravitation_formula"
+      },
+      {
+        "action": "keep",
+        "target_id": "label_m1"
+      },
+      {
+        "action": "keep",
+        "target_id": "label_m2"
+      },
+      {
+        "action": "keep",
+        "target_id": "distance_line"
+      },
+      {
+        "action": "keep",
+        "target_id": "label_r"
+      },
+      {
+        "action": "modify",
+        "target_id": "planet_A",
+        "new_properties": {
+          "radius": 100
+        }
+      },
+      {
+        "action": "modify",
+        "target_id": "label_m1",
+        "new_properties": {
+          "scale": 1
+        }
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#2563EB",
+            "opacity": 0,
+            "position": {
+              "x": -550,
+              "y": 540
+            },
+            "radius": 120,
+            "strokeColor": "#1E293B",
+            "strokeWidth": 5
+          },
+          "target_id": "final_earth",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "white",
+            "fontSize": 32,
+            "opacity": 0,
+            "position": {
+              "x": -550,
+              "y": 540
+            },
+            "text": "Earth"
+          },
+          "target_id": "final_label_earth",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#DC2626",
+            "opacity": 0,
+            "position": {
+              "x": -550,
+              "y": 300
+            },
+            "radius": 20
+          },
+          "target_id": "final_apple",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 24,
+            "opacity": 0,
+            "position": {
+              "x": -550,
+              "y": 250
+            },
+            "text": "Apple"
+          },
+          "target_id": "final_label_apple",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.7,
+            "opacity": 1
+          },
+          "target_id": "final_earth",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.7,
+            "opacity": 1
+          },
+          "target_id": "final_label_earth",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.7,
+            "opacity": 1
+          },
+          "target_id": "final_apple",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.7,
+            "opacity": 1
+          },
+          "target_id": "final_label_apple",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "opacity": 0,
+            "path": "M -550 320 L -550 420",
+            "strokeColor": "#DC2626",
+            "strokeWidth": 8
+          },
+          "target_id": "force_arrow_apple_fall",
+          "type": "path"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1,
+            "opacity": 1
+          },
+          "target_id": "force_arrow_apple_fall",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 64,
+            "fontWeight": "bold",
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 150
+            },
+            "text": "Summary"
+          },
+          "target_id": "summary_title",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "summary_title",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 450
+            },
+            "text": "Gravitation is an attractive force."
+          },
+          "target_id": "summary_point_1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 530
+            },
+            "text": "Stronger with more mass."
+          },
+          "target_id": "summary_point_2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 40,
+            "opacity": 0,
+            "position": {
+              "x": 384,
+              "y": 610
+            },
+            "text": "Weaker with more distance (inverse square)."
+          },
+          "target_id": "summary_point_3",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "summary_point_1",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "summary_point_2",
+          "type": "text"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 0.5,
+            "opacity": 1
+          },
+          "target_id": "summary_point_3",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 5,
+    "scene_title": "Summary of Gravitation",
+    "transitions": [
+      {
+        "action": "fadeOut",
+        "target_id": "distance_expl_title"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "distance_expl_text_1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "distance_expl_text_2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "distance_expl_text_3"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "force_arrow_A_to_B_distance_effect"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "force_arrow_B_to_A_distance_effect"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "planet_A"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "planet_B"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_m1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_m2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "distance_line"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "label_r"
+      },
+      {
+        "action": "modify",
+        "target_id": "gravitation_formula",
+        "new_properties": {
+          "color": "#1E293B",
+          "fontSize": 90,
+          "position": {
+            "x": 384,
+            "y": 250
+          }
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "extends": "@motion-canvas/2d/tsconfig.project.json",
+  "include": ["src"],
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "lib": ["dom", "esnext"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "@motion-canvas/2d/lib",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "types": ["vite/client"]
+  }
+}

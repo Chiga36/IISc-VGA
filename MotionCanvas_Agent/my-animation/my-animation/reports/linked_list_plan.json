@@ -1,0 +1,1146 @@
+{
+  "topic": "linked list",
+  "generation_timestamp": "2025-08-24 19:40:03",
+  "total_scenes": 6,
+  "total_estimated_duration": 74,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "mem_array_block",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "array_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "mem_ll_block1",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "mem_ll_block2",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "ll_text",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s1_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s1_desc1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s1_desc2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s1_desc3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s1_desc4",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 1,
+      "scene_title": "Introduction to Linked Lists",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node_main_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node_data_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node_next_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node_data_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node_next_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node_null_arrow_line",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node_null_arrow_head",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node_null_text",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s2_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s2_desc1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s2_desc2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s2_desc3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s2_desc4",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 2,
+      "scene_title": "The Node Structure",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "mem_array_block"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "array_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mem_ll_block1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mem_ll_block2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "ll_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s1_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s1_desc1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s1_desc2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s1_desc3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s1_desc4"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "head_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "head_arrow_line",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "head_arrow_head",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node1_data_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node1_next_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node1_data_val",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node2_data_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node2_next_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node2_data_val",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node3_data_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node3_next_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node3_data_val",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "arrow_1_2_line",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "arrow_1_2_head",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "arrow_2_3_line",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "arrow_2_3_head",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node3_null_arrow_line",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node3_null_arrow_head",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "node3_null_text",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s3_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s3_desc1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s3_desc2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s3_desc3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 3,
+      "scene_title": "Assembling the Linked List",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "node_main_rect"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "node_data_rect"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "node_next_rect"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "node_data_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "node_next_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "node_null_arrow_line"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "node_null_arrow_head"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "node_null_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s2_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s2_desc1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s2_desc2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s2_desc3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s2_desc4"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "current_pointer_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "current_pointer_arrow_line",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "current_pointer_arrow_head",
+            "type": "path"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "animation"
+            },
+            "target_id": "current_pointer_label",
+            "type": "text"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "animation"
+            },
+            "target_id": "current_pointer_arrow_line",
+            "type": "line"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "animation"
+            },
+            "target_id": "current_pointer_arrow_head",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s4_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s4_desc1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s4_desc2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s4_desc3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 4,
+      "scene_title": "Walking Through the List (Traversal)",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "head_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "head_arrow_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "head_arrow_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "node1_data_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node1_next_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node1_data_val"
+        },
+        {
+          "action": "keep",
+          "target_id": "node2_data_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node2_next_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node2_data_val"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_data_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_next_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_data_val"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_1_2_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_1_2_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_2_3_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_2_3_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_null_arrow_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_null_arrow_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_null_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s3_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s3_desc1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s3_desc2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s3_desc3"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "new_node_data_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "new_node_next_rect",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "new_node_data_val",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "modification"
+            },
+            "target_id": "arrow_1_2_line",
+            "type": "line"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "modification"
+            },
+            "target_id": "arrow_1_2_head",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "arrow_node1_new_node_line",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "arrow_node1_new_node_head",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "arrow_new_node_node2_line",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "arrow_new_node_node2_head",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s5_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s5_desc1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s5_desc2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s5_desc3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 5,
+      "scene_title": "Adding New Elements (Insertion)",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "head_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "head_arrow_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "head_arrow_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "node1_data_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node1_next_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node1_data_val"
+        },
+        {
+          "action": "keep",
+          "target_id": "node2_data_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node2_next_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node2_data_val"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_data_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_next_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_data_val"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_2_3_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_2_3_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_null_arrow_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_null_arrow_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_null_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "current_pointer_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "current_pointer_arrow_line"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "current_pointer_arrow_head"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s4_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s4_desc1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s4_desc2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s4_desc3"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "modification"
+            },
+            "target_id": "node2_data_rect",
+            "type": "rect"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "modification"
+            },
+            "target_id": "node2_next_rect",
+            "type": "rect"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "modification"
+            },
+            "target_id": "node2_data_val",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "modification"
+            },
+            "target_id": "arrow_node1_new_node_line",
+            "type": "line"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "modification"
+            },
+            "target_id": "arrow_node1_new_node_head",
+            "type": "path"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "fade"
+            },
+            "target_id": "node2_data_rect",
+            "type": "rect"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "fade"
+            },
+            "target_id": "node2_next_rect",
+            "type": "rect"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "fade"
+            },
+            "target_id": "node2_data_val",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "fade"
+            },
+            "target_id": "arrow_new_node_node2_line",
+            "type": "line"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "fade"
+            },
+            "target_id": "arrow_new_node_node2_head",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "arrow_node1_node3_line",
+            "type": "line"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "left"
+            },
+            "target_id": "arrow_node1_node3_head",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s6_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s6_desc1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s6_desc2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "right"
+            },
+            "target_id": "s6_desc3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 6,
+      "scene_title": "Removing Elements (Deletion)",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "head_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "head_arrow_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "head_arrow_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "node1_data_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node1_next_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node1_data_val"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_data_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_next_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_data_val"
+        },
+        {
+          "action": "keep",
+          "target_id": "new_node_data_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "new_node_next_rect"
+        },
+        {
+          "action": "keep",
+          "target_id": "new_node_data_val"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_node1_new_node_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_node1_new_node_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_new_node_node2_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_new_node_node2_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_2_3_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "arrow_2_3_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_null_arrow_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_null_arrow_head"
+        },
+        {
+          "action": "keep",
+          "target_id": "node3_null_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s5_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s5_desc1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s5_desc2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "s5_desc3"
+        }
+      ]
+    }
+  ]
+}

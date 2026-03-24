@@ -1,0 +1,298 @@
+{
+  "topic": "gravity",
+  "generation_timestamp": "2025-10-16 21:37:41",
+  "total_scenes": 6,
+  "total_estimated_duration": 54,
+  "pipeline_version": "Professional v3.0",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_title": "Introduction to Gravity",
+      "duration": 8,
+      "transitions": [],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "title_text",
+            "properties": {
+              "text": "Gravity: The Universal Attraction"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "intro_text",
+            "properties": {
+              "text": "Gravity is a fundamental force that attracts any two objects with mass."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 2,
+      "scene_title": "Newton's Law of Universal Gravitation",
+      "duration": 12,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "intro_text"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "circle",
+            "target_id": "object1",
+            "properties": {
+              "placeholder": "string"
+            }
+          },
+          {
+            "command": "create",
+            "type": "circle",
+            "target_id": "object2",
+            "properties": {
+              "placeholder": "string"
+            }
+          },
+          {
+            "command": "create",
+            "type": "line",
+            "target_id": "distance_line",
+            "properties": {
+              "placeholder": "string"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "newton_law",
+            "properties": {
+              "text": "Newton's Law: F = G * (m1 * m2) / r^2"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "law_explanation",
+            "properties": {
+              "text": "F is the force, G is the gravitational constant, m1 and m2 are the masses, and r is the distance."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_title": "Mass and Distance Relationship",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "keep",
+          "target_id": "object1"
+        },
+        {
+          "action": "keep",
+          "target_id": "object2"
+        },
+        {
+          "action": "keep",
+          "target_id": "distance_line"
+        },
+        {
+          "action": "keep",
+          "target_id": "newton_law"
+        },
+        {
+          "action": "modify",
+          "target_id": "law_explanation",
+          "new_properties": {
+            "placeholder": "string"
+          }
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "type": "circle",
+            "target_id": "object1",
+            "properties": {
+              "placeholder": "string"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "type": "text",
+            "target_id": "law_explanation",
+            "properties": {
+              "text": "Increasing mass increases the force; increasing distance decreases the force."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_title": "Gravity on Earth",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "object1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "object2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "distance_line"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "newton_law"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "law_explanation"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "circle",
+            "target_id": "earth",
+            "properties": {
+              "placeholder": "string"
+            }
+          },
+          {
+            "command": "create",
+            "type": "circle",
+            "target_id": "object_falling",
+            "properties": {
+              "placeholder": "string"
+            }
+          },
+          {
+            "command": "animate",
+            "type": "circle",
+            "target_id": "object_falling",
+            "properties": {
+              "placeholder": "string"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "earth_gravity",
+            "properties": {
+              "text": "Earth's gravity accelerates objects at approximately 9.8 m/s\u00b2."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 5,
+      "scene_title": "Gravity and Weight",
+      "duration": 8,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "keep",
+          "target_id": "earth"
+        },
+        {
+          "action": "keep",
+          "target_id": "object_falling"
+        },
+        {
+          "action": "keep",
+          "target_id": "earth_gravity"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "weight_def",
+            "properties": {
+              "text": "Weight is the force of gravity acting on an object's mass: W = mg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 6,
+      "scene_title": "Conclusion",
+      "duration": 6,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "earth"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "object_falling"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "earth_gravity"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "weight_def"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "conclusion_text",
+            "properties": {
+              "text": "Gravity is a fundamental force shaping our universe, from falling apples to orbiting planets."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

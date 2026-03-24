@@ -1,0 +1,1183 @@
+[
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "duration": 1,
+            "fill": "#DC2626",
+            "radius": 80,
+            "strokeColor": "#DC2626",
+            "strokeWidth": 2,
+            "text": "Sun"
+          },
+          "target_id": "sun",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 5,
+            "scale": 1.1
+          },
+          "target_id": "sun",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "duration": 0.5,
+            "fontSize": 72,
+            "fontWeight": "bold",
+            "position": {
+              "x": 384,
+              "y": 400
+            },
+            "text": "The Solar System"
+          },
+          "target_id": "s1_t1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 48,
+            "position": {
+              "x": 384,
+              "y": 320
+            },
+            "text": "Our Cosmic Neighborhood"
+          },
+          "target_id": "s1_t2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#DC2626",
+            "duration": 0.5,
+            "fontSize": 56,
+            "fontWeight": "bold",
+            "position": {
+              "x": 384,
+              "y": -100
+            },
+            "text": "The Sun"
+          },
+          "target_id": "s1_t3",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": -180
+            },
+            "text": "The central star"
+          },
+          "target_id": "s1_t4",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 6,
+    "scene_number": 1,
+    "scene_title": "Introduction to the Solar System",
+    "transitions": []
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "duration": 1,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 200,
+            "strokeColor": "#2563EB",
+            "strokeWidth": 2
+          },
+          "target_id": "orbit1",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "#059669",
+            "position": {
+              "x": -376,
+              "y": 0
+            },
+            "radius": 10
+          },
+          "target_id": "planet_intro",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 4,
+            "position": {
+              "x": -576,
+              "y": 200
+            }
+          },
+          "target_id": "planet_intro",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "duration": 0.5,
+            "fontSize": 64,
+            "fontWeight": "bold",
+            "position": {
+              "x": 384,
+              "y": 400
+            },
+            "text": "Planets Orbit the Sun"
+          },
+          "target_id": "s2_t1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 40,
+            "position": {
+              "x": 384,
+              "y": 320
+            },
+            "text": "Move in elliptical paths"
+          },
+          "target_id": "s2_t2",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 2,
+    "scene_title": "Planets and Orbits",
+    "transitions": [
+      {
+        "action": "modify",
+        "target_id": "sun",
+        "new_properties": {
+          "scale": 1
+        }
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s1_t1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s1_t2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s1_t3"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s1_t4"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 40,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "mercury_orbit",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "#475569",
+            "position": {
+              "x": -536,
+              "y": 0
+            },
+            "radius": 8
+          },
+          "target_id": "mercury",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 70,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "venus_orbit",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "#DC2626",
+            "position": {
+              "x": -506,
+              "y": 0
+            },
+            "radius": 12
+          },
+          "target_id": "venus",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 100,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "earth_orbit",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "#2563EB",
+            "position": {
+              "x": -476,
+              "y": 0
+            },
+            "radius": 15
+          },
+          "target_id": "earth",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 130,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "mars_orbit",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "#DC2626",
+            "position": {
+              "x": -446,
+              "y": 0
+            },
+            "radius": 10
+          },
+          "target_id": "mars",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 7,
+            "position": {
+              "x": -576,
+              "y": 100
+            }
+          },
+          "target_id": "earth",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "duration": 0.5,
+            "fontSize": 64,
+            "fontWeight": "bold",
+            "position": {
+              "x": 384,
+              "y": 400
+            },
+            "text": "Inner, Rocky Planets"
+          },
+          "target_id": "s3_t1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": 280
+            },
+            "text": "Mercury"
+          },
+          "target_id": "s3_t2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": 200
+            },
+            "text": "Venus"
+          },
+          "target_id": "s3_t3",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": 120
+            },
+            "text": "Earth"
+          },
+          "target_id": "s3_t4",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": 40
+            },
+            "text": "Mars"
+          },
+          "target_id": "s3_t5",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 8,
+    "scene_number": 3,
+    "scene_title": "Inner Rocky Planets",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "sun"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "orbit1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "planet_intro"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s2_t1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s2_t2"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "duration": 1,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 160,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "asteroid_belt",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 200,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "jupiter_orbit",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "#DC2626",
+            "position": {
+              "x": -376,
+              "y": 0
+            },
+            "radius": 30
+          },
+          "target_id": "jupiter",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 230,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "saturn_orbit",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "#8B5CF6",
+            "position": {
+              "x": -346,
+              "y": 0
+            },
+            "radius": 25
+          },
+          "target_id": "saturn",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 260,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "uranus_orbit",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "#2563EB",
+            "position": {
+              "x": -316,
+              "y": 0
+            },
+            "radius": 20
+          },
+          "target_id": "uranus",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 290,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "neptune_orbit",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "#059669",
+            "position": {
+              "x": -286,
+              "y": 0
+            },
+            "radius": 18
+          },
+          "target_id": "neptune",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 9,
+            "position": {
+              "x": -576,
+              "y": 200
+            }
+          },
+          "target_id": "jupiter",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "duration": 0.5,
+            "fontSize": 64,
+            "fontWeight": "bold",
+            "position": {
+              "x": 384,
+              "y": 400
+            },
+            "text": "Asteroid Belt & Gas Giants"
+          },
+          "target_id": "s4_t1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": 280
+            },
+            "text": "Asteroid Belt"
+          },
+          "target_id": "s4_t2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": 200
+            },
+            "text": "Jupiter"
+          },
+          "target_id": "s4_t3",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": 120
+            },
+            "text": "Saturn"
+          },
+          "target_id": "s4_t4",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": 40
+            },
+            "text": "Uranus"
+          },
+          "target_id": "s4_t5",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": -40
+            },
+            "text": "Neptune"
+          },
+          "target_id": "s4_t6",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 10,
+    "scene_number": 4,
+    "scene_title": "Asteroid Belt and Gas Giants",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "sun"
+      },
+      {
+        "action": "keep",
+        "target_id": "mercury_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "mercury"
+      },
+      {
+        "action": "keep",
+        "target_id": "venus_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "venus"
+      },
+      {
+        "action": "keep",
+        "target_id": "earth_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "earth"
+      },
+      {
+        "action": "keep",
+        "target_id": "mars_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "mars"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s3_t1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s3_t2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s3_t3"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s3_t4"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s3_t5"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "duration": 1,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 320,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "kuiper_belt",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "none",
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 350,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "pluto_orbit",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 0.5,
+            "fill": "#8B5CF6",
+            "position": {
+              "x": -226,
+              "y": 0
+            },
+            "radius": 7
+          },
+          "target_id": "pluto",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 6,
+            "position": {
+              "x": -576,
+              "y": 350
+            }
+          },
+          "target_id": "pluto",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "duration": 0.5,
+            "fontSize": 64,
+            "fontWeight": "bold",
+            "position": {
+              "x": 384,
+              "y": 400
+            },
+            "text": "Dwarf Planets & Kuiper Belt"
+          },
+          "target_id": "s5_t1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": 280
+            },
+            "text": "Pluto"
+          },
+          "target_id": "s5_t2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": 200
+            },
+            "text": "Home of many icy bodies"
+          },
+          "target_id": "s5_t3",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 7,
+    "scene_number": 5,
+    "scene_title": "Dwarf Planets and Kuiper Belt",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "sun"
+      },
+      {
+        "action": "keep",
+        "target_id": "mercury_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "mercury"
+      },
+      {
+        "action": "keep",
+        "target_id": "venus_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "venus"
+      },
+      {
+        "action": "keep",
+        "target_id": "earth_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "earth"
+      },
+      {
+        "action": "keep",
+        "target_id": "mars_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "mars"
+      },
+      {
+        "action": "keep",
+        "target_id": "asteroid_belt"
+      },
+      {
+        "action": "keep",
+        "target_id": "jupiter_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "jupiter"
+      },
+      {
+        "action": "keep",
+        "target_id": "saturn_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "saturn"
+      },
+      {
+        "action": "keep",
+        "target_id": "uranus_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "uranus"
+      },
+      {
+        "action": "keep",
+        "target_id": "neptune_orbit"
+      },
+      {
+        "action": "keep",
+        "target_id": "neptune"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s4_t1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s4_t2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s4_t3"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s4_t4"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s4_t5"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s4_t6"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "duration": 1,
+            "fill": "none",
+            "opacity": 0.3,
+            "position": {
+              "x": -576,
+              "y": 0
+            },
+            "radius": 400,
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 1
+          },
+          "target_id": "galaxy_disk",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 2,
+            "fill": "none",
+            "opacity": 0.5,
+            "path": "M -900 -200 C -800 -100 -700 0 -600 100 C -700 200 -800 300 -900 400",
+            "strokeColor": "#2563EB",
+            "strokeWidth": 3
+          },
+          "target_id": "s6_arm1",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 2,
+            "fill": "none",
+            "opacity": 0.5,
+            "path": "M -250 -200 C -350 -100 -450 0 -550 100 C -450 200 -350 300 -250 400",
+            "strokeColor": "#2563EB",
+            "strokeWidth": 3
+          },
+          "target_id": "s6_arm2",
+          "type": "path"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 7,
+            "position": {
+              "x": -500,
+              "y": 50
+            }
+          },
+          "target_id": "sun",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "duration": 0.5,
+            "fontSize": 64,
+            "fontWeight": "bold",
+            "position": {
+              "x": 384,
+              "y": 400
+            },
+            "text": "Our Place in the Cosmos"
+          },
+          "target_id": "s6_t1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 40,
+            "position": {
+              "x": 384,
+              "y": 320
+            },
+            "text": "Part of the Milky Way Galaxy"
+          },
+          "target_id": "s6_t2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 0.5,
+            "fontSize": 36,
+            "position": {
+              "x": 384,
+              "y": 240
+            },
+            "text": "An immense collection of stars"
+          },
+          "target_id": "s6_t3",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 8,
+    "scene_number": 6,
+    "scene_title": "Beyond Our Solar System",
+    "transitions": [
+      {
+        "action": "modify",
+        "target_id": "sun",
+        "new_properties": {
+          "radius": 10,
+          "text": "Our Sun"
+        }
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "mercury_orbit"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "mercury"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "venus_orbit"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "venus"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "earth_orbit"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "earth"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "mars_orbit"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "mars"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "asteroid_belt"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "jupiter_orbit"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "jupiter"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "saturn_orbit"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "saturn"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "uranus_orbit"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "uranus"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "neptune_orbit"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "neptune"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "kuiper_belt"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "pluto_orbit"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "pluto"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s5_t1"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s5_t2"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "s5_t3"
+      }
+    ]
+  }
+]

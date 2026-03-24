@@ -1,0 +1,586 @@
+{
+  "topic": "queues",
+  "generation_timestamp": "2025-08-24 22:26:52",
+  "total_scenes": 6,
+  "total_estimated_duration": 69,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates a rectangle representing an empty queue, positioned on the left side of the screen."
+            },
+            "target_id": "queueBox",
+            "type": "rectangle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates 'FRONT' label at the left end of the queue."
+            },
+            "target_id": "frontLabel",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates 'REAR' label at the right end of the queue."
+            },
+            "target_id": "rearLabel",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates the main title for the scene on the right side."
+            },
+            "target_id": "sceneTitle1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Introduces the definition of a queue."
+            },
+            "target_id": "explanationText1_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Highlights the FIFO principle."
+            },
+            "target_id": "explanationText1_2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 1,
+      "scene_title": "Introduction to Queues",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates the first element to be enqueued."
+            },
+            "target_id": "queueElement1",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animates the first element entering the queue."
+            },
+            "target_id": "queueElement1",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates the second element."
+            },
+            "target_id": "queueElement2",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animates the second element entering."
+            },
+            "target_id": "queueElement2",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates the third element."
+            },
+            "target_id": "queueElement3",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animates the third element entering."
+            },
+            "target_id": "queueElement3",
+            "type": "circle"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "placeholder": "Highlights the first element in, first out."
+            },
+            "target_id": "queueElement1",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animates the first element leaving the queue."
+            },
+            "target_id": "queueElement1",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animates remaining elements shifting left."
+            },
+            "target_id": "queueElement2",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animates remaining elements shifting left."
+            },
+            "target_id": "queueElement3",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Displays the title 'First In, First Out (FIFO)'."
+            },
+            "target_id": "sceneTitle2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explains the FIFO principle in detail."
+            },
+            "target_id": "explanationText2_1",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 2,
+      "scene_title": "First In, First Out (FIFO)",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "queueBox"
+        },
+        {
+          "action": "keep",
+          "target_id": "frontLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "rearLabel"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "sceneTitle1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explanationText1_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explanationText1_2"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates an arrow representing the enqueue direction."
+            },
+            "target_id": "enqueueArrow",
+            "type": "arrow"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates a new element for enqueue demonstration."
+            },
+            "target_id": "queueElement4",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animates the new element entering the queue from the rear."
+            },
+            "target_id": "queueElement4",
+            "type": "circle"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Modifies the rear label to move with the new element."
+            },
+            "target_id": "rearLabel",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Displays the title for the enqueue operation."
+            },
+            "target_id": "sceneTitle3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explains the enqueue operation."
+            },
+            "target_id": "explanationText3_1",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 3,
+      "scene_title": "Enqueue: Adding Elements",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "queueBox"
+        },
+        {
+          "action": "keep",
+          "target_id": "frontLabel"
+        },
+        {
+          "action": "modify",
+          "target_id": "rearLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "queueElement2"
+        },
+        {
+          "action": "keep",
+          "target_id": "queueElement3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "sceneTitle2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explanationText2_1"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates an arrow representing the dequeue direction."
+            },
+            "target_id": "dequeueArrow",
+            "type": "arrow"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animates the front element leaving the queue."
+            },
+            "target_id": "queueElement2",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animates remaining elements shifting forward."
+            },
+            "target_id": "queueElement3",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animates remaining elements shifting forward."
+            },
+            "target_id": "queueElement4",
+            "type": "circle"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Modifies the front label to move with the new front element."
+            },
+            "target_id": "frontLabel",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Displays the title for the dequeue operation."
+            },
+            "target_id": "sceneTitle4",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explains the dequeue operation."
+            },
+            "target_id": "explanationText4_1",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 4,
+      "scene_title": "Dequeue: Removing Elements",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "queueBox"
+        },
+        {
+          "action": "modify",
+          "target_id": "frontLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "rearLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "queueElement2"
+        },
+        {
+          "action": "keep",
+          "target_id": "queueElement3"
+        },
+        {
+          "action": "keep",
+          "target_id": "queueElement4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "enqueueArrow"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "sceneTitle3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explanationText3_1"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates an explicit 'FRONT' pointer graphic."
+            },
+            "target_id": "frontPointer",
+            "type": "arrow"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Creates an explicit 'REAR' pointer graphic."
+            },
+            "target_id": "rearPointer",
+            "type": "arrow"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Simulates an enqueue, showing rear pointer movement."
+            },
+            "target_id": "rearPointer",
+            "type": "arrow"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Simulates a dequeue, showing front pointer movement."
+            },
+            "target_id": "frontPointer",
+            "type": "arrow"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Displays the title for front and rear pointers."
+            },
+            "target_id": "sceneTitle5",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explains the role of front and rear pointers."
+            },
+            "target_id": "explanationText5_1",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 5,
+      "scene_title": "Front and Rear Pointers",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "queueBox"
+        },
+        {
+          "action": "keep",
+          "target_id": "frontLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "rearLabel"
+        },
+        {
+          "action": "keep",
+          "target_id": "queueElement3"
+        },
+        {
+          "action": "keep",
+          "target_id": "queueElement4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "dequeueArrow"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "sceneTitle4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explanationText4_1"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Icon for operating systems."
+            },
+            "target_id": "osIcon",
+            "type": "svg"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Icon for printer spooling."
+            },
+            "target_id": "printerIcon",
+            "type": "svg"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Icon for network buffering."
+            },
+            "target_id": "networkIcon",
+            "type": "svg"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Icon for task scheduling."
+            },
+            "target_id": "schedulerIcon",
+            "type": "svg"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Displays the title for applications."
+            },
+            "target_id": "sceneTitle6",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Lists common applications of queues."
+            },
+            "target_id": "explanationText6_1",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 6,
+      "scene_title": "Real-World Applications",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "queueBox"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "frontLabel"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rearLabel"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "queueElement3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "queueElement4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "frontPointer"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rearPointer"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "sceneTitle5"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "explanationText5_1"
+        }
+      ]
+    }
+  ]
+}

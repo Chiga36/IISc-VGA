@@ -1,0 +1,351 @@
+{
+  "topic": "ac_motor",
+  "generation_timestamp": "2025-09-18 20:16:31",
+  "total_scenes": 6,
+  "total_estimated_duration": 63,
+  "pipeline_version": "Professional v3.0",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_title": "Introduction to AC Motors",
+      "duration": 8,
+      "transitions": [],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "circle",
+            "target_id": "intro_circle",
+            "properties": {
+              "placeholder": "string"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene1_title",
+            "properties": {
+              "text": "AC Motors: An Introduction"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene1_subtitle",
+            "properties": {
+              "text": "Understanding the Basics"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 2,
+      "scene_title": "What is an AC Motor?",
+      "duration": 12,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "intro_circle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene1_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene1_subtitle"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "path",
+            "target_id": "stator_winding",
+            "properties": {
+              "placeholder": "string"
+            }
+          },
+          {
+            "command": "create",
+            "type": "circle",
+            "target_id": "rotor",
+            "properties": {
+              "placeholder": "string"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene2_title",
+            "properties": {
+              "text": "AC Motor Definition"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene2_def",
+            "properties": {
+              "text": "An AC motor uses alternating current to produce mechanical motion."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_title": "Components of an AC Motor",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "stator_winding"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotor"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "intro_circle"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene2_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene2_def"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene3_title",
+            "properties": {
+              "text": "Key Components"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene3_stator",
+            "properties": {
+              "text": "Stator: Stationary part with windings that create a rotating magnetic field."
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene3_rotor",
+            "properties": {
+              "text": "Rotor: Rotating part that interacts with the magnetic field to produce torque."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_title": "Working Principle",
+      "duration": 15,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "stator_winding"
+        },
+        {
+          "action": "keep",
+          "target_id": "rotor"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene3_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene3_stator"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene3_rotor"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "animate",
+            "type": "path",
+            "target_id": "rotating_magnetic_field",
+            "properties": {
+              "placeholder": "string"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene4_title",
+            "properties": {
+              "text": "How it Works"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene4_step1",
+            "properties": {
+              "text": "1. Alternating current flows through the stator windings."
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene4_step2",
+            "properties": {
+              "text": "2. This creates a rotating magnetic field."
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene4_step3",
+            "properties": {
+              "text": "3. The rotor interacts with this field, generating torque and rotation."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 5,
+      "scene_title": "Types of AC Motors",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "stator_winding"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotor"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "rotating_magnetic_field"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene4_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene4_step1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene4_step2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene4_step3"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene5_title",
+            "properties": {
+              "text": "Common Types"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene5_induction",
+            "properties": {
+              "text": "Induction Motors: Widely used due to their simplicity and reliability."
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene5_synchronous",
+            "properties": {
+              "text": "Synchronous Motors: Operate at a constant speed, used where precise speed control is needed."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 6,
+      "scene_title": "Applications of AC Motors",
+      "duration": 8,
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "scene5_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene5_induction"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "scene5_synchronous"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene6_title",
+            "properties": {
+              "text": "Applications"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene6_app1",
+            "properties": {
+              "text": "Pumps, fans, and compressors"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene6_app2",
+            "properties": {
+              "text": "Industrial machinery"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene6_app3",
+            "properties": {
+              "text": "Home appliances"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

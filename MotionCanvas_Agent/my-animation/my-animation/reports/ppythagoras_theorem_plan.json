@@ -1,0 +1,535 @@
+{
+  "topic": "ppythagoras theorem",
+  "generation_timestamp": "2025-08-22 19:38:01",
+  "total_scenes": 5,
+  "total_estimated_duration": 53,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "transparent",
+              "path": "M 0.15 0.6 L 0.35 0.6 L 0.35 0.3 Z",
+              "strokeColor": "#000000",
+              "strokeWidth": 4
+            },
+            "target_id": "rightTriangle",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "transparent",
+              "path": "M 0.3 0.6 L 0.3 0.55 L 0.35 0.55",
+              "strokeColor": "#000000",
+              "strokeWidth": 2
+            },
+            "target_id": "rightAngleMark",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 60,
+              "fontWeight": "bold",
+              "position": {
+                "x": 0.7,
+                "y": 0.2
+              },
+              "text": "The Pythagoras Theorem"
+            },
+            "target_id": "titleText",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 30,
+              "position": {
+                "x": 0.7,
+                "y": 0.3
+              },
+              "text": "Applies to Right-Angled Triangles"
+            },
+            "target_id": "subtitleText",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 1,
+      "scene_title": "Introduction to Right-Angled Triangle",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 28,
+              "position": {
+                "x": 0.38,
+                "y": 0.45
+              },
+              "text": "a"
+            },
+            "target_id": "side_a_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 28,
+              "position": {
+                "x": 0.25,
+                "y": 0.62
+              },
+              "text": "b"
+            },
+            "target_id": "side_b_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 28,
+              "position": {
+                "x": 0.25,
+                "y": 0.45
+              },
+              "text": "c"
+            },
+            "target_id": "side_c_label",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 28,
+              "position": {
+                "x": 0.7,
+                "y": 0.4
+              },
+              "text": "The sides forming the right angle are 'a' and 'b'."
+            },
+            "target_id": "sideLabelsExplanation",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 28,
+              "position": {
+                "x": 0.7,
+                "y": 0.5
+              },
+              "text": "Side 'c' is the Hypotenuse (longest side, opposite the right angle)."
+            },
+            "target_id": "hypotenuseText",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 2,
+      "scene_title": "Identifying the Sides",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "rightTriangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "rightAngleMark"
+        },
+        {
+          "action": "keep",
+          "target_id": "titleText"
+        },
+        {
+          "action": "modify",
+          "target_id": "subtitleText",
+          "new_properties": {
+            "opacity": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 28,
+              "position": {
+                "x": 0.7,
+                "y": 0.4
+              },
+              "text": "For a right-angled triangle, the square of the hypotenuse (c) is equal to the sum of the squares of the other two sides (a and b)."
+            },
+            "target_id": "theoremStatementText",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 50,
+              "position": {
+                "x": 0.7,
+                "y": 0.6
+              },
+              "text": "a^2 + b^2 = c^2"
+            },
+            "target_id": "theoremFormulaLatex",
+            "type": "latex"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 3,
+      "scene_title": "Stating the Theorem",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "rightTriangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "rightAngleMark"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_a_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_b_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_c_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "titleText"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "subtitleText"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "sideLabelsExplanation"
+        },
+        {
+          "action": "modify",
+          "target_id": "hypotenuseText",
+          "new_properties": {
+            "opacity": 0.5
+          }
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#FFCCCC",
+              "path": "M 0.35 0.3 L 0.35 0.6 L 0.65 0.6 L 0.65 0.3 Z",
+              "strokeColor": "#FF0000",
+              "strokeWidth": 3
+            },
+            "target_id": "square_a",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#CCCCFF",
+              "path": "M 0.15 0.6 L 0.35 0.6 L 0.35 0.8 L 0.15 0.8 Z",
+              "strokeColor": "#0000FF",
+              "strokeWidth": 3
+            },
+            "target_id": "square_b",
+            "type": "path"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#CCFFCC",
+              "path": "M 0.15 0.6 L 0.35 0.3 L 0.65 0.5 L 0.45 0.8 Z",
+              "strokeColor": "#008000",
+              "strokeWidth": 3
+            },
+            "target_id": "square_c",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 28,
+              "position": {
+                "x": 0.7,
+                "y": 0.5
+              },
+              "text": "The sum of the areas of the squares on the two shorter sides equals the area of the square on the hypotenuse."
+            },
+            "target_id": "visualExplanationText",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 4,
+      "scene_title": "Visualizing the Relationship",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "rightTriangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "rightAngleMark"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_a_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_b_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "side_c_label"
+        },
+        {
+          "action": "keep",
+          "target_id": "titleText"
+        },
+        {
+          "action": "modify",
+          "target_id": "hypotenuseText",
+          "new_properties": {
+            "opacity": 0
+          }
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "theoremStatementText"
+        },
+        {
+          "action": "modify",
+          "target_id": "theoremFormulaLatex",
+          "new_properties": {
+            "fontSize": 35,
+            "position": {
+              "x": 0.7,
+              "y": 0.3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "text": "a=3"
+            },
+            "target_id": "side_a_label",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "text": "b=4"
+            },
+            "target_id": "side_b_label",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "text": "c=?"
+            },
+            "target_id": "side_c_label",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 35,
+              "position": {
+                "x": 0.7,
+                "y": 0.4
+              },
+              "text": "c^2 = a^2 + b^2"
+            },
+            "target_id": "example_step1",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 35,
+              "position": {
+                "x": 0.7,
+                "y": 0.5
+              },
+              "text": "c^2 = 3^2 + 4^2"
+            },
+            "target_id": "example_step2",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 35,
+              "position": {
+                "x": 0.7,
+                "y": 0.6
+              },
+              "text": "c^2 = 9 + 16"
+            },
+            "target_id": "example_step3",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 35,
+              "position": {
+                "x": 0.7,
+                "y": 0.7
+              },
+              "text": "c^2 = 25"
+            },
+            "target_id": "example_step4",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 35,
+              "position": {
+                "x": 0.7,
+                "y": 0.8
+              },
+              "text": "c = \\sqrt{25}"
+            },
+            "target_id": "example_step5",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "fill": "#000000",
+              "fontSize": 45,
+              "fontWeight": "bold",
+              "position": {
+                "x": 0.7,
+                "y": 0.9
+              },
+              "text": "c = 5"
+            },
+            "target_id": "example_result",
+            "type": "latex"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 5,
+      "scene_title": "Applying the Theorem",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "rightTriangle"
+        },
+        {
+          "action": "keep",
+          "target_id": "rightAngleMark"
+        },
+        {
+          "action": "modify",
+          "target_id": "square_a",
+          "new_properties": {
+            "opacity": 0.2
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "square_b",
+          "new_properties": {
+            "opacity": 0.2
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "square_c",
+          "new_properties": {
+            "opacity": 0.2
+          }
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "visualExplanationText"
+        },
+        {
+          "action": "modify",
+          "target_id": "titleText",
+          "new_properties": {
+            "position": {
+              "x": 0.7,
+              "y": 0.15
+            }
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "theoremFormulaLatex",
+          "new_properties": {
+            "fontSize": 30,
+            "position": {
+              "x": 0.7,
+              "y": 0.25
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

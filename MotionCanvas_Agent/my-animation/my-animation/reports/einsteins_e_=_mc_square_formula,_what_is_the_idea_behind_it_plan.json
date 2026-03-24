@@ -1,0 +1,582 @@
+{
+  "topic": "einsteins e = mc square formula, what is the idea behind it",
+  "generation_timestamp": "2025-08-24 17:15:02",
+  "total_scenes": 6,
+  "total_estimated_duration": 65,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Mass Placeholder Circle A8A8A8 (gray), x:0.25, y:0.4, r:0.08"
+            },
+            "target_id": "viz_placeholder_mass",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Energy Placeholder Circle 87CEEB (sky blue), x:0.25, y:0.6, r:0.08"
+            },
+            "target_id": "viz_placeholder_energy",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Einstein's Famous Formula E=mc\u00b2"
+            },
+            "target_id": "scene_title_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "E = mc^2"
+            },
+            "target_id": "formula_emc2",
+            "type": "latex"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Energy equals Mass"
+            },
+            "target_id": "explanation_intro_line1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "times the Speed of Light squared."
+            },
+            "target_id": "explanation_intro_line2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 1,
+      "scene_title": "Introduction to E=mc\u00b2",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "Mass Placeholder Circle A8A8A8 (gray), x:0.25, y:0.4, r:0.08"
+            },
+            "target_id": "viz_placeholder_mass",
+            "type": "circle"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Energy Placeholder Circle 87CEEB (sky blue), x:0.25, y:0.6, r:0.08"
+            },
+            "target_id": "viz_placeholder_energy",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Pulsating Sphere 87CEEB (sky blue), x:0.25, y:0.5, r:0.12"
+            },
+            "target_id": "viz_energy_sphere",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Einstein's Famous Formula E=mc\u00b2 - Part 1"
+            },
+            "target_id": "scene_title_text",
+            "type": "text"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "placeholder": "E = mc^2 - Highlight E"
+            },
+            "target_id": "formula_emc2",
+            "type": "latex"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "Energy equals Mass"
+            },
+            "target_id": "explanation_intro_line1",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "times the Speed of Light squared."
+            },
+            "target_id": "explanation_intro_line2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "E for Energy"
+            },
+            "target_id": "explanation_E_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The capacity to do work."
+            },
+            "target_id": "explanation_E_desc",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 2,
+      "scene_title": "Unpacking 'E' for Energy",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "formula_emc2"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Pulsating Sphere 87CEEB (sky blue), x:0.15, y:0.2, r:0.05 (smaller)"
+            },
+            "target_id": "viz_energy_sphere",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Static Cube A9A9A9 (dark gray), x:0.25, y:0.5, size:0.15"
+            },
+            "target_id": "viz_mass_cube",
+            "type": "rect"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Einstein's Famous Formula E=mc\u00b2 - Part 2"
+            },
+            "target_id": "scene_title_text",
+            "type": "text"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "placeholder": "E = mc^2 - Highlight m"
+            },
+            "target_id": "formula_emc2",
+            "type": "latex"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "E for Energy"
+            },
+            "target_id": "explanation_E_title",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "The capacity to do work."
+            },
+            "target_id": "explanation_E_desc",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "m for Mass"
+            },
+            "target_id": "explanation_m_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A measure of an object's inertia,"
+            },
+            "target_id": "explanation_m_desc1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "or resistance to change in motion."
+            },
+            "target_id": "explanation_m_desc2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 3,
+      "scene_title": "Unpacking 'm' for Mass",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "formula_emc2"
+        },
+        {
+          "action": "keep",
+          "target_id": "viz_energy_sphere"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Pulsating Sphere 87CEEB (sky blue), x:0.1, y:0.15, r:0.03 (even smaller)"
+            },
+            "target_id": "viz_energy_sphere",
+            "type": "circle"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Static Cube A9A9A9 (dark gray), x:0.3, y:0.15, size:0.08 (smaller)"
+            },
+            "target_id": "viz_mass_cube",
+            "type": "rect"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Fast Moving Line FFD700 (gold), x:0.25, y:0.5, length:0.3"
+            },
+            "target_id": "viz_light_beam",
+            "type": "line"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Einstein's Famous Formula E=mc\u00b2 - Part 3"
+            },
+            "target_id": "scene_title_text",
+            "type": "text"
+          },
+          {
+            "command": "highlight",
+            "properties": {
+              "placeholder": "E = mc^2 - Highlight c^2"
+            },
+            "target_id": "formula_emc2",
+            "type": "latex"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "m for Mass"
+            },
+            "target_id": "explanation_m_title",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "A measure of an object's inertia,"
+            },
+            "target_id": "explanation_m_desc1",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "or resistance to change in motion."
+            },
+            "target_id": "explanation_m_desc2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "c for Speed of Light"
+            },
+            "target_id": "explanation_c_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A cosmic constant (~300,000 km/s)."
+            },
+            "target_id": "explanation_c_desc",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The squaring of 'c' emphasizes its immense power."
+            },
+            "target_id": "explanation_c_squared_desc",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 4,
+      "scene_title": "Unpacking 'c' for Speed of Light",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "formula_emc2"
+        },
+        {
+          "action": "keep",
+          "target_id": "viz_energy_sphere"
+        },
+        {
+          "action": "keep",
+          "target_id": "viz_mass_cube"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "Fast Moving Line FFD700 (gold), x:0.25, y:0.5, length:0.3"
+            },
+            "target_id": "viz_light_beam",
+            "type": "line"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Transforming Cube to Sphere - Cube at x:0.25, y:0.5 dissolves into energy sphere"
+            },
+            "target_id": "viz_mass_cube",
+            "type": "rect"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Expanding Energy Sphere 87CEEB (sky blue), x:0.25, y:0.5, r:0.15"
+            },
+            "target_id": "viz_energy_sphere",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "The Core Idea: Mass-Energy Equivalence"
+            },
+            "target_id": "scene_title_text",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "E = mc^2 - No highlights"
+            },
+            "target_id": "formula_emc2",
+            "type": "latex"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "c for Speed of Light"
+            },
+            "target_id": "explanation_c_title",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "A cosmic constant (~300,000 km/s)."
+            },
+            "target_id": "explanation_c_desc",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "The squaring of 'c' emphasizes its immense power."
+            },
+            "target_id": "explanation_c_squared_desc",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Mass-Energy Equivalence"
+            },
+            "target_id": "explanation_equivalence_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Mass is a concentrated form of energy."
+            },
+            "target_id": "explanation_equivalence_desc1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "They are interchangeable."
+            },
+            "target_id": "explanation_equivalence_desc2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 5,
+      "scene_title": "Mass-Energy Equivalence",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "formula_emc2"
+        },
+        {
+          "action": "keep",
+          "target_id": "viz_mass_cube"
+        },
+        {
+          "action": "keep",
+          "target_id": "viz_energy_sphere"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "Static Cube A9A9A9 (dark gray), x:0.25, y:0.5, size:0.15"
+            },
+            "target_id": "viz_mass_cube",
+            "type": "rect"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "Pulsating Sphere 87CEEB (sky blue), x:0.25, y:0.5, r:0.12"
+            },
+            "target_id": "viz_energy_sphere",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Profound Implications of E=mc\u00b2"
+            },
+            "target_id": "scene_title_text",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "E = mc^2"
+            },
+            "target_id": "formula_emc2",
+            "type": "latex"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "Mass-Energy Equivalence"
+            },
+            "target_id": "explanation_equivalence_title",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "Mass is a concentrated form of energy."
+            },
+            "target_id": "explanation_equivalence_desc1",
+            "type": "text"
+          },
+          {
+            "command": "fadeOut",
+            "properties": {
+              "placeholder": "They are interchangeable."
+            },
+            "target_id": "explanation_equivalence_desc2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A Universe of Possibilities"
+            },
+            "target_id": "conclusion_title",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "This principle fuels nuclear reactions"
+            },
+            "target_id": "conclusion_desc1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "and powers stars, revealing the universe's fundamental nature."
+            },
+            "target_id": "conclusion_desc2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 6,
+      "scene_title": "Profound Implications",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "formula_emc2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "viz_mass_cube"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "viz_energy_sphere"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,448 @@
+{
+  "topic": "fibonacci series",
+  "generation_timestamp": "2025-08-24 16:35:03",
+  "total_scenes": 5,
+  "total_estimated_duration": 45,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The Fibonacci Series"
+            },
+            "target_id": "mainTitle",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Discover one of mathematics' most captivating sequences."
+            },
+            "target_id": "introText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Each number is the sum of the two preceding ones."
+            },
+            "target_id": "introText2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 7,
+      "scene_number": 1,
+      "scene_title": "Introduction to Fibonacci",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "F_n = F_{n-1} + F_{n-2}"
+            },
+            "target_id": "fibonacciFormula",
+            "type": "latex"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Mathematically, it's defined as:"
+            },
+            "target_id": "ruleText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "For n > 1"
+            },
+            "target_id": "ruleText2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 2,
+      "scene_title": "The Core Rule",
+      "transitions": [
+        {
+          "action": "modify",
+          "target_id": "mainTitle",
+          "new_properties": {
+            "placeholder": "The Core Rule"
+          }
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "introText1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "introText2"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "0"
+            },
+            "target_id": "number0",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "1"
+            },
+            "target_id": "number1_a",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The sequence typically starts with two initial numbers."
+            },
+            "target_id": "initialText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "These define the rest of the series."
+            },
+            "target_id": "initialText2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 3,
+      "scene_title": "Building Blocks",
+      "transitions": [
+        {
+          "action": "modify",
+          "target_id": "mainTitle",
+          "new_properties": {
+            "placeholder": "Building Blocks"
+          }
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "ruleText1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "ruleText2"
+        },
+        {
+          "action": "keep",
+          "target_id": "fibonacciFormula"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "number0",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "number1_a",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "1"
+            },
+            "target_id": "number1_b",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "2"
+            },
+            "target_id": "number2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "3"
+            },
+            "target_id": "number3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "5"
+            },
+            "target_id": "number5",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Let's build the sequence:"
+            },
+            "target_id": "calcText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "F(0) = 0"
+            },
+            "target_id": "calcText2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "F(1) = 1"
+            },
+            "target_id": "calcText3",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "F(2) = 0 + 1 = 1"
+            },
+            "target_id": "calcText4",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "F(3) = 1 + 1 = 2"
+            },
+            "target_id": "calcText5",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "F(4) = 1 + 2 = 3"
+            },
+            "target_id": "calcText6",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "F(5) = 2 + 3 = 5"
+            },
+            "target_id": "calcText7",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 4,
+      "scene_title": "Step-by-Step Calculation",
+      "transitions": [
+        {
+          "action": "modify",
+          "target_id": "mainTitle",
+          "new_properties": {
+            "placeholder": "Step-by-Step Calculation"
+          }
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "initialText1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "initialText2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "fibonacciFormula"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "number0",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "number1_a",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "number1_b",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "number2",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "number3",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "number5",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "8"
+            },
+            "target_id": "number8_final",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "13"
+            },
+            "target_id": "number13_final",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "..."
+            },
+            "target_id": "sequenceDots",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": ""
+            },
+            "target_id": "goldenSpiral",
+            "type": "path"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "The Fibonacci sequence continues indefinitely:"
+            },
+            "target_id": "sequenceText1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "It appears in nature, art, and finance."
+            },
+            "target_id": "sequenceText2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "From spirals in shells to branching trees!"
+            },
+            "target_id": "sequenceText3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 5,
+      "scene_title": "The Infinite Sequence",
+      "transitions": [
+        {
+          "action": "modify",
+          "target_id": "mainTitle",
+          "new_properties": {
+            "placeholder": "The Infinite Sequence"
+          }
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "calcText1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "calcText2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "calcText3"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "calcText4"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "calcText5"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "calcText6"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "calcText7"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,265 @@
+[
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Draw a right-angled triangle with sides a, b, and hypotenuse c"
+          },
+          "target_id": "triangle1",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Draw square on side 'a'"
+          },
+          "target_id": "squareA",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Draw square on side 'b'"
+          },
+          "target_id": "squareB",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Draw square on hypotenuse 'c'"
+          },
+          "target_id": "squareC",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Title: Pythagoras Theorem"
+          },
+          "target_id": "title",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 1,
+    "scene_title": "Introduction",
+    "transitions": []
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "highlight",
+          "properties": {
+            "placeholder": "Highlight square A"
+          },
+          "target_id": "squareA",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Area of square A = a^2"
+          },
+          "target_id": "eqA",
+          "type": "latex"
+        }
+      ]
+    },
+    "duration": 3,
+    "scene_number": 2,
+    "scene_title": "Area of Square A",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "triangle1"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareA"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareB"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareC"
+      },
+      {
+        "action": "keep",
+        "target_id": "title"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "highlight",
+          "properties": {
+            "placeholder": "Highlight square B"
+          },
+          "target_id": "squareB",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Area of square B = b^2"
+          },
+          "target_id": "eqB",
+          "type": "latex"
+        }
+      ]
+    },
+    "duration": 3,
+    "scene_number": 3,
+    "scene_title": "Area of Square B",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "triangle1"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareA"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareB"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareC"
+      },
+      {
+        "action": "keep",
+        "target_id": "title"
+      },
+      {
+        "action": "keep",
+        "target_id": "eqA"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "highlight",
+          "properties": {
+            "placeholder": "Highlight square C"
+          },
+          "target_id": "squareC",
+          "type": "path"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Area of square C = c^2"
+          },
+          "target_id": "eqC",
+          "type": "latex"
+        }
+      ]
+    },
+    "duration": 3,
+    "scene_number": 4,
+    "scene_title": "Area of Square C",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "triangle1"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareA"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareB"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareC"
+      },
+      {
+        "action": "keep",
+        "target_id": "title"
+      },
+      {
+        "action": "keep",
+        "target_id": "eqA"
+      },
+      {
+        "action": "keep",
+        "target_id": "eqB"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "Pythagoras Theorem: a^2 + b^2 = c^2"
+          },
+          "target_id": "theorem",
+          "type": "latex"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 5,
+    "scene_title": "Pythagorean Theorem",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "triangle1"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareA"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareB"
+      },
+      {
+        "action": "keep",
+        "target_id": "squareC"
+      },
+      {
+        "action": "keep",
+        "target_id": "title"
+      },
+      {
+        "action": "keep",
+        "target_id": "eqA"
+      },
+      {
+        "action": "keep",
+        "target_id": "eqB"
+      },
+      {
+        "action": "keep",
+        "target_id": "eqC"
+      }
+    ]
+  }
+]

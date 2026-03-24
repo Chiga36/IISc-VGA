@@ -1,0 +1,268 @@
+{
+  "topic": "buoyancy",
+  "generation_timestamp": "2025-10-09 21:19:54",
+  "total_scenes": 6,
+  "total_estimated_duration": 57,
+  "pipeline_version": "Professional v3.0",
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_title": "Introduction to Buoyancy",
+      "duration": 8,
+      "transitions": [],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "scene_title",
+            "properties": {
+              "text": "What is Buoyancy?"
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "definition",
+            "properties": {
+              "text": "Buoyancy is the upward force exerted by a fluid that opposes the weight of an immersed object."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 2,
+      "scene_title": "Archimedes' Principle",
+      "duration": 12,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "scene_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "definition"
+        }
+      ],
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "type": "circle",
+            "target_id": "water_surface",
+            "properties": {
+              "placeholder": "string"
+            }
+          },
+          {
+            "command": "create",
+            "type": "rectangle",
+            "target_id": "object",
+            "properties": {
+              "placeholder": "string"
+            }
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "archimedes_principle",
+            "properties": {
+              "text": "Archimedes' Principle: The buoyant force on an object is equal to the weight of the fluid displaced by the object."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_title": "Factors Affecting Buoyancy",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "scene_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "definition"
+        },
+        {
+          "action": "keep",
+          "target_id": "water_surface"
+        },
+        {
+          "action": "keep",
+          "target_id": "object"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "archimedes_principle"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "density",
+            "properties": {
+              "text": "Density of the fluid: A denser fluid exerts a greater buoyant force."
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "volume",
+            "properties": {
+              "text": "Volume of the displaced fluid: The more fluid displaced, the greater the buoyant force."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_title": "Density and Buoyancy",
+      "duration": 12,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "scene_title"
+        },
+        {
+          "action": "keep",
+          "target_id": "water_surface"
+        },
+        {
+          "action": "modify",
+          "target_id": "object",
+          "new_properties": {
+            "placeholder": "string"
+          }
+        },
+        {
+          "action": "keep",
+          "target_id": "density"
+        },
+        {
+          "action": "keep",
+          "target_id": "volume"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "sinking",
+            "properties": {
+              "text": "If the object's density is greater than the fluid's density, the object sinks."
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "floating",
+            "properties": {
+              "text": "If the object's density is less than the fluid's density, the object floats."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 5,
+      "scene_title": "Applications of Buoyancy",
+      "duration": 10,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "scene_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "water_surface"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "object"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "density"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "volume"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "sinking"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "floating"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "ships",
+            "properties": {
+              "text": "Ships: Designed to displace a large volume of water, allowing them to float despite being made of dense materials."
+            }
+          },
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "balloons",
+            "properties": {
+              "text": "Hot Air Balloons: Heated air is less dense than the surrounding air, creating buoyancy."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "scene_number": 6,
+      "scene_title": "Conclusion",
+      "duration": 5,
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "scene_title"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "ships"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "balloons"
+        }
+      ],
+      "actions": {
+        "visualization": [],
+        "writing": [
+          {
+            "command": "create",
+            "type": "text",
+            "target_id": "summary",
+            "properties": {
+              "text": "Buoyancy is a fundamental force that explains why objects float or sink. Understanding buoyancy is essential in many fields, from engineering to oceanography."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

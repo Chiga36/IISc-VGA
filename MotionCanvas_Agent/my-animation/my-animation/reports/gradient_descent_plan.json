@@ -1,0 +1,976 @@
+[
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#E0ECFB",
+            "path": "M -700 200 C -600 -100 -400 -100 -300 200",
+            "strokeColor": "#2563EB",
+            "strokeWidth": 8
+          },
+          "target_id": "analogyHill",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#DC2626",
+            "position": {
+              "x": -650,
+              "y": 120
+            },
+            "radius": 30,
+            "strokeColor": "#991B1B",
+            "strokeWidth": 4
+          },
+          "target_id": "analogyBall",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 72,
+            "fontWeight": "bold",
+            "position": {
+              "x": 400,
+              "y": -400
+            },
+            "text": "What is Gradient Descent?"
+          },
+          "target_id": "text_title_gd",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 48,
+            "position": {
+              "x": 400,
+              "y": -280
+            },
+            "text": "Finding the Lowest Point"
+          },
+          "target_id": "text_subtitle_lowest_point",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 4,
+    "scene_number": 1,
+    "scene_title": "Introduction: The Goal",
+    "transitions": []
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -550,
+              "y": 0
+            }
+          },
+          "target_id": "analogyBall",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 1.5,
+            "position": {
+              "x": -450,
+              "y": 0
+            }
+          },
+          "target_id": "analogyBall",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -280
+            },
+            "text": "Imagine you're on a hill, blindfolded."
+          },
+          "target_id": "text_hill_blindfolded",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -200
+            },
+            "text": "How do you find the bottom?"
+          },
+          "target_id": "text_how_to_find",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 4,
+    "scene_number": 2,
+    "scene_title": "The Problem: Blind Search",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "text_title_gd"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_subtitle_lowest_point"
+      },
+      {
+        "action": "keep",
+        "target_id": "analogyHill"
+      },
+      {
+        "action": "keep",
+        "target_id": "analogyBall"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "duration": 1.5,
+            "path": "M 0 0 L 0 50 M -10 40 L 0 50 L 10 40",
+            "position": {
+              "x": -450,
+              "y": -50
+            },
+            "strokeColor": "#059669",
+            "strokeWidth": 6
+          },
+          "target_id": "analogyDirectionArrow",
+          "type": "path"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 2,
+            "position": {
+              "x": -450,
+              "y": -50
+            }
+          },
+          "target_id": "analogyBall",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -280
+            },
+            "text": "You feel the slope to know which way is down."
+          },
+          "target_id": "text_feel_slope",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -200
+            },
+            "text": "Steepness tells you how fast to go."
+          },
+          "target_id": "text_steepness_speed",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 3,
+    "scene_title": "Introducing Slope: The Gradient",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "text_title_gd"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_hill_blindfolded"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_how_to_find"
+      },
+      {
+        "action": "keep",
+        "target_id": "analogyHill"
+      },
+      {
+        "action": "keep",
+        "target_id": "analogyBall"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "duration": 1.5,
+            "path": "M -250 0 L 250 0",
+            "position": {
+              "x": -500,
+              "y": 100
+            },
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 3
+          },
+          "target_id": "xAxisLine",
+          "type": "line"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 1.5,
+            "path": "M 0 -200 L 0 200",
+            "position": {
+              "x": -500,
+              "y": 100
+            },
+            "strokeColor": "#94A3B8",
+            "strokeWidth": 3
+          },
+          "target_id": "yAxisLine",
+          "type": "line"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 2,
+            "fontSize": 32,
+            "position": {
+              "x": -400,
+              "y": 150
+            },
+            "text": "Parameters (\u03b8)"
+          },
+          "target_id": "xAxisLabel",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "duration": 2,
+            "fontSize": 32,
+            "position": {
+              "x": -600,
+              "y": 0
+            },
+            "text": "Cost (J(\u03b8))"
+          },
+          "target_id": "yAxisLabel",
+          "type": "text"
+        }
+      ],
+      "writing": []
+    },
+    "duration": 6,
+    "scene_number": 4,
+    "scene_title": "From Hill to Cost Function",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "text_title_gd"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "analogyBall"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "analogyDirectionArrow"
+      },
+      {
+        "action": "modify",
+        "target_id": "text_feel_slope",
+        "new_properties": {
+          "color": "#1E293B",
+          "fontSize": 48,
+          "text": "In Machine Learning, this 'hill' is a 'Cost Function'."
+        }
+      },
+      {
+        "action": "modify",
+        "target_id": "text_steepness_speed",
+        "new_properties": {
+          "color": "#1E293B",
+          "fontSize": 42,
+          "text": "We want to minimize this 'cost' to find optimal parameters."
+        }
+      },
+      {
+        "action": "modify",
+        "target_id": "analogyHill",
+        "new_properties": {
+          "fill": "#E0ECFB",
+          "path": "M -700 100 C -600 -100 -400 -100 -300 100",
+          "strokeColor": "#2563EB",
+          "strokeWidth": 8,
+          "text": "mainCostCurve"
+        }
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "fill": "#DC2626",
+            "position": {
+              "x": -650,
+              "y": 0
+            },
+            "radius": 15,
+            "strokeColor": "#991B1B",
+            "strokeWidth": 3
+          },
+          "target_id": "optimizationPoint",
+          "type": "circle"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "duration": 2,
+            "path": "M -50 -50 L 50 50",
+            "position": {
+              "x": -650,
+              "y": 0
+            },
+            "strokeColor": "#8B5CF6",
+            "strokeWidth": 4
+          },
+          "target_id": "tangentLine",
+          "type": "line"
+        }
+      ],
+      "writing": [
+        {
+          "command": "modify",
+          "properties": {
+            "text": "The 'slope' at any point is called the 'gradient'."
+          },
+          "target_id": "text_feel_slope",
+          "type": "text"
+        },
+        {
+          "command": "modify",
+          "properties": {
+            "text": "It tells us the steepest direction and magnitude of change."
+          },
+          "target_id": "text_steepness_speed",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 6,
+    "scene_number": 5,
+    "scene_title": "The Gradient: Measuring Slope",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "text_title_gd"
+      },
+      {
+        "action": "keep",
+        "target_id": "text_feel_slope"
+      },
+      {
+        "action": "keep",
+        "target_id": "text_steepness_speed"
+      },
+      {
+        "action": "keep",
+        "target_id": "mainCostCurve"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLabel"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 2,
+            "position": {
+              "x": -600,
+              "y": -50
+            }
+          },
+          "target_id": "optimizationPoint",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 2,
+            "path": "M -50 -50 L 50 50",
+            "position": {
+              "x": -600,
+              "y": -50
+            }
+          },
+          "target_id": "tangentLine",
+          "type": "line"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -280
+            },
+            "text": "We take a small step in the opposite direction of the gradient."
+          },
+          "target_id": "text_small_step",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -200
+            },
+            "text": "This step size is controlled by the 'learning rate' (\u03b1)."
+          },
+          "target_id": "text_learning_rate",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 6,
+    "scene_number": 6,
+    "scene_title": "Taking Steps: The Learning Rate",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "text_title_gd"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_feel_slope"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_steepness_speed"
+      },
+      {
+        "action": "keep",
+        "target_id": "mainCostCurve"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "optimizationPoint"
+      },
+      {
+        "action": "keep",
+        "target_id": "tangentLine"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 4,
+            "path": "M -500 -100",
+            "text": "mainCostCurve"
+          },
+          "target_id": "optimizationPoint",
+          "type": "circle"
+        },
+        {
+          "command": "animate",
+          "properties": {
+            "duration": 4,
+            "path": "M -50 0 L 50 0",
+            "position": {
+              "x": -500,
+              "y": -100
+            },
+            "text": "mainCostCurve"
+          },
+          "target_id": "tangentLine",
+          "type": "line"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -280
+            },
+            "text": "We repeat this process iteratively..."
+          },
+          "target_id": "text_repeat_iteratively",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -200
+            },
+            "text": "...calculating gradient and taking steps."
+          },
+          "target_id": "text_until_minimum",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 6,
+    "scene_number": 7,
+    "scene_title": "Iteration: Repeating the Process",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "text_title_gd"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_small_step"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_learning_rate"
+      },
+      {
+        "action": "keep",
+        "target_id": "mainCostCurve"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "optimizationPoint"
+      },
+      {
+        "action": "keep",
+        "target_id": "tangentLine"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "modify",
+          "properties": {
+            "fill": "#059669"
+          },
+          "target_id": "optimizationPoint",
+          "type": "circle"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -280
+            },
+            "text": "Eventually, we reach the minimum point of the cost function."
+          },
+          "target_id": "text_optimal_solution",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -200
+            },
+            "text": "This is our optimal solution."
+          },
+          "target_id": "text_optimal_solution_detail",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 4,
+    "scene_number": 8,
+    "scene_title": "Reaching the Minimum",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "text_title_gd"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_repeat_iteratively"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_until_minimum"
+      },
+      {
+        "action": "keep",
+        "target_id": "mainCostCurve"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "optimizationPoint"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "tangentLine"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 48,
+            "position": {
+              "x": 400,
+              "y": -280
+            },
+            "text": "\\text{Gradient Descent Update Rule:}"
+          },
+          "target_id": "latex_formula_header",
+          "type": "latex"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#2563EB",
+            "fontSize": 60,
+            "position": {
+              "x": 400,
+              "y": -150
+            },
+            "text": "\\theta_{new} = \\theta_{old} - \\alpha \\nabla J(\\theta_{old})"
+          },
+          "target_id": "latex_gd_formula",
+          "type": "latex"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "position": {
+              "x": 400,
+              "y": 0
+            },
+            "text": "\\theta \\text{ (Parameters)}"
+          },
+          "target_id": "latex_theta_label",
+          "type": "latex"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "position": {
+              "x": 400,
+              "y": 80
+            },
+            "text": "\\alpha \\text{ (Learning Rate)}"
+          },
+          "target_id": "latex_alpha_label",
+          "type": "latex"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#475569",
+            "fontSize": 36,
+            "position": {
+              "x": 400,
+              "y": 160
+            },
+            "text": "\\nabla J(\\theta) \\text{ (Gradient of Cost Function)}"
+          },
+          "target_id": "latex_nabla_J_label",
+          "type": "latex"
+        }
+      ]
+    },
+    "duration": 6,
+    "scene_number": 9,
+    "scene_title": "The Gradient Descent Formula",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "text_title_gd"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_optimal_solution"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "text_optimal_solution_detail"
+      },
+      {
+        "action": "keep",
+        "target_id": "mainCostCurve"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "optimizationPoint"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -280
+            },
+            "text": "Gradient Descent is an optimization algorithm..."
+          },
+          "target_id": "text_summary_1",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -200
+            },
+            "text": "...that iteratively adjusts model parameters..."
+          },
+          "target_id": "text_summary_2",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -120
+            },
+            "text": "...to minimize a cost (or loss) function."
+          },
+          "target_id": "text_summary_3",
+          "type": "text"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "color": "#1E293B",
+            "fontSize": 42,
+            "position": {
+              "x": 400,
+              "y": -40
+            },
+            "text": "It uses the gradient (slope) to guide the search for the minimum."
+          },
+          "target_id": "text_summary_4",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 10,
+    "scene_title": "Summary",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "text_title_gd"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "latex_formula_header"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "latex_gd_formula"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "latex_theta_label"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "latex_alpha_label"
+      },
+      {
+        "action": "fadeOut",
+        "target_id": "latex_nabla_J_label"
+      },
+      {
+        "action": "keep",
+        "target_id": "mainCostCurve"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "xAxisLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "yAxisLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "optimizationPoint"
+      }
+    ]
+  }
+]

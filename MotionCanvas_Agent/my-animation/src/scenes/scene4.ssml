@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<speak version="1.1" xmlns="http://www.w3.org/2001/10/synthesis"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.w3.org/2001/10/synthesis
+                           http://www.w3.org/TR/speech-synthesis11/synthesis.xsd"
+       xml:lang="en-US">
+  <voice name="en-US-Neural2-F">
+    <prosody rate="medium" pitch="medium">
+      <p><emphasis level="strong">Earth</emphasis></p>
+      <break time="500ms"/>
+      <p><emphasis level="strong">Mars</emphasis></p>
+      <break time="500ms"/>
+      <p><emphasis level="strong">Jupiter</emphasis></p>
+      <break time="500ms"/>
+      <p><emphasis level="moderate">Gravity on Different Planets</emphasis></p>
+      <break time="500ms"/>
+      <p><emphasis level="moderate">Planetary mass significantly affects gravitational pull.</emphasis></p>
+      <break time="500ms"/>
+      <p><emphasis level="moderate">Mars has lower gravity than Earth.</emphasis></p>
+      <break time="500ms"/>
+      <p><emphasis level="moderate">Jupiter has much higher gravity than Earth.</emphasis></p>
+      <break time="500ms"/>
+
+    </prosody>
+  </voice>
+</speak>

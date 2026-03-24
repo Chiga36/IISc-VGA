@@ -1,0 +1,241 @@
+[
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "rightTriangle",
+          "type": "path"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "aLine",
+          "type": "line"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "bLine",
+          "type": "line"
+        },
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "cLine",
+          "type": "line"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "titleText",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 1,
+    "scene_title": "Introducing the Right Triangle",
+    "transitions": []
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "highlight",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "aLine",
+          "type": "line"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "aLabel",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 3,
+    "scene_number": 2,
+    "scene_title": "Side 'a'",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "rightTriangle"
+      },
+      {
+        "action": "keep",
+        "target_id": "titleText"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "highlight",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "bLine",
+          "type": "line"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "bLabel",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 3,
+    "scene_number": 3,
+    "scene_title": "Side 'b'",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "rightTriangle"
+      },
+      {
+        "action": "keep",
+        "target_id": "titleText"
+      },
+      {
+        "action": "keep",
+        "target_id": "aLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "aLabel"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [
+        {
+          "command": "highlight",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "cLine",
+          "type": "line"
+        }
+      ],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "cLabel",
+          "type": "text"
+        }
+      ]
+    },
+    "duration": 3,
+    "scene_number": 4,
+    "scene_title": "Hypotenuse 'c'",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "rightTriangle"
+      },
+      {
+        "action": "keep",
+        "target_id": "titleText"
+      },
+      {
+        "action": "keep",
+        "target_id": "aLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "aLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "bLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "bLabel"
+      }
+    ]
+  },
+  {
+    "actions": {
+      "visualization": [],
+      "writing": [
+        {
+          "command": "create",
+          "properties": {
+            "placeholder": "string"
+          },
+          "target_id": "theoremText",
+          "type": "latex"
+        }
+      ]
+    },
+    "duration": 5,
+    "scene_number": 5,
+    "scene_title": "Pythagorean Theorem",
+    "transitions": [
+      {
+        "action": "keep",
+        "target_id": "rightTriangle"
+      },
+      {
+        "action": "keep",
+        "target_id": "titleText"
+      },
+      {
+        "action": "keep",
+        "target_id": "aLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "aLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "bLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "bLabel"
+      },
+      {
+        "action": "keep",
+        "target_id": "cLine"
+      },
+      {
+        "action": "keep",
+        "target_id": "cLabel"
+      }
+    ]
+  }
+]

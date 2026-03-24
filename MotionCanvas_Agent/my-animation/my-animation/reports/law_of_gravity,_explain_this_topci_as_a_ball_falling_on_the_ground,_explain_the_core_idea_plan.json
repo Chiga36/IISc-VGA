@@ -1,0 +1,424 @@
+{
+  "topic": "law of gravity, explain this topci as a ball falling on the ground, explain the core idea",
+  "generation_timestamp": "2025-08-24 19:16:54",
+  "total_scenes": 5,
+  "total_estimated_duration": 60,
+  "pipeline_version": "Professional v2.0",
+  "scenes": [
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A circle representing an abstract concept of gravity."
+            },
+            "target_id": "gravity_symbol",
+            "type": "circle"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A letter G inside the gravity symbol."
+            },
+            "target_id": "gravity_label_visual",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Main title for the scene."
+            },
+            "target_id": "title_text",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Definition of gravity."
+            },
+            "target_id": "intro_definition",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 8,
+      "scene_number": 1,
+      "scene_title": "What is Gravity? An Introduction",
+      "transitions": []
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A brown rectangle representing the ground."
+            },
+            "target_id": "ground_plane",
+            "type": "rect"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A red ball suspended in the air."
+            },
+            "target_id": "falling_ball",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animate the ball falling to the ground."
+            },
+            "target_id": "falling_ball",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explanation text about objects falling."
+            },
+            "target_id": "falling_ball_explanation",
+            "type": "text"
+          },
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Update the scene title for the new context."
+            },
+            "target_id": "title_text",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 10,
+      "scene_number": 2,
+      "scene_title": "The Falling Ball: An Everyday Observation",
+      "transitions": [
+        {
+          "action": "fadeOut",
+          "target_id": "gravity_symbol"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "gravity_label_visual"
+        },
+        {
+          "action": "keep",
+          "target_id": "title_text"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "intro_definition"
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "An arrow showing force from ball to ground."
+            },
+            "target_id": "ball_to_ground_arrow",
+            "type": "arrow"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A subtle arrow showing force from ground to ball."
+            },
+            "target_id": "ground_to_ball_arrow",
+            "type": "arrow"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for the force."
+            },
+            "target_id": "force_label",
+            "type": "text"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "First part of Newton's insight explanation."
+            },
+            "target_id": "universal_attraction_explanation_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Second part of Newton's insight explanation: universal attraction."
+            },
+            "target_id": "universal_attraction_explanation_2",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 12,
+      "scene_number": 3,
+      "scene_title": "Newton's Insight: Universal Attraction",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "ground_plane"
+        },
+        {
+          "action": "keep",
+          "target_id": "falling_ball"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "falling_ball_explanation"
+        },
+        {
+          "action": "modify",
+          "target_id": "title_text",
+          "new_properties": {
+            "placeholder": "Update title to Newton's Insight."
+          }
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for mass factor."
+            },
+            "target_id": "mass_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Label for distance factor."
+            },
+            "target_id": "distance_label",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "An arrow indicating mass influence."
+            },
+            "target_id": "mass_indicator_arrow",
+            "type": "arrow"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "A dashed line indicating distance."
+            },
+            "target_id": "distance_line",
+            "type": "line"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Introduction to factors affecting gravity."
+            },
+            "target_id": "factors_explanation_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explanation of mass as a factor."
+            },
+            "target_id": "factors_explanation_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Explanation of distance as a factor."
+            },
+            "target_id": "factors_explanation_3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 4,
+      "scene_title": "Factors of Gravity: Mass and Distance",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "ground_plane"
+        },
+        {
+          "action": "keep",
+          "target_id": "falling_ball"
+        },
+        {
+          "action": "modify",
+          "target_id": "ball_to_ground_arrow",
+          "new_properties": {
+            "placeholder": "Change arrow color and thickness for emphasis."
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "ground_to_ball_arrow",
+          "new_properties": {
+            "placeholder": "Change arrow color and thickness for emphasis."
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "force_label",
+          "new_properties": {
+            "placeholder": "Update force label and color."
+          }
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "universal_attraction_explanation_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "universal_attraction_explanation_2"
+        },
+        {
+          "action": "modify",
+          "target_id": "title_text",
+          "new_properties": {
+            "placeholder": "Update title to Factors of Gravity."
+          }
+        }
+      ]
+    },
+    {
+      "actions": {
+        "visualization": [
+          {
+            "command": "modify",
+            "properties": {
+              "placeholder": "Move the ball back to the top to re-initiate fall animation."
+            },
+            "target_id": "falling_ball",
+            "type": "circle"
+          },
+          {
+            "command": "animate",
+            "properties": {
+              "placeholder": "Animate the ball falling again, reinforcing the concept."
+            },
+            "target_id": "falling_ball",
+            "type": "circle"
+          }
+        ],
+        "writing": [
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "First part of the core idea summary."
+            },
+            "target_id": "core_idea_summary_1",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Second part of the core idea summary, mentioning mass and distance."
+            },
+            "target_id": "core_idea_summary_2",
+            "type": "text"
+          },
+          {
+            "command": "create",
+            "properties": {
+              "placeholder": "Final summary connecting to Newton's Law."
+            },
+            "target_id": "core_idea_summary_3",
+            "type": "text"
+          }
+        ]
+      },
+      "duration": 15,
+      "scene_number": 5,
+      "scene_title": "The Core Idea: Law of Universal Gravitation",
+      "transitions": [
+        {
+          "action": "keep",
+          "target_id": "ground_plane"
+        },
+        {
+          "action": "keep",
+          "target_id": "falling_ball"
+        },
+        {
+          "action": "modify",
+          "target_id": "ball_to_ground_arrow",
+          "new_properties": {
+            "placeholder": "Revert arrow color and position for final summary."
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "ground_to_ball_arrow",
+          "new_properties": {
+            "placeholder": "Revert arrow color and position for final summary."
+          }
+        },
+        {
+          "action": "modify",
+          "target_id": "force_label",
+          "new_properties": {
+            "placeholder": "Revert force label and color for final summary."
+          }
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mass_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "distance_label"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "mass_indicator_arrow"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "distance_line"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "factors_explanation_1"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "factors_explanation_2"
+        },
+        {
+          "action": "fadeOut",
+          "target_id": "factors_explanation_3"
+        },
+        {
+          "action": "modify",
+          "target_id": "title_text",
+          "new_properties": {
+            "placeholder": "Update title to The Core Idea."
+          }
+        }
+      ]
+    }
+  ]
+}
